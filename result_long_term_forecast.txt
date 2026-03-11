@@ -1,0 +1,6 @@
+forecasting_Melbourne_CBD_10239_merged_260227_230405_FrePatchTST3_fre_patch_custom_sl-14_pl-14_var-1_dm-512_stages-4_2P2i_1P1i_dec-2_des-test_0  
+mae: 3.33640, mse: 24.91948, r2: -0.79898, pear: 0.04566, mase: 1.29946
+
+forecasting_Melbourne_CBD_10239_merged_260228_014928_FrePatchTST3_fre_patch_custom_sl-14_pl-14_var-1_dm-512_stages-4_2P2i_1P1i_dec-2_des-test_0  
+mae: 2.13940, mse: 7.80791, r2: -0.53669, pear: 0.10645, mase: 1.10821
+

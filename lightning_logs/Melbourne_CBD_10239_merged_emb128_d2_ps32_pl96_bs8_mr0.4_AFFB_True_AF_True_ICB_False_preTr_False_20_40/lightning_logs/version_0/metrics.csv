@@ -1,0 +1,6 @@
+epoch,lr-AdamW,step,test_loss,test_mae,test_mse,train_loss,train_mae,train_mse,val_loss,val_mae,val_mse
+,0.0001,0,,,,,,,,,
+0,,77,,,,,,,nan,nan,nan
+0,,77,,,,nan,nan,nan,,,
+1,,78,nan,nan,nan,,,,,,
+1,,78,nan,nan,nan,,,,,,

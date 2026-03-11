@@ -1,0 +1,84 @@
+Melbourne_CBD_10239_merged_emb128_d2_ps32_pl96_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_20_42  
+MSE:{'test': nan, 'val': nan}, MAE:{'test': nan, 'val': nan}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps32_pl96_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_21_37  
+MSE:{'test': 0.9218106269836426, 'val': 1.0072225332260132}, MAE:{'test': 0.684146523475647, 'val': 0.7384920716285706}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps32_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_21_40  
+MSE:{'test': 2.018711566925049, 'val': 0.6168054342269897}, MAE:{'test': 1.0298291444778442, 'val': 0.641262412071228}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps32_pl7_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_21_45  
+MSE:{'test': 1.9528203010559082, 'val': 0.6280409097671509}, MAE:{'test': 1.0097455978393555, 'val': 0.642166793346405}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps32_pl7_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_21_52  
+MSE:{'test': 1.9528203010559082, 'val': 0.6280409097671509}, MAE:{'test': 1.0097455978393555, 'val': 0.642166793346405}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps32_pl7_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_22_08  
+MSE:{'test': 1.9528203010559082, 'val': 0.6280409097671509}, MAE:{'test': 1.0097455978393555, 'val': 0.642166793346405}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps32_pl7_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_22_28  
+MSE:{'test': 1.9528203010559082, 'val': 0.6280409097671509}, MAE:{'test': 1.0097455978393555, 'val': 0.642166793346405}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps32_pl7_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_13_59  
+MSE:{'test': 1.9528203010559082, 'val': 0.6280409097671509}, MAE:{'test': 1.0097455978393555, 'val': 0.642166793346405}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps32_pl7_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_18_47  
+MSE:{'test': 1.9528203010559082, 'val': 0.6280409097671509}, MAE:{'test': 1.0097455978393555, 'val': 0.642166793346405}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps32_pl7_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_18_50  
+MSE:{'test': 1.9528203010559082, 'val': 0.6280409097671509}, MAE:{'test': 1.0097455978393555, 'val': 0.642166793346405}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps32_pl7_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_18_07  
+MSE:{'test': 1.9528203010559082, 'val': 0.6280409097671509}, MAE:{'test': 1.0097455978393555, 'val': 0.642166793346405}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps32_pl7_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_18_14  
+MSE:{'test': 1.1471140384674072, 'val': 1.145359754562378}, MAE:{'test': 0.7540536522865295, 'val': 0.7531347870826721}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps32_pl7_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_16_05  
+MSE:{'test': 1.1471140384674072, 'val': 1.145359754562378}, MAE:{'test': 0.7540536522865295, 'val': 0.7531347870826721}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps32_pl7_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_16_57  
+MSE:{'test': 1.1471140384674072, 'val': 1.145359754562378}, MAE:{'test': 0.7540536522865295, 'val': 0.7531347870826721}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps32_pl7_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_17_03  
+MSE:{'test': 1.1471140384674072, 'val': 1.145359754562378}, MAE:{'test': 0.7540536522865295, 'val': 0.7531347870826721}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps32_pl7_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_17_11  
+MSE:{'test': 1.1471140384674072, 'val': 1.145359754562378}, MAE:{'test': 0.7540536522865295, 'val': 0.7531347870826721}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps32_pl7_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_17_19  
+MSE:{'test': 1.1471140384674072, 'val': 1.145359754562378}, MAE:{'test': 0.7540536522865295, 'val': 0.7531347870826721}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps32_pl7_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_17_35  
+MSE:{'test': 1.1539533138275146, 'val': 1.1537426710128784}, MAE:{'test': 0.7534414529800415, 'val': 0.7532886862754822}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps32_pl7_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_17_50  
+MSE:{'test': 1.1539533138275146, 'val': 1.1537426710128784}, MAE:{'test': 0.7534414529800415, 'val': 0.7532886862754822}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps32_pl7_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_18_02  
+MSE:{'test': 1.1539533138275146, 'val': 1.1537426710128784}, MAE:{'test': 0.7534414529800415, 'val': 0.7532886862754822}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps32_pl7_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_18_10  
+MSE:{'test': 2.0266220569610596, 'val': 0.9244706034660339}, MAE:{'test': 0.9693474769592285, 'val': 0.6880625486373901}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_19_41  
+MSE:{'test': 2.2256319522857666, 'val': 1.027396321296692}, MAE:{'test': 1.038265347480774, 'val': 0.7124817371368408}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_19_46  
+MSE:{'test': 2.2276039123535156, 'val': 1.028285026550293}, MAE:{'test': 1.0390323400497437, 'val': 0.7130411863327026}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_20_10  
+MSE:{'test': 2.2276039123535156, 'val': 1.028285026550293}, MAE:{'test': 1.0390323400497437, 'val': 0.7130411863327026}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_20_16  
+MSE:{'test': 2.2276039123535156, 'val': 1.028285026550293}, MAE:{'test': 1.0390323400497437, 'val': 0.7130411863327026}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_20_25  
+MSE:{'test': 2.2276039123535156, 'val': 1.028285026550293}, MAE:{'test': 1.0390323400497437, 'val': 0.7130411863327026}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_20_32  
+MSE:{'test': 2.2276039123535156, 'val': 1.028285026550293}, MAE:{'test': 1.0390323400497437, 'val': 0.7130411863327026}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_20_40  
+MSE:{'test': 2.2276039123535156, 'val': 1.028285026550293}, MAE:{'test': 1.0390323400497437, 'val': 0.7130411863327026}
+
