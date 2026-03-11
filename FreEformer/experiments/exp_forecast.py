@@ -290,8 +290,13 @@ class Exp_Forecast(Exp_Basic):
         return total_loss
 
     def _val_mse_step1_real(self, data, loader):
+        metrics = self._val_step1_real_metrics(data, loader)
+        return metrics["mse"]
+
+    def _val_step1_real_metrics(self, data, loader):
         self.model.eval()
         sq_sum = 0.0
+        abs_sum = 0.0
         count = 0
         f_dim = -1 if self.args.features == 'MS' else 0
         channel = getattr(self.args, 'plot_channel', 0)
@@ -315,7 +320,7 @@ class Exp_Forecast(Exp_Basic):
                 outputs = outputs.detach().cpu().numpy()
                 batch_y = batch_y.detach().cpu().numpy()
 
-                if data.scale and self.args.inverse:
+                if data.scale:
                     shape = outputs.shape
                     outputs = data.inverse_transform(
                         outputs.reshape(-1, outputs.shape[-1])
@@ -329,10 +334,16 @@ class Exp_Forecast(Exp_Basic):
                 true_step1 = batch_y[:, 0, channel_idx]
                 diff = pred_step1 - true_step1
                 sq_sum += np.sum(diff * diff)
+                abs_sum += np.sum(np.abs(diff))
                 count += diff.size
 
         self.model.train()
-        return float(sq_sum / count) if count > 0 else 0.0
+        if count == 0:
+            return {"mae": 0.0, "mse": 0.0}
+        return {
+            "mae": float(abs_sum / count),
+            "mse": float(sq_sum / count),
+        }
 
     def train(self, setting=None):
         train_data, train_loader = self._get_data(flag='train')
@@ -521,16 +532,17 @@ class Exp_Forecast(Exp_Basic):
             if len(vali_loader) == 0:
                 test_loss = self.vali(test_data, test_loader, criterion)
                 vali_loss = test_loss
-                val_mse = self._val_mse_step1_real(test_data, test_loader)
+                val_metrics = self._val_step1_real_metrics(test_data, test_loader)
             else:
                 vali_loss = self.vali(vali_data, vali_loader, criterion)
-                val_mse = self._val_mse_step1_real(vali_data, vali_loader)
+                val_metrics = self._val_step1_real_metrics(vali_data, vali_loader)
                 test_loss = self.vali(test_data, test_loader, criterion)
-            val_mae_history.append(vali_loss)
-            val_mse_history.append(val_mse)
+            val_mae_history.append(val_metrics["mae"])
+            val_mse_history.append(val_metrics["mse"])
 
             print(f"Epoch: {epoch + 1}, Steps: {train_steps} | Train Loss: {train_loss:.7f} "
-                  f"Vali Loss: {vali_loss:.7f} Test Loss: {test_loss:.7f}")
+                  f"Vali Loss: {vali_loss:.7f} Test Loss: {test_loss:.7f} "
+                  f"Vali Real MAE: {val_metrics['mae']:.7f} Vali Real MSE: {val_metrics['mse']:.7f}")
             early_stopping(vali_loss, self.model, path, epoch=epoch + 1)
             if early_stopping.early_stop:  #
                 print("Early stopping")
@@ -556,6 +568,24 @@ class Exp_Forecast(Exp_Basic):
             plt.tight_layout()
             plt.savefig(plot_path, dpi=200)
             plt.close()
+            self._last_val_mae_history = val_mae_history
+
+            table_data = [[f"{i+1}", f"{val_mae_history[i]:.4f}"] for i in range(len(val_mae_history))]
+            plt.figure(figsize=(6, 0.6 + 0.4 * len(val_mae_history)))
+            plt.axis("off")
+            table = plt.table(
+                cellText=table_data,
+                colLabels=["Epoch", "Val MAE"],
+                cellLoc="center",
+                loc="center"
+            )
+            table.scale(1, 1.2)
+            plt.title(f"FreEformer Validation MAE Table ({dataset_stem})")
+            plt.tight_layout()
+            mae_table_path = os.path.join(self.args.folder_path,
+                                          f"FreEformer_{dataset_stem}_ValMAE_table.png")
+            plt.savefig(mae_table_path, dpi=200)
+            plt.close()
 
         if len(val_mse_history) > 0:
             dataset_stem = os.path.splitext(os.path.basename(self.args.data_path))[0]
@@ -571,6 +601,23 @@ class Exp_Forecast(Exp_Basic):
             plt.savefig(plot_path, dpi=200)
             plt.close()
             self._last_val_mse_history = val_mse_history
+
+            table_data = [[f"{i+1}", f"{val_mse_history[i]:.4f}"] for i in range(len(val_mse_history))]
+            plt.figure(figsize=(6, 0.6 + 0.4 * len(val_mse_history)))
+            plt.axis("off")
+            table = plt.table(
+                cellText=table_data,
+                colLabels=["Epoch", "Val MSE"],
+                cellLoc="center",
+                loc="center"
+            )
+            table.scale(1, 1.2)
+            plt.title(f"FreEformer Validation MSE Table ({dataset_stem})")
+            plt.tight_layout()
+            mse_table_path = os.path.join(self.args.folder_path,
+                                          f"FreEformer_{dataset_stem}_ValMSE_table.png")
+            plt.savefig(mse_table_path, dpi=200)
+            plt.close()
 
         return self.model
 
@@ -809,25 +856,6 @@ class Exp_Forecast(Exp_Basic):
                 plt.tight_layout()
                 save_path = os.path.join(folder_path, f"FreEformer_{dataset_stem}_prediction_step{step_idx + 1}.png")
                 plt.savefig(save_path, dpi=200)
-                plt.close()
-
-            # MSE table (per epoch, aligned with validation curve)
-            if hasattr(self, "_last_val_mse_history"):
-                mse_history = self._last_val_mse_history
-                table_data = [[f"{i+1}", f"{mse_history[i]:.4f}"] for i in range(len(mse_history))]
-                plt.figure(figsize=(6, 0.6 + 0.4 * len(mse_history)))
-                plt.axis("off")
-                table = plt.table(
-                    cellText=table_data,
-                    colLabels=["Epoch", "Val MSE"],
-                    cellLoc="center",
-                    loc="center"
-                )
-                table.scale(1, 1.2)
-                plt.title(f"FreEformer Validation MSE Table ({dataset_stem})")
-                plt.tight_layout()
-                mse_path = os.path.join(folder_path, f"FreEformer_{dataset_stem}_ValMSE_table.png")
-                plt.savefig(mse_path, dpi=200)
                 plt.close()
 
         mse_list = []

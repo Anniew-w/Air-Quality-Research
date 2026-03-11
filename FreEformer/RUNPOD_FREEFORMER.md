@@ -55,6 +55,7 @@ FreEformer writes outputs under:
 ## Notes
 
 - The script uses the same air-quality settings you already used locally: `data=custom`, `features=S`, `target=pm25`, `seq_len=14`, `pred_len=14`, `air_dataset=1`, `window_split=1`.
+- It now runs with a lower default learning rate `1e-5` and enables `inverse=1`, so validation/test metrics are reported on the de-normalized PM2.5 scale.
 - It uses the repository-relative data directory, so it does not depend on your local macOS absolute path.
 - `num_workers` is set to `4` for safer RunPod behavior. You can raise it later if needed.
 - Run it from the repository root so the output folders stay under `FreEformer/`.
@@ -112,7 +113,7 @@ python -u run.py \
   --mapping_fun softmax_learn \
   --loss MSE \
   --loss_mode L1 \
-  --learning_rate 3e-5 \
+  --learning_rate 1e-5 \
   --batch_size 8 \
   --test_batch_size 1 \
   --train_epochs 5 \
@@ -125,5 +126,5 @@ python -u run.py \
   --des runpod \
   --use_revin 1 \
   --use_norm 1 \
-  --inverse 0
+  --inverse 1
 ```

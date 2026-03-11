@@ -60,7 +60,7 @@ python -u run.py \
   --mapping_fun softmax_learn \
   --loss MSE \
   --loss_mode L1 \
-  --learning_rate 3e-5 \
+  --learning_rate 1e-5 \
   --batch_size 8 \
   --test_batch_size 1 \
   --train_epochs "$EPOCHS" \
@@ -73,4 +73,4 @@ python -u run.py \
   --des runpod \
   --use_revin 1 \
   --use_norm 1 \
-  --inverse 0
+  --inverse 1
