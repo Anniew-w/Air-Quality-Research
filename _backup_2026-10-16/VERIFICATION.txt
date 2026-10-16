@@ -42,4 +42,24 @@ EXIT STATUS: 1
 
 RESTORED BEHAVIOR: separate rollback manifest equals ORIGINAL_FILE.json byte-for-byte and reports the same 2376 baseline omissions (exit 1). Completed MODIFIED_FILE.json remains changed, coverage=all_present_research_files, and passes (exit 0). No research files or Git history were rolled back.
 
-CLOUD VERIFICATION: pending upload and independent fresh download.
+CLOUD VERIFICATION: PASS. Complete GitHub clone downloaded independently; all 6161 research files restored and SHA-256 matched.
+
+UPLOAD
+COMMAND: git push origin main
+INPUT: existing origin, main, payload commit 944651476629ce464807be53f8180cf1068e781c
+LITERAL RESULT:
+To https://github.com/Anniew-w/Air-Quality-Research.git
+   472a5e1..9446514  main -> main
+EXIT STATUS: 0
+
+FRESH RESTORE
+COMMAND: git clone --quiet --no-local --branch main --single-branch https://github.com/Anniew-w/Air-Quality-Research.git /private/tmp/air-quality-github-restore-20261016-01a14307 && git -C /private/tmp/air-quality-github-restore-20261016-01a14307 rev-parse HEAD && python3 /private/tmp/air-quality-github-restore-20261016-01a14307/_backup_2026-10-16/verify_backup.py --restore-empty-dirs --summary-only
+INPUT: GitHub repository, not a local clone or shared object store
+LITERAL STDOUT:
+944651476629ce464807be53f8180cf1068e781c
+PASS files=6161 bytes=3797934234 sha256=all_match
+EXIT STATUS: 0
+
+INDEPENDENT CHECKS: restored research paths=6161; missing=0; gitlinks=0; restored working tree clean; manifest, diff, rollback script, restore instructions, and verifier byte-identical to uploaded originals. Directory symlink and traversal selftests rejected invalid inputs and created no external files.
+
+FINAL STATE: main contains full research snapshot. Four named artifacts reopened and executable rollback tested on a separate copy. Final verification-document commit contains only backup metadata; research payload remains unchanged. Future edits require another commit and push. Existing environment/source-code gaps are documented in RESTORE_RESEARCH.md.
