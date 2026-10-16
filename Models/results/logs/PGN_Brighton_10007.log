@@ -1,0 +1,21 @@
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Brighton_10007_merged | X=(1214, 14, 8), y=(1214, 14)
+[Brighton_10007_merged] Epoch 01 | TrainLoss=0.8404 | ValMAE=4.2565
+[Brighton_10007_merged] Epoch 05 | TrainLoss=0.7200 | ValMAE=4.2166
+[Brighton_10007_merged] Epoch 10 | TrainLoss=0.6901 | ValMAE=4.2041
+[Brighton_10007_merged] Epoch 15 | TrainLoss=0.6788 | ValMAE=4.1597
+[Brighton_10007_merged] Epoch 20 | TrainLoss=0.6675 | ValMAE=4.1550
+✅ Saved training history and prediction: results/PGN_Brighton_10007_merged_history.png, results/PGN_Brighton_10007_merged_prediction_step1.png
+✅ Saved extra MAE plots: results/PGN_Brighton_10007_merged_ValMAE_curve.png, results/Brighton_10007_merged_PGN_StepMAE_bar.png
+
+==================================================
+[Brighton_10007_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  2.2891
+  RMSE: 3.1506
+  R2:   -0.4133
+  Step MAEs: ['2.307', '2.396', '2.353', '2.343', '2.273', '2.243', '2.265', '2.285', '2.307', '2.335', '2.337', '2.225', '2.145', '2.232']
+==================================================
+
+✅ Saved metrics to results/PGN_Brighton_10007_merged_metrics.json

@@ -1,0 +1,27 @@
+{
+  "model": "Fed-central-tmp",
+  "location": "Melton_10169_merged",
+  "seed": 2026,
+  "lookback": 14,
+  "horizon": 14,
+  "test_mae": 2.2698,
+  "test_rmse": 3.1624,
+  "test_r2": -0.151,
+  "step_maes": [
+    1.889,
+    2.2925,
+    2.3474,
+    2.397,
+    2.3606,
+    2.32,
+    2.3339,
+    2.3514,
+    2.2952,
+    2.226,
+    2.2593,
+    2.1978,
+    2.2643,
+    2.2431
+  ],
+  "test_r2_perwindow": -0.5215
+}

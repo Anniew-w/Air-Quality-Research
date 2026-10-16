@@ -1,0 +1,27 @@
+{
+  "model": "Fed-central-fre",
+  "location": "Alphington_10001_merged",
+  "seed": 2025,
+  "lookback": 14,
+  "horizon": 14,
+  "test_mae": 3.7391,
+  "test_rmse": 5.6068,
+  "test_r2": -0.0378,
+  "step_maes": [
+    2.6621,
+    3.4717,
+    3.727,
+    3.7059,
+    3.7788,
+    3.77,
+    3.8308,
+    3.9443,
+    3.8947,
+    3.8878,
+    3.8791,
+    3.9312,
+    3.9763,
+    3.8879
+  ],
+  "test_r2_perwindow": -0.6492
+}

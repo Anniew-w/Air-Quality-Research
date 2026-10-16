@@ -1,0 +1,26 @@
+{
+  "model": "Fed-central-tmp",
+  "location": "Brighton_10007_merged",
+  "lookback": 14,
+  "horizon": 14,
+  "test_mae": 3.3411,
+  "test_rmse": 4.8084,
+  "test_r2": -0.1964,
+  "step_maes": [
+    2.7991,
+    3.3104,
+    3.2864,
+    3.4682,
+    3.5351,
+    3.5366,
+    3.584,
+    3.4067,
+    3.3535,
+    3.3897,
+    3.3249,
+    3.2614,
+    3.2494,
+    3.2705
+  ],
+  "test_r2_perwindow": -0.8481
+}

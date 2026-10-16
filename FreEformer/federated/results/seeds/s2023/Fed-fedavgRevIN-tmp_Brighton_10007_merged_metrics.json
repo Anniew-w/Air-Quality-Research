@@ -1,0 +1,26 @@
+{
+  "model": "Fed-fedavgRevIN-tmp",
+  "location": "Brighton_10007_merged",
+  "lookback": 14,
+  "horizon": 14,
+  "test_mae": 3.3733,
+  "test_rmse": 4.8595,
+  "test_r2": -0.222,
+  "step_maes": [
+    2.7651,
+    3.2684,
+    3.3787,
+    3.3811,
+    3.3642,
+    3.3621,
+    3.434,
+    3.5198,
+    3.5327,
+    3.4406,
+    3.4384,
+    3.4604,
+    3.4489,
+    3.4318
+  ],
+  "test_r2_perwindow": -0.954
+}

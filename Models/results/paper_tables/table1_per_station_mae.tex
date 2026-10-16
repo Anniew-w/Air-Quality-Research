@@ -1,0 +1,25 @@
+\begin{table}[t]
+\centering
+\caption{Per-station test MAE for 14-day PM$_{2.5}$ forecasting (lookback 14, horizon 14). Best per station in \textbf{bold}; lower is better.}
+\label{tab:per-station-mae}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccc}
+\toprule
+Station & LSTM & DLinear & TCN & GNN-Transformer & PGN & AFFIRM \\
+\midrule
+Alphington (10001) & 2.436 & 2.519 & 2.436 & \textbf{2.300} & 2.372 & 2.898 \\
+Box Hill (10042) & \textbf{1.444} & 1.613 & 1.676 & 1.534 & 1.581 & 1.640 \\
+Brighton (10007) & \textbf{2.082} & 2.296 & 2.275 & 2.258 & 2.289 & 2.193 \\
+Dandenong (10022) & \textbf{1.767} & 1.898 & 1.990 & 1.807 & 1.895 & 1.936 \\
+Geelong South (10107) & 1.824 & 2.098 & 1.937 & \textbf{1.822} & 1.921 & 2.030 \\
+Macleod (10377) & \textbf{1.377} & 2.348 & 2.605 & 1.396 & 1.667 & 1.532 \\
+Melbourne CBD (10239) & \textbf{2.064} & 2.290 & 2.209 & 2.084 & 2.168 & 2.192 \\
+Melton (10169) & 1.854 & 1.880 & 1.846 & \textbf{1.728} & 1.815 & 1.872 \\
+Morwell East (10017) & 2.088 & 2.333 & 2.530 & \textbf{2.005} & 2.247 & 2.223 \\
+Morwell South (10217) & 1.792 & 1.524 & 1.663 & 1.572 & 1.572 & \textbf{1.435} \\
+Traralgon (10011) & \textbf{1.690} & 2.061 & 1.888 & 1.854 & 1.951 & 1.964 \\
+\midrule
+Average & 1.856 & 2.078 & 2.096 & \textbf{1.851} & 1.952 & 1.992 \\
+\bottomrule
+\end{tabular}}
+\end{table}

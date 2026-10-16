@@ -1,0 +1,27 @@
+{
+  "model": "Fed-central-fre",
+  "location": "Traralgon_10011_merged",
+  "seed": 2025,
+  "lookback": 14,
+  "horizon": 14,
+  "test_mae": 2.7586,
+  "test_rmse": 3.823,
+  "test_r2": -0.1577,
+  "step_maes": [
+    2.2149,
+    2.6874,
+    2.8072,
+    2.9192,
+    2.8191,
+    2.8624,
+    2.8018,
+    2.8446,
+    2.8183,
+    2.7823,
+    2.8006,
+    2.7704,
+    2.7768,
+    2.7156
+  ],
+  "test_r2_perwindow": -0.9891
+}

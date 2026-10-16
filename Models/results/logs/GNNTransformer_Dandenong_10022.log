@@ -1,0 +1,29 @@
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Dandenong_10022_merged | X=(694, 14, 8), y=(694, 14)
+[Dandenong_10022_merged] Epoch 01 | TrainLoss=0.8165 | ValMAE=2.4647
+[Dandenong_10022_merged] Epoch 05 | TrainLoss=0.7417 | ValMAE=2.2073
+[Dandenong_10022_merged] Epoch 10 | TrainLoss=0.7120 | ValMAE=2.1198
+[Dandenong_10022_merged] Epoch 15 | TrainLoss=0.7065 | ValMAE=2.0997
+[Dandenong_10022_merged] Epoch 20 | TrainLoss=0.7005 | ValMAE=2.0930
+[Dandenong_10022_merged] Epoch 25 | TrainLoss=0.7042 | ValMAE=2.0921
+[Dandenong_10022_merged] Epoch 30 | TrainLoss=0.6999 | ValMAE=2.0902
+✅ Saved training history and prediction plots for Dandenong_10022_merged
+✅ Saved extra MAE plots: Step-wise MAE for Dandenong_10022_merged
+
+==================================================
+[Dandenong_10022_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  1.8066
+  RMSE: 2.3911
+  R2:   -0.1079
+  Step MAEs: ['1.755', '1.846', '1.845', '1.856', '1.832', '1.795', '1.816', '1.798', '1.785', '1.788', '1.797', '1.792', '1.804', '1.784']
+==================================================
+
+✅ Saved metrics to results/GNNTransformer_Dandenong_10022_merged_metrics.json

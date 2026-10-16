@@ -1,0 +1,53 @@
+Experiment,mode,bb,station,MAE,RMSE,R2
+Transformer + FedAvg,fedavg,fre,cannon hill,1.8305,3.1868,0.373
+Transformer + FedAvg,fedavg,fre,clinton,1.8922,8.3168,0.0766
+Transformer + FedAvg,fedavg,fre,deception bay,1.7898,3.155,0.3008
+Transformer + FedAvg,fedavg,fre,flinders view,2.2428,4.1466,0.3568
+Transformer + FedAvg,fedavg,fre,mutdapilly,1.5665,2.9044,0.3551
+Transformer + FedAvg,fedavg,fre,north maclean,2.4269,6.3428,0.3489
+Transformer + FedAvg,fedavg,fre,north ward,1.2073,1.9693,0.3539
+Transformer + FedAvg,fedavg,fre,rocklea,2.9603,4.5872,0.2815
+Transformer + FedAvg,fedavg,fre,south gladstone,2.8025,9.9291,0.0546
+Transformer + FedAvg,fedavg,fre,southport,1.5005,3.0891,0.2279
+Transformer + FedAvg,fedavg,fre,springwood,1.7229,3.7093,0.1557
+Transformer + FedAvg,fedavg,fre,targinie,1.1527,2.056,0.2763
+Transformer + FedAvg,fedavg,fre,woolloongabba,1.6687,2.9863,0.3734
+Transformer + FedProx,fedprox,fre,cannon hill,1.829,3.1855,0.3735
+Transformer + FedProx,fedprox,fre,clinton,1.892,8.3165,0.0767
+Transformer + FedProx,fedprox,fre,deception bay,1.7888,3.1561,0.3004
+Transformer + FedProx,fedprox,fre,flinders view,2.2423,4.1474,0.3566
+Transformer + FedProx,fedprox,fre,mutdapilly,1.5657,2.9038,0.3554
+Transformer + FedProx,fedprox,fre,north maclean,2.4231,6.3341,0.3507
+Transformer + FedProx,fedprox,fre,north ward,1.2064,1.9682,0.3546
+Transformer + FedProx,fedprox,fre,rocklea,2.9596,4.5867,0.2816
+Transformer + FedProx,fedprox,fre,south gladstone,2.8017,9.9293,0.0546
+Transformer + FedProx,fedprox,fre,southport,1.4996,3.0905,0.2272
+Transformer + FedProx,fedprox,fre,springwood,1.722,3.7114,0.1547
+Transformer + FedProx,fedprox,fre,targinie,1.1524,2.0567,0.2758
+Transformer + FedProx,fedprox,fre,woolloongabba,1.6675,2.9852,0.3739
+Mamba + FedAvg,fedavg,mamba,cannon hill,1.8265,3.1743,0.3779
+Mamba + FedAvg,fedavg,mamba,clinton,1.9117,8.337,0.0721
+Mamba + FedAvg,fedavg,mamba,deception bay,1.7865,3.1381,0.3083
+Mamba + FedAvg,fedavg,mamba,flinders view,2.2236,4.1255,0.3633
+Mamba + FedAvg,fedavg,mamba,mutdapilly,1.561,2.8822,0.3649
+Mamba + FedAvg,fedavg,mamba,north maclean,2.39,6.3287,0.3518
+Mamba + FedAvg,fedavg,mamba,north ward,1.2107,1.9702,0.3533
+Mamba + FedAvg,fedavg,mamba,rocklea,2.9297,4.5554,0.2914
+Mamba + FedAvg,fedavg,mamba,south gladstone,2.8238,9.9434,0.0519
+Mamba + FedAvg,fedavg,mamba,southport,1.5018,3.0841,0.2304
+Mamba + FedAvg,fedavg,mamba,springwood,1.7347,3.7125,0.1542
+Mamba + FedAvg,fedavg,mamba,targinie,1.1627,2.0672,0.2684
+Mamba + FedAvg,fedavg,mamba,woolloongabba,1.6646,2.9729,0.379
+Mamba + FedProx,fedprox,mamba,cannon hill,1.8291,3.1876,0.3726
+Mamba + FedProx,fedprox,mamba,clinton,1.8902,8.3096,0.0782
+Mamba + FedProx,fedprox,mamba,deception bay,1.7895,3.1636,0.297
+Mamba + FedProx,fedprox,mamba,flinders view,2.2481,4.1583,0.3532
+Mamba + FedProx,fedprox,mamba,mutdapilly,1.5663,2.9001,0.357
+Mamba + FedProx,fedprox,mamba,north maclean,2.4201,6.3382,0.3499
+Mamba + FedProx,fedprox,mamba,north ward,1.2103,1.9728,0.3516
+Mamba + FedProx,fedprox,mamba,rocklea,2.9475,4.5807,0.2835
+Mamba + FedProx,fedprox,mamba,south gladstone,2.7883,9.9238,0.0557
+Mamba + FedProx,fedprox,mamba,southport,1.4989,3.0969,0.224
+Mamba + FedProx,fedprox,mamba,springwood,1.723,3.7217,0.15
+Mamba + FedProx,fedprox,mamba,targinie,1.1602,2.0702,0.2663
+Mamba + FedProx,fedprox,mamba,woolloongabba,1.6668,2.9863,0.3734

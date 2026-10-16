@@ -1,0 +1,43 @@
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Melton_10169_merged | X=(1250, 14, 8), y=(1250, 14)
+[Melton_10169_merged] Epoch 01 | TrainLoss=0.7927 | ValMAE=2.7381
+[Melton_10169_merged] Epoch 05 | TrainLoss=0.7346 | ValMAE=2.6600
+[Melton_10169_merged] Epoch 10 | TrainLoss=0.7018 | ValMAE=2.6132
+[Melton_10169_merged] Epoch 15 | TrainLoss=0.6796 | ValMAE=2.5876
+[Melton_10169_merged] Epoch 20 | TrainLoss=0.6633 | ValMAE=2.5713
+[Melton_10169_merged] Epoch 25 | TrainLoss=0.6514 | ValMAE=2.5640
+[Melton_10169_merged] Epoch 30 | TrainLoss=0.6423 | ValMAE=2.5587
+[Melton_10169_merged] Epoch 35 | TrainLoss=0.6351 | ValMAE=2.5559
+[Melton_10169_merged] Epoch 40 | TrainLoss=0.6293 | ValMAE=2.5565
+[Melton_10169_merged] Epoch 45 | TrainLoss=0.6271 | ValMAE=2.5562
+⏸️ Early stopping triggered at epoch 45
+
+==================================================
+[Melton_10169_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  1.8799
+  RMSE: 2.3773
+  R2:   -0.0781
+  Step MAEs: ['1.830', '1.856', '1.891', '1.926', '1.946', '1.908', '2.006', '1.959', '1.924', '1.867', '1.808', '1.891', '1.742', '1.764']
+==================================================
+
+✅ Saved metrics to results/DLinear_Melton_10169_merged_metrics.json

@@ -1,0 +1,27 @@
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Morwell_East_10017_merged | X=(376, 14, 8), y=(376, 14)
+[Morwell_East_10017_merged] Epoch 01 | TrainLoss=6.0928 | ValMAE=9.4583
+[Morwell_East_10017_merged] Epoch 05 | TrainLoss=1.7777 | ValMAE=3.7661
+[Morwell_East_10017_merged] Epoch 10 | TrainLoss=1.2274 | ValMAE=3.0614
+[Morwell_East_10017_merged] Epoch 15 | TrainLoss=1.0390 | ValMAE=2.8435
+[Morwell_East_10017_merged] Epoch 20 | TrainLoss=0.9413 | ValMAE=2.7030
+[Morwell_East_10017_merged] Epoch 25 | TrainLoss=0.8659 | ValMAE=2.6055
+[Morwell_East_10017_merged] Epoch 30 | TrainLoss=0.8197 | ValMAE=2.5437
+✅ Saved training history and prediction: results/TCN_Morwell_East_10017_merged_history.png, results/TCN_Morwell_East_10017_merged_prediction_step1.png
+✅ Saved extra MAE plots: results/Morwell_East_10017_merged_ValMAE_curve.png, results/Morwell_East_10017_merged_StepMAE_bar.png
+
+==================================================
+[Morwell_East_10017_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  2.5298
+  RMSE: 3.2617
+  R2:   -0.6612
+  Step MAEs: ['2.043', '3.448', '2.448', '2.528', '2.663', '2.835', '2.182', '2.762', '2.476', '2.153', '2.916', '2.249', '2.192', '2.521']
+==================================================
+
+✅ Saved metrics to results/TCN_Morwell_East_10017_merged_metrics.json

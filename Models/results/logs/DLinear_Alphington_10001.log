@@ -1,0 +1,36 @@
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Alphington_10001_merged | X=(1269, 14, 8), y=(1269, 14)
+[Alphington_10001_merged] Epoch 01 | TrainLoss=0.8300 | ValMAE=5.4095
+[Alphington_10001_merged] Epoch 05 | TrainLoss=0.7749 | ValMAE=5.2361
+[Alphington_10001_merged] Epoch 10 | TrainLoss=0.7422 | ValMAE=5.1838
+[Alphington_10001_merged] Epoch 15 | TrainLoss=0.7207 | ValMAE=5.1609
+[Alphington_10001_merged] Epoch 20 | TrainLoss=0.7059 | ValMAE=5.1625
+[Alphington_10001_merged] Epoch 25 | TrainLoss=0.6946 | ValMAE=5.1551
+[Alphington_10001_merged] Epoch 30 | TrainLoss=0.6892 | ValMAE=5.1609
+⏸️ Early stopping triggered at epoch 31
+
+==================================================
+[Alphington_10001_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  2.5194
+  RMSE: 3.6645
+  R2:   -0.0670
+  Step MAEs: ['2.450', '2.470', '2.652', '2.540', '2.455', '2.529', '2.547', '2.574', '2.553', '2.434', '2.536', '2.486', '2.599', '2.445']
+==================================================
+
+✅ Saved metrics to results/DLinear_Alphington_10001_merged_metrics.json

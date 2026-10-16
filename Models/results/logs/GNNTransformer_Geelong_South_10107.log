@@ -1,0 +1,41 @@
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Geelong_South_10107_merged | X=(1159, 14, 8), y=(1159, 14)
+[Geelong_South_10107_merged] Epoch 01 | TrainLoss=0.8172 | ValMAE=2.0498
+[Geelong_South_10107_merged] Epoch 05 | TrainLoss=0.7271 | ValMAE=1.7935
+[Geelong_South_10107_merged] Epoch 10 | TrainLoss=0.7083 | ValMAE=1.7453
+[Geelong_South_10107_merged] Epoch 15 | TrainLoss=0.7072 | ValMAE=1.7398
+[Geelong_South_10107_merged] Epoch 20 | TrainLoss=0.7036 | ValMAE=1.7383
+[Geelong_South_10107_merged] Epoch 25 | TrainLoss=0.7028 | ValMAE=1.7358
+[Geelong_South_10107_merged] Epoch 30 | TrainLoss=0.6998 | ValMAE=1.7342
+✅ Saved training history and prediction plots for Geelong_South_10107_merged
+✅ Saved extra MAE plots: Step-wise MAE for Geelong_South_10107_merged
+
+==================================================
+[Geelong_South_10107_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  1.8218
+  RMSE: 2.5395
+  R2:   -0.0767
+  Step MAEs: ['1.836', '1.924', '1.947', '1.992', '1.961', '1.884', '1.879', '1.752', '1.735', '1.752', '1.783', '1.695', '1.672', '1.693']
+==================================================
+
+✅ Saved metrics to results/GNNTransformer_Geelong_South_10107_merged_metrics.json

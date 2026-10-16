@@ -1,0 +1,27 @@
+{
+  "model": "Fed-fedavg-fre",
+  "location": "Dandenong_10022_merged",
+  "seed": 2024,
+  "lookback": 14,
+  "horizon": 14,
+  "test_mae": 2.1675,
+  "test_rmse": 2.8751,
+  "test_r2": -0.2801,
+  "step_maes": [
+    1.835,
+    2.3032,
+    2.3981,
+    2.2531,
+    2.1465,
+    2.1173,
+    2.1518,
+    2.1545,
+    2.1764,
+    2.1953,
+    2.2034,
+    2.161,
+    2.1501,
+    2.099
+  ],
+  "test_r2_perwindow": -0.6077
+}

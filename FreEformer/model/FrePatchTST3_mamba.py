@@ -3,7 +3,10 @@ import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
 from layers.RevIN import RevIN
-# from mamba_ssm import Mamba
+try:
+    from mamba_ssm import Mamba
+except Exception:  # mamba_ssm only installs on CUDA; keep this file importable elsewhere
+    Mamba = None
 
 
 class Model(nn.Module):
@@ -75,7 +78,7 @@ class Model(nn.Module):
 
         self.encoder_fre_real = Mamba(
             d_model=configs.d_model,
-            d_state=configs.d_ff,
+            d_state=min(configs.d_ff, 256),  # Mamba CUDA kernel caps state dim at 256
             d_conv=configs.d_conv,
             expand=configs.expand,
         )
@@ -86,7 +89,7 @@ class Model(nn.Module):
         )
         self.encoder_fre_imag = Mamba(
             d_model=configs.d_model,
-            d_state=configs.d_ff,
+            d_state=min(configs.d_ff, 256),  # Mamba CUDA kernel caps state dim at 256
             d_conv=configs.d_conv,
             expand=configs.expand,
         )

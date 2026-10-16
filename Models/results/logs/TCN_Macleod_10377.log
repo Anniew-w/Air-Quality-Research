@@ -1,0 +1,27 @@
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Macleod_10377_merged | X=(195, 14, 8), y=(195, 14)
+[Macleod_10377_merged] Epoch 01 | TrainLoss=6.6375 | ValMAE=15.2818
+[Macleod_10377_merged] Epoch 05 | TrainLoss=2.5421 | ValMAE=5.7156
+[Macleod_10377_merged] Epoch 10 | TrainLoss=1.5797 | ValMAE=4.0410
+[Macleod_10377_merged] Epoch 15 | TrainLoss=1.3040 | ValMAE=3.5111
+[Macleod_10377_merged] Epoch 20 | TrainLoss=1.1381 | ValMAE=3.1993
+[Macleod_10377_merged] Epoch 25 | TrainLoss=1.1020 | ValMAE=3.0487
+[Macleod_10377_merged] Epoch 30 | TrainLoss=1.0130 | ValMAE=2.9184
+✅ Saved training history and prediction: results/TCN_Macleod_10377_merged_history.png, results/TCN_Macleod_10377_merged_prediction_step1.png
+✅ Saved extra MAE plots: results/Macleod_10377_merged_ValMAE_curve.png, results/Macleod_10377_merged_StepMAE_bar.png
+
+==================================================
+[Macleod_10377_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  2.6054
+  RMSE: 3.3902
+  R2:   -3.4852
+  Step MAEs: ['2.082', '5.112', '2.046', '2.065', '3.036', '4.014', '1.766', '3.852', '1.820', '1.358', '2.980', '2.512', '2.159', '1.672']
+==================================================
+
+✅ Saved metrics to results/TCN_Macleod_10377_merged_metrics.json

@@ -1,0 +1,27 @@
+{
+  "model": "Fed-central-tmp",
+  "location": "Melbourne_CBD_10239_merged",
+  "seed": 2024,
+  "lookback": 14,
+  "horizon": 14,
+  "test_mae": 3.2346,
+  "test_rmse": 4.8816,
+  "test_r2": -0.1003,
+  "step_maes": [
+    2.431,
+    2.9645,
+    3.1608,
+    3.2756,
+    3.3906,
+    3.4396,
+    3.403,
+    3.3999,
+    3.3401,
+    3.2842,
+    3.3023,
+    3.2633,
+    3.305,
+    3.3253
+  ],
+  "test_r2_perwindow": -0.7262
+}

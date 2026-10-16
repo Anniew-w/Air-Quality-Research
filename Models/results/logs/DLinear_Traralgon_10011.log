@@ -1,0 +1,29 @@
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Traralgon_10011_merged | X=(1332, 14, 8), y=(1332, 14)
+[Traralgon_10011_merged] Epoch 01 | TrainLoss=0.8115 | ValMAE=3.6934
+[Traralgon_10011_merged] Epoch 05 | TrainLoss=0.7303 | ValMAE=3.3302
+[Traralgon_10011_merged] Epoch 10 | TrainLoss=0.6936 | ValMAE=3.3100
+[Traralgon_10011_merged] Epoch 15 | TrainLoss=0.6698 | ValMAE=3.2932
+[Traralgon_10011_merged] Epoch 20 | TrainLoss=0.6550 | ValMAE=3.2890
+[Traralgon_10011_merged] Epoch 25 | TrainLoss=0.6491 | ValMAE=3.2893
+⏸️ Early stopping triggered at epoch 29
+
+==================================================
+[Traralgon_10011_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  2.0605
+  RMSE: 2.6036
+  R2:   -0.5081
+  Step MAEs: ['2.035', '2.072', '2.234', '2.221', '2.098', '2.273', '2.182', '1.934', '2.104', '2.172', '1.898', '1.971', '1.805', '1.847']
+==================================================
+
+✅ Saved metrics to results/DLinear_Traralgon_10011_merged_metrics.json

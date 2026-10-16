@@ -1,0 +1,25 @@
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Morwell_East_10017_merged | X=(376, 14, 8), y=(376, 14)
+[Morwell_East_10017_merged] Epoch 01 | TrainLoss=0.8821 | ValMAE=2.6491
+[Morwell_East_10017_merged] Epoch 05 | TrainLoss=0.7332 | ValMAE=2.3667
+[Morwell_East_10017_merged] Epoch 10 | TrainLoss=0.6863 | ValMAE=2.3303
+[Morwell_East_10017_merged] Epoch 15 | TrainLoss=0.6544 | ValMAE=2.3248
+[Morwell_East_10017_merged] Epoch 20 | TrainLoss=0.6414 | ValMAE=2.3323
+✅ Saved training history and prediction: results/PGN_Morwell_East_10017_merged_history.png, results/PGN_Morwell_East_10017_merged_prediction_step1.png
+✅ Saved extra MAE plots: results/PGN_Morwell_East_10017_merged_ValMAE_curve.png, results/Morwell_East_10017_merged_PGN_StepMAE_bar.png
+
+==================================================
+[Morwell_East_10017_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  2.2465
+  RMSE: 2.9623
+  R2:   -0.3703
+  Step MAEs: ['2.208', '2.334', '2.122', '2.139', '2.177', '2.391', '2.216', '2.032', '2.269', '2.280', '2.133', '2.158', '2.248', '2.745']
+==================================================
+
+✅ Saved metrics to results/PGN_Morwell_East_10017_merged_metrics.json

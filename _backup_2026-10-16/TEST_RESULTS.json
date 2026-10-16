@@ -1,0 +1,26 @@
+[
+  {
+    "label": "BASELINE",
+    "command": "python3 \"$B/verify_backup.py\" --manifest \"$B/ORIGINAL_FILE.json\" --summary-only",
+    "input": "local research files and named manifest",
+    "stdout": "FAIL files=3785 missing=0 unbacked=2376 mismatched=0\n",
+    "stderr": "",
+    "exit_status": 1
+  },
+  {
+    "label": "MODIFIED",
+    "command": "python3 \"$B/verify_backup.py\" --summary-only",
+    "input": "local research files and named manifest",
+    "stdout": "PASS files=6161 bytes=3797934234 sha256=all_match\n",
+    "stderr": "",
+    "exit_status": 0
+  },
+  {
+    "label": "ROLLBACK",
+    "command": "cp \"$B/MODIFIED_FILE.json\" \"$T\"; \"$B/ROLLBACK.sh\" \"$T\"; python3 \"$B/verify_backup.py\" --manifest \"$T\" --summary-only",
+    "input": "local research files and named manifest",
+    "stdout": "RESTORED baseline manifest; research files and Git history unchanged\nFAIL files=3785 missing=0 unbacked=2376 mismatched=0\n",
+    "stderr": "",
+    "exit_status": 1
+  }
+]

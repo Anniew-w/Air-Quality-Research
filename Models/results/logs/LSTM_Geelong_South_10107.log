@@ -1,0 +1,45 @@
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Geelong_South_10107_merged | X=(1159, 14, 8), y=(1159, 14)
+📊 X_train mean=0.0000, std=1.0000
+📊 y_train (std) mean=-0.0000, std=1.0000
+[Geelong_South_10107_merged] Epoch 01 | TrainLoss=0.7061 | ValMAE=1.7665
+[Geelong_South_10107_merged] Epoch 05 | TrainLoss=0.6769 | ValMAE=1.7596
+[Geelong_South_10107_merged] Epoch 10 | TrainLoss=0.6234 | ValMAE=1.7557
+[Geelong_South_10107_merged] Epoch 15 | TrainLoss=0.5446 | ValMAE=1.7510
+[Geelong_South_10107_merged] Epoch 20 | TrainLoss=0.4697 | ValMAE=1.7469
+[Geelong_South_10107_merged] Epoch 25 | TrainLoss=0.4197 | ValMAE=1.7418
+[Geelong_South_10107_merged] Epoch 30 | TrainLoss=0.3812 | ValMAE=1.7443
+[Geelong_South_10107_merged] Epoch 35 | TrainLoss=0.3565 | ValMAE=1.7446
+⏸️ Early stopping triggered at epoch 35
+✅ Saved training history and prediction: results/LSTM_Geelong_South_10107_merged_history.png, results/LSTM_Geelong_South_10107_merged_prediction_step1.png
+✅ Saved extra MAE plots: results/LSTM_Geelong_South_10107_merged_ValMAE_curve.png, results/LSTM_Geelong_South_10107_merged_ValMSE_curve.png
+
+==================================================
+[Geelong_South_10107_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  1.8240
+  RMSE: 2.4592
+  R2:   -0.0097
+  Step MAEs: ['1.844', '1.873', '1.915', '1.919', '1.902', '1.928', '1.922', '1.815', '1.771', '1.768', '1.740', '1.729', '1.724', '1.686']
+==================================================
+
+✅ Saved metrics to results/LSTM_Geelong_South_10107_merged_metrics.json

@@ -1,0 +1,41 @@
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Geelong_South_10107_merged | X=(1159, 14, 8), y=(1159, 14)
+[Geelong_South_10107_merged] Epoch 01 | TrainLoss=4.0129 | ValMAE=3.8698
+[Geelong_South_10107_merged] Epoch 05 | TrainLoss=1.1128 | ValMAE=2.2373
+[Geelong_South_10107_merged] Epoch 10 | TrainLoss=0.9094 | ValMAE=2.0283
+[Geelong_South_10107_merged] Epoch 15 | TrainLoss=0.8234 | ValMAE=1.9345
+[Geelong_South_10107_merged] Epoch 20 | TrainLoss=0.7825 | ValMAE=1.8832
+[Geelong_South_10107_merged] Epoch 25 | TrainLoss=0.7610 | ValMAE=1.8485
+[Geelong_South_10107_merged] Epoch 30 | TrainLoss=0.7408 | ValMAE=1.8252
+✅ Saved training history and prediction: results/TCN_Geelong_South_10107_merged_history.png, results/TCN_Geelong_South_10107_merged_prediction_step1.png
+✅ Saved extra MAE plots: results/Geelong_South_10107_merged_ValMAE_curve.png, results/Geelong_South_10107_merged_StepMAE_bar.png
+
+==================================================
+[Geelong_South_10107_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  1.9365
+  RMSE: 2.6023
+  R2:   -0.1306
+  Step MAEs: ['1.798', '2.010', '2.108', '2.102', '1.973', '2.033', '1.928', '1.806', '1.858', '1.862', '2.087', '1.773', '1.840', '1.931']
+==================================================
+
+✅ Saved metrics to results/TCN_Geelong_South_10107_merged_metrics.json

@@ -1,0 +1,36 @@
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Alphington_10001_merged | X=(1269, 14, 8), y=(1269, 14)
+📊 X_train mean=-0.0000, std=1.0000
+📊 y_train (std) mean=-0.0000, std=1.0000
+[Alphington_10001_merged] Epoch 01 | TrainLoss=0.6994 | ValMAE=5.1484
+[Alphington_10001_merged] Epoch 05 | TrainLoss=0.6817 | ValMAE=5.1508
+[Alphington_10001_merged] Epoch 10 | TrainLoss=0.6562 | ValMAE=5.1577
+⏸️ Early stopping triggered at epoch 11
+✅ Saved training history and prediction: results/LSTM_Alphington_10001_merged_history.png, results/LSTM_Alphington_10001_merged_prediction_step1.png
+✅ Saved extra MAE plots: results/LSTM_Alphington_10001_merged_ValMAE_curve.png, results/LSTM_Alphington_10001_merged_ValMSE_curve.png
+
+==================================================
+[Alphington_10001_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  2.4355
+  RMSE: 3.5578
+  R2:   -0.0058
+  Step MAEs: ['2.523', '2.398', '2.459', '2.468', '2.347', '2.422', '2.422', '2.401', '2.432', '2.449', '2.390', '2.461', '2.486', '2.438']
+==================================================
+
+✅ Saved metrics to results/LSTM_Alphington_10001_merged_metrics.json

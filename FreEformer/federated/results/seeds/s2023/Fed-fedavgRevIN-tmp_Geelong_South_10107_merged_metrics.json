@@ -1,0 +1,26 @@
+{
+  "model": "Fed-fedavgRevIN-tmp",
+  "location": "Geelong_South_10107_merged",
+  "lookback": 14,
+  "horizon": 14,
+  "test_mae": 1.9526,
+  "test_rmse": 2.6755,
+  "test_r2": -0.2004,
+  "step_maes": [
+    1.568,
+    1.9578,
+    2.0237,
+    2.0044,
+    1.9442,
+    1.9504,
+    1.9693,
+    2.0129,
+    2.0405,
+    2.0153,
+    2.0057,
+    1.9808,
+    1.9469,
+    1.9169
+  ],
+  "test_r2_perwindow": -0.605
+}

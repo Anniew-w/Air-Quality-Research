@@ -1,0 +1,6 @@
+Brighton_10007_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_18_22  
+MSE:{'test': 0.9203431010246277, 'val': 0.9803270101547241}, MAE:{'test': 0.7146552205085754, 'val': 0.6560882329940796}
+
+Brighton_10007_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_20_25  
+MSE:{'test': 0.9203431010246277, 'val': 0.9803270101547241}, MAE:{'test': 0.7146552205085754, 'val': 0.6560882329940796}
+

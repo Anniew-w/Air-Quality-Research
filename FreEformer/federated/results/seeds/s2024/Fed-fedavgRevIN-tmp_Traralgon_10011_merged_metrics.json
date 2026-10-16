@@ -1,0 +1,27 @@
+{
+  "model": "Fed-fedavgRevIN-tmp",
+  "location": "Traralgon_10011_merged",
+  "seed": 2024,
+  "lookback": 14,
+  "horizon": 14,
+  "test_mae": 2.7392,
+  "test_rmse": 3.7801,
+  "test_r2": -0.1319,
+  "step_maes": [
+    2.1928,
+    2.6976,
+    2.8302,
+    2.9281,
+    2.8155,
+    2.7963,
+    2.7988,
+    2.8049,
+    2.7698,
+    2.7872,
+    2.7365,
+    2.7595,
+    2.7068,
+    2.7255
+  ],
+  "test_r2_perwindow": -0.9341
+}

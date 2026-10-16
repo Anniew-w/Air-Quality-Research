@@ -1,0 +1,22 @@
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Brighton_10007_merged | X=(1214, 14, 8), y=(1214, 14)
+[Brighton_10007_merged] Epoch 01 | TrainLoss=0.7920 | ValMAE=4.3082
+[Brighton_10007_merged] Epoch 05 | TrainLoss=0.6944 | ValMAE=4.0919
+[Brighton_10007_merged] Epoch 10 | TrainLoss=0.6798 | ValMAE=4.0853
+[Brighton_10007_merged] Epoch 15 | TrainLoss=0.6758 | ValMAE=4.0913
+[Brighton_10007_merged] Epoch 20 | TrainLoss=0.6760 | ValMAE=4.0948
+⏸️ Early stopping triggered at epoch 22
+✅ Saved training history and prediction plots for Brighton_10007_merged
+✅ Saved extra MAE plots: Step-wise MAE for Brighton_10007_merged
+
+==================================================
+[Brighton_10007_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  2.2581
+  RMSE: 3.1223
+  R2:   -0.3880
+  Step MAEs: ['2.213', '2.279', '2.266', '2.292', '2.236', '2.234', '2.219', '2.259', '2.259', '2.281', '2.292', '2.287', '2.277', '2.220']
+==================================================
+
+✅ Saved metrics to results/GNNTransformer_Brighton_10007_merged_metrics.json

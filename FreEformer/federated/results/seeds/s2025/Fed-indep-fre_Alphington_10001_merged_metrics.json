@@ -1,0 +1,27 @@
+{
+  "model": "Fed-indep-fre",
+  "location": "Alphington_10001_merged",
+  "seed": 2025,
+  "lookback": 14,
+  "horizon": 14,
+  "test_mae": 3.8426,
+  "test_rmse": 5.6375,
+  "test_r2": -0.0492,
+  "step_maes": [
+    2.8643,
+    3.6339,
+    3.807,
+    3.9119,
+    3.8738,
+    3.7918,
+    3.8805,
+    3.8469,
+    3.998,
+    3.9184,
+    3.9905,
+    4.131,
+    4.1067,
+    4.0421
+  ],
+  "test_r2_perwindow": -0.7919
+}

@@ -1,0 +1,25 @@
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Macleod_10377_merged | X=(195, 14, 8), y=(195, 14)
+[Macleod_10377_merged] Epoch 01 | TrainLoss=0.9271 | ValMAE=3.0167
+[Macleod_10377_merged] Epoch 05 | TrainLoss=0.7853 | ValMAE=2.5922
+[Macleod_10377_merged] Epoch 10 | TrainLoss=0.7417 | ValMAE=2.4633
+[Macleod_10377_merged] Epoch 15 | TrainLoss=0.7071 | ValMAE=2.4167
+[Macleod_10377_merged] Epoch 20 | TrainLoss=0.6907 | ValMAE=2.3566
+✅ Saved training history and prediction: results/PGN_Macleod_10377_merged_history.png, results/PGN_Macleod_10377_merged_prediction_step1.png
+✅ Saved extra MAE plots: results/PGN_Macleod_10377_merged_ValMAE_curve.png, results/Macleod_10377_merged_PGN_StepMAE_bar.png
+
+==================================================
+[Macleod_10377_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  1.6667
+  RMSE: 2.1050
+  R2:   -0.7293
+  Step MAEs: ['1.606', '2.148', '2.303', '1.383', '1.874', '1.478', '1.337', '1.363', '1.628', '1.373', '1.716', '1.741', '1.380', '2.002']
+==================================================
+
+✅ Saved metrics to results/PGN_Macleod_10377_merged_metrics.json

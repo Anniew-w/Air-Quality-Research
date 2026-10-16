@@ -1,0 +1,29 @@
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Morwell_South_10217_merged | X=(690, 14, 8), y=(690, 14)
+[Morwell_South_10217_merged] Epoch 01 | TrainLoss=5.2035 | ValMAE=3.5701
+[Morwell_South_10217_merged] Epoch 05 | TrainLoss=1.3509 | ValMAE=1.8627
+[Morwell_South_10217_merged] Epoch 10 | TrainLoss=1.0228 | ValMAE=1.6668
+[Morwell_South_10217_merged] Epoch 15 | TrainLoss=0.8944 | ValMAE=1.5814
+[Morwell_South_10217_merged] Epoch 20 | TrainLoss=0.8404 | ValMAE=1.5095
+[Morwell_South_10217_merged] Epoch 25 | TrainLoss=0.7891 | ValMAE=1.4730
+[Morwell_South_10217_merged] Epoch 30 | TrainLoss=0.7643 | ValMAE=1.4443
+✅ Saved training history and prediction: results/TCN_Morwell_South_10217_merged_history.png, results/TCN_Morwell_South_10217_merged_prediction_step1.png
+✅ Saved extra MAE plots: results/Morwell_South_10217_merged_ValMAE_curve.png, results/Morwell_South_10217_merged_StepMAE_bar.png
+
+==================================================
+[Morwell_South_10217_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  1.6628
+  RMSE: 2.0464
+  R2:   -0.4766
+  Step MAEs: ['1.562', '1.302', '1.487', '1.646', '1.818', '1.504', '1.912', '1.703', '1.759', '1.514', '1.556', '1.802', '1.829', '1.886']
+==================================================
+
+✅ Saved metrics to results/TCN_Morwell_South_10217_merged_metrics.json

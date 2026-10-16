@@ -1,0 +1,6 @@
+Melton_10169_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_18_28  
+MSE:{'test': 0.9722772836685181, 'val': 0.6443365216255188}, MAE:{'test': 0.7142249345779419, 'val': 0.5426339507102966}
+
+Melton_10169_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_20_29  
+MSE:{'test': 0.9722772836685181, 'val': 0.6443365216255188}, MAE:{'test': 0.7142249345779419, 'val': 0.5426339507102966}
+

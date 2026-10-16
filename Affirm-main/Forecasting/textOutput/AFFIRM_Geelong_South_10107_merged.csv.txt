@@ -1,0 +1,6 @@
+Geelong_South_10107_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_18_25  
+MSE:{'test': 0.9439349174499512, 'val': 1.0758662223815918}, MAE:{'test': 0.6863192319869995, 'val': 0.7773925065994263}
+
+Geelong_South_10107_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_20_27  
+MSE:{'test': 0.9439349174499512, 'val': 1.0758662223815918}, MAE:{'test': 0.6863192319869995, 'val': 0.7773925065994263}
+

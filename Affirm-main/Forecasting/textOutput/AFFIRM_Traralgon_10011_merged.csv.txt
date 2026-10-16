@@ -1,0 +1,6 @@
+Traralgon_10011_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_18_32  
+MSE:{'test': 1.0124214887619019, 'val': 0.6730514168739319}, MAE:{'test': 0.7106248736381531, 'val': 0.5583219528198242}
+
+Traralgon_10011_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_20_32  
+MSE:{'test': 1.0124214887619019, 'val': 0.6730514168739319}, MAE:{'test': 0.7106248736381531, 'val': 0.5583219528198242}
+

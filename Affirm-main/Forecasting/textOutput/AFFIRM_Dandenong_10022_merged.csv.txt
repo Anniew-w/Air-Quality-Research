@@ -1,0 +1,6 @@
+Dandenong_10022_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_18_23  
+MSE:{'test': 0.9525564312934875, 'val': 0.8029297590255737}, MAE:{'test': 0.7228176593780518, 'val': 0.6693882346153259}
+
+Dandenong_10022_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_20_26  
+MSE:{'test': 0.9525564312934875, 'val': 0.8029297590255737}, MAE:{'test': 0.7228176593780518, 'val': 0.6693882346153259}
+

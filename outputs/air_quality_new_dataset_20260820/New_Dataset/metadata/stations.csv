@@ -1,0 +1,70 @@
+location_id,location_name,state,country,latitude,longitude,timezone,site_classification,industry_operated,daily_start,daily_end,daily_rows,years_present,pm25_daily_non_null,pm10_daily_non_null,no2_daily_non_null,o3_daily_non_null,so2_daily_non_null,co_daily_non_null
+QLD_ABBOT_POINT,Abbot Point,Queensland,Australia,-19.9496,148.0482,Australia/Brisbane,Background,False,2021-01-01,2024-12-31,1461,"2021,2022,2023,2024",0,0,0,0,0,0
+QLD_ALDOGA,Aldoga,Queensland,Australia,-23.8409,151.0627,Australia/Brisbane,Background,False,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",0,0,0,0,0,0
+QLD_AUCKLAND_POINT,Auckland Point,Queensland,Australia,-23.8349,151.2539,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",0,1541,0,0,0,0
+QLD_AYR,Ayr,Queensland,Australia,-19.5839,147.4059,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",1600,1600,0,0,0,0
+QLD_BLACKWATER,Blackwater,Queensland,Australia,-23.5627,148.8807,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",1791,1791,0,0,0,0
+QLD_BLUFF,Bluff,Queensland,Australia,-23.5821,149.0743,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",0,1659,0,0,0,0
+QLD_BOAT_CREEK,Boat Creek,Queensland,Australia,-23.82,151.1539,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",1797,1797,1816,0,1809,0
+QLD_BOYNE_ISLAND,Boyne Island,Queensland,Australia,-23.9408,151.3507,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",1819,1819,1812,0,1806,1416
+QLD_BRISBANE_CBD,Brisbane CBD,Queensland,Australia,-27.4774,153.0281,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",1775,1775,0,0,0,0
+QLD_BUNDABERG,Bundaberg,Queensland,Australia,-24.8856,152.3278,Australia/Brisbane,Neighbourhood,False,2022-01-01,2025-12-31,1461,"2022,2023,2024,2025",1043,1232,0,0,0,0
+QLD_CANNON_HILL,Cannon Hill,Queensland,Australia,-27.4654,153.0872,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",1799,1799,1788,1805,0,0
+QLD_CHARLEVILLE,Charleville,Queensland,Australia,-26.3968,146.2593,Australia/Brisbane,Neighbourhood,False,2023-01-01,2025-12-31,1096,"2023,2024,2025",777,777,0,0,0,0
+QLD_CLINTON,Clinton,Queensland,Australia,-23.8701,151.2216,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",1809,1809,1772,0,1803,0
+QLD_COOMERA,Coomera,Queensland,Australia,-27.8634,153.3257,Australia/Brisbane,Neighbourhood,False,2023-01-01,2025-12-31,1096,"2023,2024,2025",934,934,944,0,0,915
+QLD_DEAGON,Deagon,Queensland,Australia,-27.3292,153.0478,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",1626,1626,1610,1629,0,0
+QLD_DECEPTION_BAY,Deception Bay,Queensland,Australia,-27.1935,153.0347,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",1777,1777,1825,1817,0,0
+QLD_EMERALD,Emerald,Queensland,Australia,-23.5208,148.1653,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-12-31,1605,"2021,2022,2023,2024,2025",1581,1581,0,0,0,0
+QLD_FISHERMAN_S_LANDING,Fisherman's Landing,Queensland,Australia,-23.7937,151.1601,Australia/Brisbane,Peak (industry),False,2021-01-01,2024-12-31,1461,"2021,2022,2023,2024",1267,1222,110,0,860,0
+QLD_FLINDERS_VIEW,Flinders View,Queensland,Australia,-27.6529,152.7739,Australia/Brisbane,Neighbourhood,False,2021-01-01,2024-12-31,1461,"2021,2022,2023,2024",1411,1446,1441,1446,1445,0
+QLD_GATTON,Gatton,Queensland,Australia,-27.5457,152.3288,Australia/Brisbane,Background,False,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",0,0,0,0,0,0
+QLD_HOPELAND,Hopeland,Queensland,Australia,,,Australia/Brisbane,Background,True,2021-01-01,2023-12-31,1095,"2021,2022,2023",791,791,776,776,0,786
+QLD_JOSEPHVILLE,Josephville,Queensland,Australia,-27.9962,152.9257,Australia/Brisbane,Background,False,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",0,0,0,0,0,0
+QLD_LONGREACH,Longreach,Queensland,Australia,-23.4438,144.2812,Australia/Brisbane,Neighbourhood,False,2023-01-01,2025-12-31,1096,"2023,2024,2025",669,669,0,0,0,0
+QLD_LYTTON,Lytton,Queensland,Australia,-27.4064,153.1527,Australia/Brisbane,Peak (industry),True,2021-01-01,2025-12-31,1825,"2021,2022,2023,2024,2025",1805,1805,0,0,1776,0
+QLD_MARYBOROUGH,Maryborough,Queensland,Australia,-25.5159,152.6894,Australia/Brisbane,Neighbourhood,False,2022-01-01,2025-12-31,1461,"2022,2023,2024,2025",1146,1146,0,0,0,0
+QLD_MEMORIAL_PARK,Memorial Park,Queensland,Australia,-23.8426,151.2534,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",0,0,1806,1805,1805,0
+QLD_MILES_AIRPORT,Miles Airport,Queensland,Australia,,,Australia/Brisbane,Background,True,2021-01-01,2023-12-31,1095,"2021,2022,2023",888,888,891,894,0,834
+QLD_MORANBAH_EAST,Moranbah East,Queensland,Australia,-21.9995,148.0713,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",1811,1811,0,0,0,0
+QLD_MORANBAH_WEST,Moranbah West,Queensland,Australia,-22.012,148.0409,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-10-15,1749,"2021,2022,2023,2024,2025",1685,1685,0,0,0,0
+QLD_MOUNTAIN_CREEK,Mountain Creek,Queensland,Australia,-26.6918,153.1044,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-08-20,1693,"2021,2022,2023,2024,2025",1655,1689,1693,1685,0,0
+QLD_MUTDAPILLY,Mutdapilly,Queensland,Australia,-27.753,152.651,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-10-02,1736,"2021,2022,2023,2024,2025",1696,1696,1710,1729,0,0
+QLD_NAMBOUR,Nambour,Queensland,Australia,-26.6429,152.9397,Australia/Brisbane,Neighbourhood,False,2022-01-01,2025-10-01,1370,"2022,2023,2024,2025",1091,1091,0,0,0,0
+QLD_NORTH_MACLEAN,North Maclean,Queensland,Australia,-27.7709,153.0301,Australia/Brisbane,Background,False,2021-01-01,2025-07-04,1646,"2021,2022,2023,2024,2025",1608,1608,1644,1644,0,0
+QLD_NORTH_WARD,North Ward,Queensland,Australia,-19.2486,146.8074,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-06-27,1639,"2021,2022,2023,2024,2025",1628,1628,1615,0,1619,0
+QLD_PARKHURST,Parkhurst,Queensland,Australia,-23.3101,150.5216,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-11-14,1779,"2021,2022,2023,2024,2025",1430,1430,0,0,0,0
+QLD_PARKWOOD,Parkwood,Queensland,Australia,-27.9535,153.3475,Australia/Brisbane,Peak (roadside),False,2023-01-01,2025-12-31,1096,"2023,2024,2025",926,926,937,0,0,930
+QLD_RACEVIEW,Raceview,Queensland,Australia,-27.6448,152.7862,Australia/Brisbane,Neighbourhood,False,2024-01-01,2025-03-04,429,"2024,2025",154,154,155,155,155,0
+QLD_RANGEVILLE,Rangeville,Queensland,Australia,-27.5908,151.9864,Australia/Brisbane,Neighbourhood,False,2022-01-01,2025-12-31,1461,"2022,2023,2024,2025",1387,1368,0,0,0,0
+QLD_ROCKLEA,Rocklea,Queensland,Australia,-27.5358,152.9934,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",1717,1717,1740,1743,0,0
+QLD_ROMA,Roma,Queensland,Australia,-26.5656,148.7736,Australia/Brisbane,Neighbourhood,False,2023-01-01,2025-12-31,1096,"2023,2024,2025",835,835,0,0,0,0
+QLD_SOUTH_BRISBANE,South Brisbane,Queensland,Australia,-27.4848,153.0321,Australia/Brisbane,Peak (roadside),False,2021-01-01,2025-12-31,1824,"2021,2022,2023,2024,2025",1818,1818,1819,0,0,1781
+QLD_SOUTH_GLADSTONE,South Gladstone,Queensland,Australia,-23.8627,151.2704,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-12-31,1604,"2021,2022,2023,2024,2025",1581,1574,1568,0,1604,0
+QLD_SOUTHPORT,Southport,Queensland,Australia,-27.9612,153.4024,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",1800,1800,1817,1815,0,0
+QLD_SPRINGWOOD,Springwood,Queensland,Australia,-27.6125,153.1359,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",1794,1794,1801,1801,1777,0
+QLD_TARA_REGION,Tara Region,Queensland,Australia,,,Australia/Brisbane,Background,True,2021-01-01,2021-12-31,365,2021,318,318,317,313,318,152
+QLD_TARGINIE,Targinie,Queensland,Australia,-23.7743,151.106,Australia/Brisbane,Background,False,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",1781,1781,1679,0,1504,0
+QLD_THE_GAP,The Gap,Queensland,Australia,-20.7264,139.4977,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",1660,1803,0,0,1723,0
+QLD_TOOWOOMBA,Toowoomba,Queensland,Australia,-27.5342,151.9305,Australia/Brisbane,Neighbourhood,False,2022-01-01,2025-12-31,1461,"2022,2023,2024,2025",1435,1435,0,0,0,0
+QLD_TOWNSVILLE_COAST_GUARD,Townsville Coast Guard,Queensland,Australia,-19.2542,146.8257,Australia/Brisbane,Peak (port operations),True,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",0,1783,0,0,0,0
+QLD_TOWNSVILLE_ENVIRONMENT_PARK,Townsville Environment Park,Queensland,Australia,-19.2631,146.8308,Australia/Brisbane,Peak (port operations),True,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",0,1651,0,0,0,0
+QLD_TOWNSVILLE_LENNON_DRIVE,Townsville Lennon Drive,Queensland,Australia,-19.2589,146.8264,Australia/Brisbane,Peak (port operations),True,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",0,1766,0,0,0,0
+QLD_WEIPA,Weipa,Queensland,Australia,-12.6278,141.8799,Australia/Brisbane,Neighbourhood,False,2023-01-01,2025-12-31,1096,"2023,2024,2025",529,529,0,0,0,0
+QLD_WEST_MACKAY,West Mackay,Queensland,Australia,-21.1596,149.155,Australia/Brisbane,Neighbourhood,False,2021-01-01,2025-12-31,1605,"2021,2022,2023,2024,2025",1601,1601,0,0,0,0
+QLD_WEST_ROCKHAMPTON,West Rockhampton,Queensland,Australia,-23.3843,150.4868,Australia/Brisbane,Neighbourhood,False,2025-01-01,2025-12-31,365,2025,106,106,106,106,106,0
+QLD_WOOLLOONGABBA,Woolloongabba,Queensland,Australia,-27.4975,153.035,Australia/Brisbane,Peak (roadside),False,2021-01-01,2024-12-31,1461,"2021,2022,2023,2024",1459,1459,1461,0,0,1409
+QLD_WOREE,Woree,Queensland,Australia,-16.9622,145.7435,Australia/Brisbane,Neighbourhood,False,2023-01-01,2025-12-31,1096,"2023,2024,2025",1024,1024,0,0,0,0
+QLD_WYNNUM_NORTH,Wynnum North,Queensland,Australia,-27.4296,153.1581,Australia/Brisbane,Neighbourhood,True,2021-01-01,2024-12-31,1460,"2021,2022,2023,2024",1449,1449,1449,0,1432,0
+QLD_WYNNUM_WEST,Wynnum West,Queensland,Australia,-27.4379,153.1495,Australia/Brisbane,Neighbourhood,True,2021-01-01,2025-12-31,1826,"2021,2022,2023,2024,2025",1804,1742,0,0,1812,0
+10001,Alphington,Victoria,Australia,,,Australia/Melbourne,,False,2021-01-01,2024-11-23,1291,"2021,2022,2023,2024",1291,1185,1276,1271,1260,1246
+10042,Box Hill,Victoria,Australia,,,Australia/Melbourne,,False,2021-07-07,2024-12-31,1134,"2021,2022,2023,2024",1134,0,0,0,0,0
+10007,Brighton,Victoria,Australia,,,Australia/Melbourne,,False,2021-08-09,2024-12-31,1220,"2021,2022,2023,2024",1220,0,0,0,0,0
+10022,Dandenong,Victoria,Australia,,,Australia/Melbourne,,False,2023-01-01,2024-12-31,719,"2023,2024",719,704,663,719,0,0
+10107,Geelong South,Victoria,Australia,,,Australia/Melbourne,,False,2021-01-01,2024-12-31,1208,"2021,2022,2023,2024",1208,1174,1061,1118,969,958
+10377,Macleod,Victoria,Australia,,,Australia/Melbourne,,False,2024-01-05,2024-12-31,220,2024,220,0,0,0,0,0
+10239,Melbourne CBD,Victoria,Australia,,,Australia/Melbourne,,False,2021-01-01,2024-12-31,1399,"2021,2022,2023,2024",1399,0,0,0,0,0
+10169,Melton,Victoria,Australia,,,Australia/Melbourne,,False,2021-01-01,2024-12-31,1248,"2021,2022,2023,2024",1248,0,0,1180,0,0
+10017,Morwell East,Victoria,Australia,,,Australia/Melbourne,,False,2021-01-01,2022-02-17,399,"2021,2022",399,0,0,0,383,374
+10217,Morwell South,Victoria,Australia,,,Australia/Melbourne,,False,2021-01-01,2022-12-28,715,"2021,2022",715,0,677,715,665,632
+10011,Traralgon,Victoria,Australia,,,Australia/Melbourne,,False,2021-01-01,2024-12-31,1349,"2021,2022,2023,2024",1349,1292,1216,1303,1170,1289

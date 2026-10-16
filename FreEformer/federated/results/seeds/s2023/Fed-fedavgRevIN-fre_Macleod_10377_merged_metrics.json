@@ -1,0 +1,26 @@
+{
+  "model": "Fed-fedavgRevIN-fre",
+  "location": "Macleod_10377_merged",
+  "lookback": 14,
+  "horizon": 14,
+  "test_mae": 1.7532,
+  "test_rmse": 2.2006,
+  "test_r2": -0.2259,
+  "step_maes": [
+    1.5572,
+    1.7692,
+    1.9155,
+    1.8426,
+    1.8256,
+    1.8059,
+    1.7986,
+    1.808,
+    1.7336,
+    1.708,
+    1.6879,
+    1.7612,
+    1.7092,
+    1.6221
+  ],
+  "test_r2_perwindow": -0.3538
+}

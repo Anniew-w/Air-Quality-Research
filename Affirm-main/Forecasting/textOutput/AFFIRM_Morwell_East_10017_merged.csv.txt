@@ -1,0 +1,6 @@
+Morwell_East_10017_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_18_30  
+MSE:{'test': 1.0210120677947998, 'val': 1.0157958269119263}, MAE:{'test': 0.762391984462738, 'val': 0.750603973865509}
+
+Morwell_East_10017_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_20_31  
+MSE:{'test': 1.0210120677947998, 'val': 1.0157958269119263}, MAE:{'test': 0.762391984462738, 'val': 0.750603973865509}
+

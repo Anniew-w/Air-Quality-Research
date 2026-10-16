@@ -1,0 +1,68 @@
+column,applies_to,type,unit,definition,processing_or_lineage
+Date,daily_and_hourly,date,YYYY-MM-DD,Local calendar date,Derived from source local timestamp; no UTC conversion applied
+DateTime,hourly,datetime,YYYY-MM-DD HH:MM:SS,Start of the one-hour averaging period in local Queensland time,Parsed day-first from source Date and Time
+Time,hourly,time,HH:MM:SS,Local time at start of averaging period,Parsed from source Time
+location_id,daily_and_hourly,text,,Stable station identifier,Victorian numeric EPA ID retained; Queensland uses QLD_<STATION_SLUG>
+location_name,daily_and_hourly,text,,Short monitoring station name,From source metadata
+state,daily_and_hourly,text,,Australian state,Victoria or Queensland
+country,daily_and_hourly,text,,Country,Australia
+latitude,daily_and_hourly,number,decimal degrees,Station latitude WGS84,Queensland CKAN resource description; blank for existing Victorian finalized rows
+longitude,daily_and_hourly,number,decimal degrees,Station longitude WGS84,Queensland CKAN resource description; blank for existing Victorian finalized rows
+timezone,daily_and_hourly,text,IANA timezone,Timezone used to interpret local timestamps,Australia/Brisbane for Queensland and Australia/Melbourne for Victoria
+frequency,daily_and_hourly,text,,Observation or derived frequency,hourly; daily_from_hourly; or daily_existing_finalized
+source_year,daily_and_hourly,integer,year,Source reporting year,From source resource or existing finalized file
+station,daily_and_hourly,text,,Meteorological station paired with the air station,Existing Victoria retains nearest BOM station; Queensland uses the co-located monitoring station name
+bsp,daily_and_hourly,number,1/Mm,Particle light-scattering coefficient,Victoria BSP; Queensland visibility-reducing particles mapped to the same physical quantity
+co,daily_and_hourly,number,ppm,Carbon monoxide concentration,Hourly source value or daily arithmetic mean
+dbt,daily_and_hourly,number,degC,Dry-bulb or air temperature,Hourly source value or daily arithmetic mean
+no2,daily_and_hourly,number,ppb,Nitrogen dioxide concentration,Queensland ppm values multiplied by 1000; hourly source value or daily arithmetic mean
+no,daily_and_hourly,number,ppb,Nitrogen oxide concentration,Queensland ppm values multiplied by 1000
+nox,daily_and_hourly,number,ppb,Nitrogen oxides concentration,Queensland ppm values multiplied by 1000
+o3,daily_and_hourly,number,ppb,Ozone concentration,Queensland ppm values multiplied by 1000; hourly source value or daily arithmetic mean
+pm10,daily_and_hourly,number,ug/m3,Particulate matter with aerodynamic diameter <=10 um,Hourly source value or daily arithmetic mean
+pm25,daily_and_hourly,number,ug/m3,Particulate matter with aerodynamic diameter <=2.5 um,Hourly source value or daily arithmetic mean; negative source values retained
+sigma05,daily_and_hourly,number,deg,Wind-direction sigma theta over approximately five minutes,Existing Victorian field; blank for Queensland
+sigma60,daily_and_hourly,number,deg,Wind-direction sigma theta over an hour,Queensland Wind Sigma Theta mapped here; existing Victorian field retained
+so2,daily_and_hourly,number,ppb,Sulfur dioxide concentration,Queensland ppm values multiplied by 1000; hourly source value or daily arithmetic mean
+swd,daily_and_hourly,number,degrees,Scalar wind direction,Hourly source value; daily value is circular mean
+sws,daily_and_hourly,number,m/s,Scalar wind speed,Hourly source value or daily arithmetic mean
+vwd,daily_and_hourly,number,degrees,Vector wind direction,Existing Victorian field; blank for Queensland
+vws,daily_and_hourly,number,m/s,Vector wind speed,Existing Victorian field; blank for Queensland
+evapotranspiration,daily,number,mm,Daily evapotranspiration,Existing Victorian BOM-paired value
+rain,daily_and_hourly,number,mm,Rainfall,Queensland hourly value is a one-hour sum and daily value is the sum of available hours; Victoria retained as provided
+pan_evaporation,daily,number,mm,Daily Class A pan evaporation,Existing Victorian BOM-paired value
+max_temperature,daily,number,degC,Daily maximum temperature,Queensland maximum of hourly dbt; Victoria retained as provided
+min_temperature,daily,number,degC,Daily minimum temperature,Queensland minimum of hourly dbt; Victoria retained as provided
+max_rel_humidity,daily,number,percent,Daily maximum relative humidity,Maximum of hourly values or existing Victorian BOM-paired value
+min_rel_humidity,daily,number,percent,Daily minimum relative humidity,Minimum of hourly values or existing Victorian BOM-paired value
+relative_humidity,hourly,number,percent,Hourly relative humidity,Queensland source value
+relative_humidity_mean,daily,number,percent,Daily mean relative humidity,Arithmetic mean of available Queensland hourly values
+avg_10m_wind_speed,daily,number,m/s,Daily mean wind speed,Mean of Queensland hourly sws; existing Victoria retained as provided
+wind_speed_std_dev,daily_and_hourly,number,m/s,Wind-speed standard deviation,Queensland source value or daily arithmetic mean
+solar_radiation_w_m2,hourly,number,W/m2,Hourly mean solar radiation,Queensland source value
+solar_radiation_w_m2_mean,daily,number,W/m2,Daily mean of hourly solar radiation,Arithmetic mean of available hours
+solar_radiation,daily,number,MJ/m2,Daily solar exposure,Queensland sum(hourly W/m2)*0.0036; existing Victorian value retained as provided
+barometric_pressure_hpa,daily_and_hourly,number,hPa,Station-level barometric pressure,Kept separate from BSP because BSP is optical scattering
+visibility_reducing_particles,daily_and_hourly,number,1/Mm,Visibility-reducing particle light scattering,Queensland source value; also mapped to bsp for compatibility
+total_suspended_particles,daily_and_hourly,number,ug/m3,Total suspended particles,Queensland source value or daily arithmetic mean
+benzene,daily_and_hourly,number,ppb,Benzene concentration,Queensland source value or daily arithmetic mean
+toluene,daily_and_hourly,number,ppb,Toluene concentration,Queensland source value or daily arithmetic mean
+ethylbenzene,daily_and_hourly,number,ppb,Ethylbenzene concentration,Present only if supplied by source
+xylene,daily_and_hourly,number,ppb,Total xylenes concentration,Queensland Xylenes (total) mapped here
+formaldehyde,daily_and_hourly,number,ppb,Formaldehyde concentration,Queensland source value or daily arithmetic mean
+hydrogen_sulfide,daily_and_hourly,number,source unit if present,Hydrogen sulfide concentration,Reserved canonical field; blank when not monitored
+total_reduced_sulfur,daily_and_hourly,number,source unit if present,Total reduced sulfur concentration,Reserved canonical field; blank when not monitored
+carbon_dioxide,daily_and_hourly,number,ppm,Carbon dioxide concentration,Queensland source value or daily arithmetic mean
+methane,daily_and_hourly,number,ppm,Methane concentration,Queensland source value or daily arithmetic mean
+valid_hour_count,daily,integer,hours,Number of unique hourly timestamps available for the day,Queensland derived daily rows only
+expected_hour_count,daily,integer,hours,Expected number of hourly periods,24 for Queensland because there is no daylight saving
+pm25_valid_hours,daily,integer,hours,Number of non-missing PM2.5 hourly values in the day,Queensland derived daily rows only
+pm25_completeness,daily,number,proportion,PM2.5 valid hours divided by 24,Use >=0.75 as a transparent research filter where appropriate; not a legal-compliance determination
+negative_pm25_hours,daily,integer,hours,Count of negative PM2.5 source values in the day,Negative values are retained as published
+negative_pm10_hours,daily,integer,hours,Count of negative PM10 source values in the day,Negative values are retained as published
+site_classification,daily_and_hourly,text,,AS/NZS 3580.1.1 site classification,Parsed from Queensland resource description
+industry_operated,daily_and_hourly,boolean,,Whether the station is identified as industry operated,Queensland resource description; false for existing Victorian rows
+source_name,daily_and_hourly,text,,Human-readable source name,Government data provider or existing finalized data lineage
+source_url,daily_and_hourly,text,URL,Row-level source resource or data portal,Exact Queensland CSV URL by station-year; Victorian portal URL for existing rows
+source_dataset_url,daily_and_hourly,text,URL,Parent dataset or paired meteorological source,Queensland annual dataset page; BOM Climate Data Online for existing Victoria
+quality_flag,hourly,text,,Row-level quality annotation,Flags negative PM2.5 and/or PM10 values while preserving the published measurement

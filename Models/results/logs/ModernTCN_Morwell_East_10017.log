@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/wangshihan/Air Quality Research/Models/modernTCN_running.py", line 13, in <module>
+    from ModernTCN import ModernTCN   # 👈 这里改成 ModernTCN
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'ModernTCN'

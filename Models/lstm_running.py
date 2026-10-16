@@ -5,8 +5,10 @@ import torch.optim as optim
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_absolute_error, mean_squared_error
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+import json
 import os
+import random
 import pandas as pd
 from torch.utils.data import TensorDataset, DataLoader
 from torch.optim.lr_scheduler import ReduceLROnPlateau
@@ -15,13 +17,13 @@ from pathlib import Path
 
 # ========== 参数 ==========
 LOOKBACK = 14
-HORIZON = 1
-EPOCHS = 100
+HORIZON = 14
+EPOCHS = 50
 LR = 3e-4
 TEST_SIZE = 0.2
 BATCH_SIZE = 64
 
-DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu")
 os.makedirs("results", exist_ok=True)
 
 DEFAULT_DATA_PATH = (
@@ -74,24 +76,33 @@ def create_sliding_windows(features, target, lookback, horizon, dates=None):
 
 # ========== 训练单个站点 ==========
 def train_one_station(location_name, X, y, win_dates):
+    torch.manual_seed(42)
+    np.random.seed(42)
+    random.seed(42)
+
     print(f"\n🚀 Training station {location_name} | X={X.shape}, y={y.shape}")
 
     # win_dates 已与 X/y 等长（每个窗口的末尾日期）
-    X_train, X_test, y_train, y_test, d_train, d_test = train_test_split(
-        X, y, win_dates, test_size=TEST_SIZE, shuffle=False
-    )
+    n = len(X)
+    n_train = int(n * 0.8)
+    n_val   = int(n * 0.1)
+    X_train, y_train, d_train = X[:n_train],              y[:n_train],              win_dates[:n_train]
+    X_val,   y_val,   d_val   = X[n_train:n_train+n_val], y[n_train:n_train+n_val], win_dates[n_train:n_train+n_val]
+    X_test,  y_test,  d_test  = X[n_train+n_val:],        y[n_train+n_val:],        win_dates[n_train+n_val:]
 
-    # 标准化特征
+    # 标准化特征（按训练集统计）
     mean = X_train.reshape(-1, X_train.shape[-1]).mean(axis=0)
     std = X_train.reshape(-1, X_train.shape[-1]).std(axis=0) + 1e-8
     X_train = (X_train - mean) / std
-    X_test = (X_test - mean) / std
+    X_val   = (X_val   - mean) / std
+    X_test  = (X_test  - mean) / std
 
     # 标准化目标（与 TCN 一致）
     y_mean = y_train.mean()
     y_std = y_train.std() + 1e-8
     y_train = (y_train - y_mean) / y_std
-    y_test = (y_test - y_mean) / y_std
+    y_val   = (y_val   - y_mean) / y_std
+    y_test  = (y_test  - y_mean) / y_std
 
     # ========== 打印输入输出分布 ==========
     print(f"📊 X_train mean={X_train.mean():.4f}, std={X_train.std():.4f}")
@@ -100,8 +111,9 @@ def train_one_station(location_name, X, y, win_dates):
     # 转 Tensor
     X_train_t = torch.tensor(X_train, dtype=torch.float32).to(DEVICE)
     y_train_t = torch.tensor(y_train, dtype=torch.float32).to(DEVICE)
-    X_test_t = torch.tensor(X_test, dtype=torch.float32).to(DEVICE)
-    y_test_t = torch.tensor(y_test, dtype=torch.float32).to(DEVICE)
+    X_val_t   = torch.tensor(X_val,   dtype=torch.float32).to(DEVICE)
+    X_test_t  = torch.tensor(X_test,  dtype=torch.float32).to(DEVICE)
+    y_test_t  = torch.tensor(y_test,  dtype=torch.float32).to(DEVICE)
 
     # ========== LSTM MODEL ==========
     class LSTMModel(nn.Module):
@@ -154,17 +166,17 @@ def train_one_station(location_name, X, y, win_dates):
             epoch_loss += loss.item() * X_batch.size(0)
         epoch_loss /= len(train_loader.dataset)
 
-        # 验证
+        # 验证（在验证集上，PM2.5 空间）
         model.eval()
         with torch.no_grad():
-            X_test_t_masked = torch.nan_to_num(X_test_t, nan=0.0)
-            mask = (~torch.isnan(X_test_t)).float()
-            X_test_t_masked = X_test_t_masked * mask
-            y_pred_val = model(X_test_t_masked).cpu().numpy()
-            y_test_denorm = (y_test * y_std) + y_mean
+            X_val_t_masked = torch.nan_to_num(X_val_t, nan=0.0)
+            mask = (~torch.isnan(X_val_t)).float()
+            X_val_t_masked = X_val_t_masked * mask
+            y_pred_val = model(X_val_t_masked).cpu().numpy()
+            y_val_denorm  = (y_val  * y_std) + y_mean
             y_pred_denorm = (y_pred_val * y_std) + y_mean
-            val_mae = mean_absolute_error(y_test.reshape(-1), y_pred_val.reshape(-1))
-            val_mse = mean_squared_error(y_test_denorm[:, 0], y_pred_denorm[:, 0])
+            val_mae = mean_absolute_error(y_val_denorm.reshape(-1), y_pred_denorm.reshape(-1))
+            val_mse = mean_squared_error(y_val_denorm[:, 0], y_pred_denorm[:, 0])
         train_losses.append(epoch_loss)
         val_maes.append(val_mae)
         val_mses.append(val_mse)
@@ -188,12 +200,21 @@ def train_one_station(location_name, X, y, win_dates):
 
     # ========== 绘图 ==========
     # 1) 训练曲线
-    plt.figure(figsize=(12, 4))
-    plt.plot(train_losses, label='Train Loss')
-    plt.plot(val_maes, label='Val MAE')
-    plt.title(f"LSTM Training History ({location_name})")
-    plt.legend()
+    save_hist = f"results/LSTM_{location_name}_history.png"
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 6), sharex=True)
+    ax1.plot(train_losses, color='steelblue', label='Train Loss')
+    ax1.set_ylabel("Train Loss (normalized)")
+    ax1.set_title(f"LSTM Training History ({location_name})")
+    ax1.legend()
+    ax1.grid(True, alpha=0.3)
+    ax2.plot(val_maes, color='orange', label='Val MAE (PM2.5)')
+    ax2.set_ylabel("Val MAE (μg/m³)")
+    ax2.set_xlabel("Epoch")
+    ax2.legend()
+    ax2.grid(True, alpha=0.3)
     plt.tight_layout()
+    plt.savefig(save_hist, dpi=200)
+    plt.close()
 
     # 2) 测试集预测（PM2.5 单目标，但为多步预测 horizon，所以选择一个步或取均值）
     model.eval()
@@ -217,9 +238,8 @@ def train_one_station(location_name, X, y, win_dates):
     plt.tight_layout()
 
     # 保存图像
-    save_hist = f"results/{location_name}_history.png"
-    save_pred = f"results/{location_name}_prediction_step{step_idx+1}.png"
-    plt.savefig(save_pred, dpi=200)  # 保存最后一张（预测）
+    save_pred = f"results/LSTM_{location_name}_prediction_step{step_idx+1}.png"
+    plt.savefig(save_pred, dpi=200)
     plt.close('all')
     print(f"✅ Saved training history and prediction: {save_hist}, {save_pred}")
 
@@ -232,7 +252,7 @@ def train_one_station(location_name, X, y, win_dates):
     plt.ylabel("MAE")
     plt.grid(True)
     plt.tight_layout()
-    plt.savefig(f"results/{location_name}_ValMAE_curve.png", dpi=200)
+    plt.savefig(f"results/LSTM_{location_name}_ValMAE_curve.png", dpi=200)
 
     # 1b) 每个 epoch 的验证 MSE 曲线
     plt.figure(figsize=(8, 4))
@@ -242,7 +262,7 @@ def train_one_station(location_name, X, y, win_dates):
     plt.ylabel("MSE")
     plt.grid(True)
     plt.tight_layout()
-    plt.savefig(f"results/{location_name}_ValMSE_curve.png", dpi=200)
+    plt.savefig(f"results/LSTM_{location_name}_ValMSE_curve.png", dpi=200)
 
     # 2) 验证集 MAE 表格（与曲线一致：每个 epoch）
     table_data = [[f"{i+1}", f"{val_maes[i]:.4f}"] for i in range(len(val_maes))]
@@ -257,7 +277,7 @@ def train_one_station(location_name, X, y, win_dates):
     table.scale(1, 1.2)
     plt.title(f"LSTM Validation MAE Table ({location_name})")
     plt.tight_layout()
-    plt.savefig(f"results/{location_name}_ValMAE_table.png", dpi=200)
+    plt.savefig(f"results/LSTM_{location_name}_ValMAE_table.png", dpi=200)
     plt.close('all')
 
     # 3) Val MSE 表格（与曲线一致：每个 epoch）
@@ -276,7 +296,37 @@ def train_one_station(location_name, X, y, win_dates):
     plt.savefig(f"results/LSTM_{location_name}_ValMSE_table.png", dpi=200)
     plt.close('all')
 
-    print(f"✅ Saved extra MAE plots: results/{location_name}_ValMAE_curve.png, results/{location_name}_StepMAE_bar.png")
+    print(f"✅ Saved extra MAE plots: results/LSTM_{location_name}_ValMAE_curve.png, results/LSTM_{location_name}_ValMSE_curve.png")
+
+    # ========== 最终测试指标（PM2.5 原始空间）==========
+    y_true_flat = y_test_denorm.reshape(-1)
+    y_pred_flat = y_pred_test_denorm.reshape(-1)
+    test_mae  = mean_absolute_error(y_true_flat, y_pred_flat)
+    test_rmse = float(np.sqrt(mean_squared_error(y_true_flat, y_pred_flat)))
+    test_r2   = r2_score(y_true_flat, y_pred_flat)
+    step_maes = [float(mean_absolute_error(y_test_denorm[:, i], y_pred_test_denorm[:, i])) for i in range(HORIZON)]
+
+    print(f"\n{'='*50}")
+    print(f"[{location_name}] Final Test Results (PM2.5 space, horizon={HORIZON})")
+    print(f"  MAE:  {test_mae:.4f}")
+    print(f"  RMSE: {test_rmse:.4f}")
+    print(f"  R2:   {test_r2:.4f}")
+    print(f"  Step MAEs: {[f'{m:.3f}' for m in step_maes]}")
+    print(f"{'='*50}\n")
+
+    metrics = {
+        "model": "LSTM",
+        "location": location_name,
+        "lookback": LOOKBACK,
+        "horizon": HORIZON,
+        "test_mae": round(float(test_mae), 4),
+        "test_rmse": round(test_rmse, 4),
+        "test_r2": round(float(test_r2), 4),
+        "step_maes": [round(m, 4) for m in step_maes],
+    }
+    with open(f"results/LSTM_{location_name}_metrics.json", "w") as f:
+        json.dump(metrics, f, indent=2)
+    print(f"✅ Saved metrics to results/LSTM_{location_name}_metrics.json")
 
 
 # ========== 主程序 ==========
@@ -321,7 +371,12 @@ if __name__ == "__main__":
     target_col = target_col[0]
 
     # 拆分特征与目标
-    features_cols = [c for c in df.columns if c not in ['Date', 'location_id', 'location_name', 'station']]
+    # Common feature set present (low-NaN) across all 11 EPA stations; using a fixed
+    # set instead of "all non-id columns" keeps the feature space identical across
+    # stations and avoids columns like pan_evaporation that are ~100% NaN at most sites.
+    COMMON_FEATURE_COLS = ['evapotranspiration', 'rain', 'max_temperature', 'min_temperature',
+                           'max_rel_humidity', 'min_rel_humidity', 'avg_10m_wind_speed', 'solar_radiation']
+    features_cols = [c for c in COMMON_FEATURE_COLS if c in df.columns]
     features = df[features_cols].values.astype(np.float32)
     target = df[target_col].values.astype(np.float32)
     dates = pd.to_datetime(df['Date'])  # 保留为 Series

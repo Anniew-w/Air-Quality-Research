@@ -1,0 +1,27 @@
+{
+  "model": "Fed-indep-fre",
+  "location": "Geelong_South_10107_merged",
+  "seed": 2024,
+  "lookback": 14,
+  "horizon": 14,
+  "test_mae": 1.9976,
+  "test_rmse": 2.7288,
+  "test_r2": -0.2487,
+  "step_maes": [
+    1.5898,
+    1.9854,
+    2.1018,
+    2.0561,
+    1.9857,
+    2.0085,
+    2.0242,
+    2.0745,
+    2.0574,
+    2.0688,
+    2.0699,
+    2.0605,
+    1.9866,
+    1.8978
+  ],
+  "test_r2_perwindow": -0.7297
+}

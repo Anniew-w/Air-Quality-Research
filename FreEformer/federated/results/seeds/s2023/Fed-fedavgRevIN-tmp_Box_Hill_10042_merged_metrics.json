@@ -1,0 +1,26 @@
+{
+  "model": "Fed-fedavgRevIN-tmp",
+  "location": "Box_Hill_10042_merged",
+  "lookback": 14,
+  "horizon": 14,
+  "test_mae": 2.551,
+  "test_rmse": 3.7904,
+  "test_r2": -0.0718,
+  "step_maes": [
+    2.0822,
+    2.5465,
+    2.5338,
+    2.5658,
+    2.572,
+    2.602,
+    2.6056,
+    2.6029,
+    2.63,
+    2.595,
+    2.6161,
+    2.622,
+    2.6017,
+    2.538
+  ],
+  "test_r2_perwindow": -0.7185
+}

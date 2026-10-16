@@ -1,0 +1,27 @@
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Dandenong_10022_merged | X=(694, 14, 8), y=(694, 14)
+[Dandenong_10022_merged] Epoch 01 | TrainLoss=0.8671 | ValMAE=2.4633
+[Dandenong_10022_merged] Epoch 05 | TrainLoss=0.7482 | ValMAE=2.2109
+[Dandenong_10022_merged] Epoch 10 | TrainLoss=0.7176 | ValMAE=2.1824
+[Dandenong_10022_merged] Epoch 15 | TrainLoss=0.7002 | ValMAE=2.1734
+[Dandenong_10022_merged] Epoch 20 | TrainLoss=0.6870 | ValMAE=2.1686
+✅ Saved training history and prediction: results/PGN_Dandenong_10022_merged_history.png, results/PGN_Dandenong_10022_merged_prediction_step1.png
+✅ Saved extra MAE plots: results/PGN_Dandenong_10022_merged_ValMAE_curve.png, results/Dandenong_10022_merged_PGN_StepMAE_bar.png
+
+==================================================
+[Dandenong_10022_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  1.8945
+  RMSE: 2.4507
+  R2:   -0.1638
+  Step MAEs: ['1.892', '1.861', '2.006', '2.033', '1.761', '1.843', '1.996', '1.813', '1.684', '1.917', '2.006', '1.872', '1.893', '1.945']
+==================================================
+
+✅ Saved metrics to results/PGN_Dandenong_10022_merged_metrics.json

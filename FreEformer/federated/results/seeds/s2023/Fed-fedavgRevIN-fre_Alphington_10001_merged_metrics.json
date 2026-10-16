@@ -1,0 +1,26 @@
+{
+  "model": "Fed-fedavgRevIN-fre",
+  "location": "Alphington_10001_merged",
+  "lookback": 14,
+  "horizon": 14,
+  "test_mae": 3.7724,
+  "test_rmse": 5.5813,
+  "test_r2": -0.0284,
+  "step_maes": [
+    2.7242,
+    3.5976,
+    3.7372,
+    3.8185,
+    3.8002,
+    3.8373,
+    3.8755,
+    3.8598,
+    3.8725,
+    3.8886,
+    3.9264,
+    3.9719,
+    3.9632,
+    3.9403
+  ],
+  "test_r2_perwindow": -0.7041
+}

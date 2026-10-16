@@ -1,0 +1,27 @@
+{
+  "model": "Fed-fedavgRevIN-tmp",
+  "location": "Melton_10169_merged",
+  "seed": 2026,
+  "lookback": 14,
+  "horizon": 14,
+  "test_mae": 2.3064,
+  "test_rmse": 3.2299,
+  "test_r2": -0.2007,
+  "step_maes": [
+    1.8312,
+    2.2653,
+    2.3337,
+    2.3378,
+    2.3265,
+    2.3507,
+    2.3683,
+    2.3679,
+    2.3744,
+    2.372,
+    2.3844,
+    2.3564,
+    2.3163,
+    2.3053
+  ],
+  "test_r2_perwindow": -0.5391
+}

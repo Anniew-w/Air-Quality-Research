@@ -1,0 +1,30 @@
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Traralgon_10011_merged | X=(1332, 14, 8), y=(1332, 14)
+📊 X_train mean=-0.0000, std=1.0000
+📊 y_train (std) mean=0.0000, std=1.0000
+[Traralgon_10011_merged] Epoch 01 | TrainLoss=0.6539 | ValMAE=3.5271
+[Traralgon_10011_merged] Epoch 05 | TrainLoss=0.6133 | ValMAE=3.5349
+[Traralgon_10011_merged] Epoch 10 | TrainLoss=0.5916 | ValMAE=3.5427
+⏸️ Early stopping triggered at epoch 11
+✅ Saved training history and prediction: results/LSTM_Traralgon_10011_merged_history.png, results/LSTM_Traralgon_10011_merged_prediction_step1.png
+✅ Saved extra MAE plots: results/LSTM_Traralgon_10011_merged_ValMAE_curve.png, results/LSTM_Traralgon_10011_merged_ValMSE_curve.png
+
+==================================================
+[Traralgon_10011_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  1.6905
+  RMSE: 2.1386
+  R2:   -0.0175
+  Step MAEs: ['1.850', '1.881', '1.806', '1.790', '1.793', '1.739', '1.703', '1.674', '1.620', '1.596', '1.554', '1.556', '1.549', '1.557']
+==================================================
+
+✅ Saved metrics to results/LSTM_Traralgon_10011_merged_metrics.json

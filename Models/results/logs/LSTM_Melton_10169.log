@@ -1,0 +1,44 @@
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Melton_10169_merged | X=(1250, 14, 8), y=(1250, 14)
+📊 X_train mean=-0.0000, std=1.0000
+📊 y_train (std) mean=-0.0000, std=1.0000
+[Melton_10169_merged] Epoch 01 | TrainLoss=0.6571 | ValMAE=2.6441
+[Melton_10169_merged] Epoch 05 | TrainLoss=0.6290 | ValMAE=2.6330
+[Melton_10169_merged] Epoch 10 | TrainLoss=0.5984 | ValMAE=2.6254
+[Melton_10169_merged] Epoch 15 | TrainLoss=0.5448 | ValMAE=2.6103
+[Melton_10169_merged] Epoch 20 | TrainLoss=0.4902 | ValMAE=2.6006
+[Melton_10169_merged] Epoch 25 | TrainLoss=0.4410 | ValMAE=2.6001
+[Melton_10169_merged] Epoch 30 | TrainLoss=0.4013 | ValMAE=2.5992
+⏸️ Early stopping triggered at epoch 32
+✅ Saved training history and prediction: results/LSTM_Melton_10169_merged_history.png, results/LSTM_Melton_10169_merged_prediction_step1.png
+✅ Saved extra MAE plots: results/LSTM_Melton_10169_merged_ValMAE_curve.png, results/LSTM_Melton_10169_merged_ValMSE_curve.png
+
+==================================================
+[Melton_10169_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  1.8541
+  RMSE: 2.3285
+  R2:   -0.0343
+  Step MAEs: ['1.902', '1.858', '1.916', '1.912', '1.842', '1.911', '1.907', '1.845', '1.838', '1.828', '1.780', '1.810', '1.812', '1.797']
+==================================================
+
+✅ Saved metrics to results/LSTM_Melton_10169_merged_metrics.json

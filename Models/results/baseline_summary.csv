@@ -1,0 +1,7 @@
+model,avg_mae,avg_rmse,avg_rank,n_stations
+GNNTransformer,1.8508,2.4724,1.82,11
+LSTM,1.8561,2.4079,2.09,11
+PGN,1.9524,2.5789,3.36,11
+AFFIRM,1.9922,2.5943,4.0,11
+DLinear,2.0782,2.6974,5.0,11
+TCN,2.0959,2.7578,4.73,11

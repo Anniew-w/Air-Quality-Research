@@ -1,0 +1,27 @@
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Macleod_10377_merged | X=(195, 14, 8), y=(195, 14)
+[Macleod_10377_merged] Epoch 01 | TrainLoss=0.8153 | ValMAE=2.5174
+[Macleod_10377_merged] Epoch 05 | TrainLoss=0.7790 | ValMAE=2.3976
+[Macleod_10377_merged] Epoch 10 | TrainLoss=0.7457 | ValMAE=2.2785
+[Macleod_10377_merged] Epoch 15 | TrainLoss=0.7234 | ValMAE=2.2028
+[Macleod_10377_merged] Epoch 20 | TrainLoss=0.7039 | ValMAE=2.1549
+[Macleod_10377_merged] Epoch 25 | TrainLoss=0.6961 | ValMAE=2.1190
+[Macleod_10377_merged] Epoch 30 | TrainLoss=0.6925 | ValMAE=2.0944
+✅ Saved training history and prediction plots for Macleod_10377_merged
+✅ Saved extra MAE plots: Step-wise MAE for Macleod_10377_merged
+
+==================================================
+[Macleod_10377_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  1.3960
+  RMSE: 1.7672
+  R2:   -0.2188
+  Step MAEs: ['1.457', '1.749', '1.561', '1.584', '1.433', '1.201', '1.396', '1.355', '1.223', '1.236', '1.298', '1.353', '1.318', '1.380']
+==================================================
+
+✅ Saved metrics to results/GNNTransformer_Macleod_10377_merged_metrics.json

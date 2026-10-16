@@ -1,0 +1,6 @@
+Alphington_10001_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_18_19  
+MSE:{'test': 0.8912080526351929, 'val': 1.0185532569885254}, MAE:{'test': 0.6787388324737549, 'val': 0.6400633454322815}
+
+Alphington_10001_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_20_22  
+MSE:{'test': 0.8912080526351929, 'val': 1.0185532569885254}, MAE:{'test': 0.6787388324737549, 'val': 0.6400633454322815}
+

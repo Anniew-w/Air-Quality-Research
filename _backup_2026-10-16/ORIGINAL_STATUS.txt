@@ -1,0 +1,97 @@
+ M .DS_Store
+ M Affirm-main/Forecasting/Affirm_Forecasting.py
+ M Affirm-main/Forecasting/data_loader.py
+ M FreEformer/best_log.txt
+ M FreEformer/best_results/Melbourne_CBD_10239_merged.txt
+ M FreEformer/data_provider/__pycache__/data_factory.cpython-312.pyc
+ M FreEformer/data_provider/__pycache__/data_loader.cpython-312.pyc
+ M FreEformer/data_provider/data_loader.py
+ M FreEformer/experiments/__pycache__/exp_basic.cpython-312.pyc
+ M FreEformer/experiments/__pycache__/exp_forecast.cpython-312.pyc
+ M FreEformer/experiments/__pycache__/exp_forecast.cpython-38.pyc
+ M FreEformer/experiments/exp_basic.py
+ M FreEformer/experiments/exp_forecast.py
+ M FreEformer/log.txt
+ M FreEformer/model/FrePatchTST3_mamba.py
+ M FreEformer/result_long_term_forecast.txt
+ D FreEformer/results/MSE_1.82494_MAE_0.89921_forecasting_Melbourne_CBD_10239_merged_260304_153215_260304_153336_FrePatchTST3_fre_patch_custom_sl-14_pl-14_var-1_dm-512_stages-4_2P2i_1P1i_dec-2_des-test_0/FreEformer_Melbourne_CBD_10239_merged_ValMAE_curve.png
+ D FreEformer/results/MSE_1.82494_MAE_0.89921_forecasting_Melbourne_CBD_10239_merged_260304_153215_260304_153336_FrePatchTST3_fre_patch_custom_sl-14_pl-14_var-1_dm-512_stages-4_2P2i_1P1i_dec-2_des-test_0/FreEformer_Melbourne_CBD_10239_merged_ValMSE_curve.png
+ D FreEformer/results/MSE_1.82494_MAE_0.89921_forecasting_Melbourne_CBD_10239_merged_260304_153215_260304_153336_FrePatchTST3_fre_patch_custom_sl-14_pl-14_var-1_dm-512_stages-4_2P2i_1P1i_dec-2_des-test_0/FreEformer_Melbourne_CBD_10239_merged_ValMSE_table.png
+ D FreEformer/results/MSE_1.82494_MAE_0.89921_forecasting_Melbourne_CBD_10239_merged_260304_153215_260304_153336_FrePatchTST3_fre_patch_custom_sl-14_pl-14_var-1_dm-512_stages-4_2P2i_1P1i_dec-2_des-test_0/FreEformer_Melbourne_CBD_10239_merged_prediction_step1.png
+ D FreEformer/results/MSE_1.82494_MAE_0.89921_forecasting_Melbourne_CBD_10239_merged_260304_153215_260304_153336_FrePatchTST3_fre_patch_custom_sl-14_pl-14_var-1_dm-512_stages-4_2P2i_1P1i_dec-2_des-test_0/metrics.npy
+ D FreEformer/results/MSE_1.82494_MAE_0.89921_forecasting_Melbourne_CBD_10239_merged_260304_153215_260304_153336_FrePatchTST3_fre_patch_custom_sl-14_pl-14_var-1_dm-512_stages-4_2P2i_1P1i_dec-2_des-test_0/metrics.xlsx
+ D FreEformer/results/MSE_1.84284_MAE_0.90466_forecasting_Melbourne_CBD_10239_merged_260304_135458_260304_135511_FrePatchTST3_fre_patch_custom_sl-14_pl-14_var-1_dm-512_stages-4_2P2i_1P1i_dec-2_des-test_0/FreEformer_Melbourne_CBD_10239_merged_ValMAE_curve.png
+ D FreEformer/results/MSE_1.84284_MAE_0.90466_forecasting_Melbourne_CBD_10239_merged_260304_135458_260304_135511_FrePatchTST3_fre_patch_custom_sl-14_pl-14_var-1_dm-512_stages-4_2P2i_1P1i_dec-2_des-test_0/FreEformer_Melbourne_CBD_10239_merged_ValMSE_curve.png
+ D FreEformer/results/MSE_1.84284_MAE_0.90466_forecasting_Melbourne_CBD_10239_merged_260304_135458_260304_135511_FrePatchTST3_fre_patch_custom_sl-14_pl-14_var-1_dm-512_stages-4_2P2i_1P1i_dec-2_des-test_0/FreEformer_Melbourne_CBD_10239_merged_ValMSE_table.png
+ D FreEformer/results/MSE_1.84284_MAE_0.90466_forecasting_Melbourne_CBD_10239_merged_260304_135458_260304_135511_FrePatchTST3_fre_patch_custom_sl-14_pl-14_var-1_dm-512_stages-4_2P2i_1P1i_dec-2_des-test_0/FreEformer_Melbourne_CBD_10239_merged_prediction_step1.png
+ D FreEformer/results/MSE_1.84284_MAE_0.90466_forecasting_Melbourne_CBD_10239_merged_260304_135458_260304_135511_FrePatchTST3_fre_patch_custom_sl-14_pl-14_var-1_dm-512_stages-4_2P2i_1P1i_dec-2_des-test_0/metrics.npy
+ D FreEformer/results/MSE_1.84284_MAE_0.90466_forecasting_Melbourne_CBD_10239_merged_260304_135458_260304_135511_FrePatchTST3_fre_patch_custom_sl-14_pl-14_var-1_dm-512_stages-4_2P2i_1P1i_dec-2_des-test_0/metrics.xlsx
+ D FreEformer/results/MSE_24.91948_MAE_3.33640_forecasting_Melbourne_CBD_10239_merged_260115_124644_FrePatchTST3_fre_patch_custom_sl-14_pl-14_var-1_dm-512_stages-4_2P2i_1P1i_dec-2_des-test_0/metrics.npy
+ D FreEformer/results/MSE_24.91948_MAE_3.33640_forecasting_Melbourne_CBD_10239_merged_260115_124644_FrePatchTST3_fre_patch_custom_sl-14_pl-14_var-1_dm-512_stages-4_2P2i_1P1i_dec-2_des-test_0/metrics.xlsx
+ M FreEformer/run.py
+ M FreEformer/utils/__pycache__/tools.cpython-38.pyc
+ M Models/gnn_transformer_running.py
+ M Models/lstm_running.py
+ M Models/modernTCN_running.py
+ M Models/pgn_running.py
+ M Models/tcn_running.py
+?? Affirm-main/Forecasting/results/
+?? Affirm-main/Forecasting/run_air_quality_comparison.sh
+?? Affirm-main/Forecasting/run_all_stations.py
+?? Finalized_Dataset_common/
+?? Finalized_Dataset_hourly_common/
+?? FreEformer/.DS_Store
+?? FreEformer/best_results/SmokeTest_Melbourne_CBD_10239.txt
+?? FreEformer/checkpoints/forecasting_Alphington_10001_merged_260712_181557_FrePatchTST3_fre_patch_custom_sl-14_pl-14_var-9_dm-512_stages-4_2P2i_1P1i_dec-2_des-table1_0/
+?? FreEformer/checkpoints/forecasting_Melbourne_CBD_10239_merged_260630_171107_FrePatchTST3_fre_patch_custom_sl-14_pl-14_var-1_dm-512_stages-4_2P2i_1P1i_dec-2_des-test_0/
+?? FreEformer/checkpoints/forecasting_SmokeTest_Melbourne_CBD_10239_260712_173940_FrePatchTST3_fre_patch_custom_sl-14_pl-14_var-9_dm-512_stages-4_2P2i_1P1i_dec-2_des-smoketest_0/
+?? FreEformer/federated/
+?? FreEformer/layers/__pycache__/Embed.cpython-312.pyc
+?? FreEformer/layers/__pycache__/SelfAttention_Family.cpython-312.pyc
+?? FreEformer/model/FrePatchTST3_fusion.py
+?? FreEformer/model/__pycache__/FrePatchTST3_Laser.cpython-312.pyc
+?? FreEformer/model/__pycache__/FrePatchTST3_Lsoftmax.cpython-312.pyc
+?? FreEformer/model/__pycache__/FrePatchTST3_Lsoftmax_temporal.cpython-312.pyc
+?? FreEformer/model/__pycache__/FrePatchTST3_attn_ablation.cpython-312.pyc
+?? FreEformer/model/__pycache__/FrePatchTST3_attn_concat.cpython-312.pyc
+?? FreEformer/model/__pycache__/FrePatchTST3_attn_no_revin.cpython-312.pyc
+?? FreEformer/model/__pycache__/FrePatchTST3_attn_patch.cpython-312.pyc
+?? FreEformer/model/__pycache__/FrePatchTST3_attn_shared.cpython-312.pyc
+?? FreEformer/model/__pycache__/FrePatchTST3_flatten.cpython-312.pyc
+?? FreEformer/model/__pycache__/FrePatchTST3_flowformer.cpython-312.pyc
+?? FreEformer/model/__pycache__/FrePatchTST3_fre_all.cpython-312.pyc
+?? FreEformer/model/__pycache__/FrePatchTST3_fre_nopatch.cpython-312.pyc
+?? FreEformer/model/__pycache__/FrePatchTST3_fre_patch.cpython-312.pyc
+?? FreEformer/model/__pycache__/FrePatchTST3_fusion.cpython-312.pyc
+?? FreEformer/model/__pycache__/FrePatchTST3_informer.cpython-312.pyc
+?? FreEformer/model/__pycache__/FrePatchTST3_linear_cha.cpython-312.pyc
+?? FreEformer/model/__pycache__/FrePatchTST3_linear_fre.cpython-312.pyc
+?? FreEformer/model/__pycache__/FrePatchTST3_mamba.cpython-312.pyc
+?? FreEformer/model/__pycache__/FrePatchTST3_noshortcut.cpython-312.pyc
+?? FreEformer/model/__pycache__/FrePatchTST3_real_flashformer.cpython-312.pyc
+?? FreEformer/model/__pycache__/FrePatchTST3_reformer.cpython-312.pyc
+?? FreEformer/model/__pycache__/FrePatchTST3_temporal.cpython-312.pyc
+?? FreEformer/results/MSE_1.91115_MAE_0.91049_forecasting_SmokeTest_Melbourne_CBD_10239_260712_173940_FrePatchTST3_fre_patch_custom_sl-14_pl-14_var-9_dm-512_stages-4_2P2i_1P1i_dec-2_des-smoketest_0/
+?? FreEformer/results/MSE_7.80791_MAE_2.13940_forecasting_Melbourne_CBD_10239_merged_260630_171107_FrePatchTST3_fre_patch_custom_sl-14_pl-14_var-1_dm-512_stages-4_2P2i_1P1i_dec-2_des-test_0/
+?? FreEformer/results/logs/
+?? FreEformer/run_all_stations.py
+?? FreEformer/scripts/air_quality_comparison.sh
+?? FreEformer/utils/__pycache__/CKA.cpython-312.pyc
+?? FreEformer/utils/__pycache__/masking.cpython-312.pyc
+?? FreEformer/utils/__pycache__/metrics.cpython-312.pyc
+?? Models/.DS_Store
+?? Models/__pycache__/PGN.cpython-312.pyc
+?? Models/__pycache__/TCN.cpython-312.pyc
+?? Models/aggregate_baseline_results.py
+?? Models/dlinear_running.py
+?? Models/make_paper_tables.py
+?? Models/results/
+?? Models/run_all_baselines.py
+?? New_Dataset/
+?? Reports/
+?? _backup_2026-10-16/
+?? analysis/
+?? fl_bundle_full.tar.gz
+?? fl_hourly_bundle.tar.gz
+?? outputs/
+?? tools/

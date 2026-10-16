@@ -1,0 +1,29 @@
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Traralgon_10011_merged | X=(1332, 14, 8), y=(1332, 14)
+[Traralgon_10011_merged] Epoch 01 | TrainLoss=0.8236 | ValMAE=3.6216
+[Traralgon_10011_merged] Epoch 05 | TrainLoss=0.6905 | ValMAE=3.2725
+[Traralgon_10011_merged] Epoch 10 | TrainLoss=0.6573 | ValMAE=3.1507
+[Traralgon_10011_merged] Epoch 15 | TrainLoss=0.6400 | ValMAE=3.1186
+[Traralgon_10011_merged] Epoch 20 | TrainLoss=0.6267 | ValMAE=3.0994
+✅ Saved training history and prediction: results/PGN_Traralgon_10011_merged_history.png, results/PGN_Traralgon_10011_merged_prediction_step1.png
+✅ Saved extra MAE plots: results/PGN_Traralgon_10011_merged_ValMAE_curve.png, results/Traralgon_10011_merged_PGN_StepMAE_bar.png
+
+==================================================
+[Traralgon_10011_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  1.9510
+  RMSE: 2.4576
+  R2:   -0.3436
+  Step MAEs: ['1.890', '2.092', '2.098', '2.122', '1.973', '2.078', '1.993', '1.758', '1.888', '2.030', '1.927', '1.844', '1.817', '1.805']
+==================================================
+
+✅ Saved metrics to results/PGN_Traralgon_10011_merged_metrics.json

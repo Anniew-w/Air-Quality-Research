@@ -1,0 +1,43 @@
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Geelong_South_10107_merged | X=(1159, 14, 8), y=(1159, 14)
+[Geelong_South_10107_merged] Epoch 01 | TrainLoss=0.8320 | ValMAE=2.2301
+[Geelong_South_10107_merged] Epoch 05 | TrainLoss=0.7824 | ValMAE=2.1144
+[Geelong_South_10107_merged] Epoch 10 | TrainLoss=0.7510 | ValMAE=2.0299
+[Geelong_South_10107_merged] Epoch 15 | TrainLoss=0.7288 | ValMAE=1.9708
+[Geelong_South_10107_merged] Epoch 20 | TrainLoss=0.7125 | ValMAE=1.9328
+[Geelong_South_10107_merged] Epoch 25 | TrainLoss=0.7002 | ValMAE=1.9010
+[Geelong_South_10107_merged] Epoch 30 | TrainLoss=0.6911 | ValMAE=1.8815
+[Geelong_South_10107_merged] Epoch 35 | TrainLoss=0.6836 | ValMAE=1.8654
+[Geelong_South_10107_merged] Epoch 40 | TrainLoss=0.6772 | ValMAE=1.8519
+[Geelong_South_10107_merged] Epoch 45 | TrainLoss=0.6722 | ValMAE=1.8394
+[Geelong_South_10107_merged] Epoch 50 | TrainLoss=0.6680 | ValMAE=1.8344
+
+==================================================
+[Geelong_South_10107_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  2.0982
+  RMSE: 2.7613
+  R2:   -0.2730
+  Step MAEs: ['1.951', '2.157', '2.232', '2.186', '2.249', '2.167', '2.178', '2.143', '2.121', '1.986', '2.018', '1.986', '1.987', '2.014']
+==================================================
+
+✅ Saved metrics to results/DLinear_Geelong_South_10107_merged_metrics.json

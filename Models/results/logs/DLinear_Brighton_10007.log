@@ -1,0 +1,22 @@
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Brighton_10007_merged | X=(1214, 14, 8), y=(1214, 14)
+[Brighton_10007_merged] Epoch 01 | TrainLoss=0.8095 | ValMAE=4.3404
+[Brighton_10007_merged] Epoch 05 | TrainLoss=0.7559 | ValMAE=4.2322
+[Brighton_10007_merged] Epoch 10 | TrainLoss=0.7211 | ValMAE=4.1762
+[Brighton_10007_merged] Epoch 15 | TrainLoss=0.6982 | ValMAE=4.1483
+[Brighton_10007_merged] Epoch 20 | TrainLoss=0.6819 | ValMAE=4.1506
+[Brighton_10007_merged] Epoch 25 | TrainLoss=0.6735 | ValMAE=4.1513
+[Brighton_10007_merged] Epoch 30 | TrainLoss=0.6697 | ValMAE=4.1507
+⏸️ Early stopping triggered at epoch 32
+
+==================================================
+[Brighton_10007_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  2.2956
+  RMSE: 3.1314
+  R2:   -0.3961
+  Step MAEs: ['2.238', '2.257', '2.376', '2.202', '2.446', '2.247', '2.349', '2.392', '2.355', '2.234', '2.359', '2.280', '2.218', '2.185']
+==================================================
+
+✅ Saved metrics to results/DLinear_Brighton_10007_merged_metrics.json

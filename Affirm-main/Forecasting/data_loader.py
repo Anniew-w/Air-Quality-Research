@@ -465,4 +465,11 @@ class Dataset_Custom(Dataset):
         return len(self.data_x) - self.seq_len - self.pred_len + 1
 
     def inverse_transform(self, data):
+        if data.shape[-1] != self.scaler.mean_.shape[-1]:
+            # data holds only a tail slice of channels (e.g. target-only output in MS mode);
+            # invert using the matching tail of the scaler's per-column stats instead of
+            # requiring the column count to match the full fitted width.
+            mean = self.scaler.mean_[-data.shape[-1]:]
+            scale = self.scaler.scale_[-data.shape[-1]:]
+            return data * scale + mean
         return self.scaler.inverse_transform(data)

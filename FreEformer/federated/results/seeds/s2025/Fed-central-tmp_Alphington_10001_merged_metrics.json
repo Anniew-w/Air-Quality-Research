@@ -1,0 +1,27 @@
+{
+  "model": "Fed-central-tmp",
+  "location": "Alphington_10001_merged",
+  "seed": 2025,
+  "lookback": 14,
+  "horizon": 14,
+  "test_mae": 3.5948,
+  "test_rmse": 5.3592,
+  "test_r2": 0.0518,
+  "step_maes": [
+    2.6242,
+    3.4047,
+    3.5456,
+    3.79,
+    3.7436,
+    3.7361,
+    3.6187,
+    3.6533,
+    3.6357,
+    3.7696,
+    3.7509,
+    3.7686,
+    3.64,
+    3.6462
+  ],
+  "test_r2_perwindow": -0.5788
+}

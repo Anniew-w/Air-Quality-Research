@@ -1,0 +1,41 @@
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Melton_10169_merged | X=(1250, 14, 8), y=(1250, 14)
+[Melton_10169_merged] Epoch 01 | TrainLoss=0.7890 | ValMAE=2.7655
+[Melton_10169_merged] Epoch 05 | TrainLoss=0.6871 | ValMAE=2.5932
+[Melton_10169_merged] Epoch 10 | TrainLoss=0.6695 | ValMAE=2.5710
+[Melton_10169_merged] Epoch 15 | TrainLoss=0.6627 | ValMAE=2.5617
+[Melton_10169_merged] Epoch 20 | TrainLoss=0.6557 | ValMAE=2.5521
+[Melton_10169_merged] Epoch 25 | TrainLoss=0.6531 | ValMAE=2.5484
+[Melton_10169_merged] Epoch 30 | TrainLoss=0.6482 | ValMAE=2.5445
+✅ Saved training history and prediction plots for Melton_10169_merged
+✅ Saved extra MAE plots: Step-wise MAE for Melton_10169_merged
+
+==================================================
+[Melton_10169_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  1.7281
+  RMSE: 2.2321
+  R2:   0.0496
+  Step MAEs: ['1.738', '1.725', '1.725', '1.761', '1.765', '1.703', '1.753', '1.726', '1.744', '1.720', '1.734', '1.737', '1.674', '1.687']
+==================================================
+
+✅ Saved metrics to results/GNNTransformer_Melton_10169_merged_metrics.json

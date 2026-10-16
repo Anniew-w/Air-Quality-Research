@@ -1,0 +1,27 @@
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Morwell_East_10017_merged | X=(376, 14, 8), y=(376, 14)
+[Morwell_East_10017_merged] Epoch 01 | TrainLoss=0.7987 | ValMAE=2.5307
+[Morwell_East_10017_merged] Epoch 05 | TrainLoss=0.7361 | ValMAE=2.2971
+[Morwell_East_10017_merged] Epoch 10 | TrainLoss=0.6923 | ValMAE=2.1226
+[Morwell_East_10017_merged] Epoch 15 | TrainLoss=0.6725 | ValMAE=2.0461
+[Morwell_East_10017_merged] Epoch 20 | TrainLoss=0.6636 | ValMAE=2.0182
+[Morwell_East_10017_merged] Epoch 25 | TrainLoss=0.6609 | ValMAE=2.0176
+[Morwell_East_10017_merged] Epoch 30 | TrainLoss=0.6574 | ValMAE=2.0261
+✅ Saved training history and prediction plots for Morwell_East_10017_merged
+✅ Saved extra MAE plots: Step-wise MAE for Morwell_East_10017_merged
+
+==================================================
+[Morwell_East_10017_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  2.0046
+  RMSE: 2.5984
+  R2:   -0.0543
+  Step MAEs: ['2.117', '2.208', '2.112', '2.003', '1.928', '2.020', '2.008', '1.952', '1.951', '1.939', '1.968', '1.958', '1.927', '1.973']
+==================================================
+
+✅ Saved metrics to results/GNNTransformer_Morwell_East_10017_merged_metrics.json

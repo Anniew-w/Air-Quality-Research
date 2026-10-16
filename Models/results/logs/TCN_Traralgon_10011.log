@@ -1,0 +1,31 @@
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Traralgon_10011_merged | X=(1332, 14, 8), y=(1332, 14)
+[Traralgon_10011_merged] Epoch 01 | TrainLoss=3.9808 | ValMAE=3.9899
+[Traralgon_10011_merged] Epoch 05 | TrainLoss=1.0298 | ValMAE=3.4594
+[Traralgon_10011_merged] Epoch 10 | TrainLoss=0.8396 | ValMAE=3.3389
+[Traralgon_10011_merged] Epoch 15 | TrainLoss=0.7676 | ValMAE=3.3018
+[Traralgon_10011_merged] Epoch 20 | TrainLoss=0.7225 | ValMAE=3.2919
+[Traralgon_10011_merged] Epoch 25 | TrainLoss=0.7046 | ValMAE=3.2737
+[Traralgon_10011_merged] Epoch 30 | TrainLoss=0.6848 | ValMAE=3.2537
+✅ Saved training history and prediction: results/TCN_Traralgon_10011_merged_history.png, results/TCN_Traralgon_10011_merged_prediction_step1.png
+✅ Saved extra MAE plots: results/Traralgon_10011_merged_ValMAE_curve.png, results/Traralgon_10011_merged_StepMAE_bar.png
+
+==================================================
+[Traralgon_10011_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  1.8880
+  RMSE: 2.3852
+  R2:   -0.2656
+  Step MAEs: ['1.794', '1.970', '1.882', '1.981', '2.032', '1.953', '1.921', '1.783', '1.916', '1.884', '1.968', '1.751', '1.873', '1.724']
+==================================================
+
+✅ Saved metrics to results/TCN_Traralgon_10011_merged_metrics.json

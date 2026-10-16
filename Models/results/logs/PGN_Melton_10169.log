@@ -1,0 +1,39 @@
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Melton_10169_merged | X=(1250, 14, 8), y=(1250, 14)
+[Melton_10169_merged] Epoch 01 | TrainLoss=0.8269 | ValMAE=2.6720
+[Melton_10169_merged] Epoch 05 | TrainLoss=0.6927 | ValMAE=2.5768
+[Melton_10169_merged] Epoch 10 | TrainLoss=0.6652 | ValMAE=2.5561
+[Melton_10169_merged] Epoch 15 | TrainLoss=0.6532 | ValMAE=2.5477
+[Melton_10169_merged] Epoch 20 | TrainLoss=0.6414 | ValMAE=2.5386
+✅ Saved training history and prediction: results/PGN_Melton_10169_merged_history.png, results/PGN_Melton_10169_merged_prediction_step1.png
+✅ Saved extra MAE plots: results/PGN_Melton_10169_merged_ValMAE_curve.png, results/Melton_10169_merged_PGN_StepMAE_bar.png
+
+==================================================
+[Melton_10169_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  1.8149
+  RMSE: 2.2952
+  R2:   -0.0049
+  Step MAEs: ['1.808', '1.889', '1.787', '1.803', '1.784', '1.780', '1.775', '1.858', '1.831', '1.775', '1.856', '1.806', '1.786', '1.870']
+==================================================
+
+✅ Saved metrics to results/PGN_Melton_10169_merged_metrics.json

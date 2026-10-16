@@ -8,6 +8,7 @@ import torch.nn as nn
 from torch.nn.utils import clip_grad_norm_
 from torch import optim
 import os
+import json
 import time
 import warnings
 import numpy as np
@@ -868,6 +869,21 @@ class Exp_Forecast(Exp_Basic):
             mae, mse, rmse, mape, mspe, r2, pear, mase = metric(preds_array, trues_array)
             print(f'preds_array.shape: {preds_array.shape}')
             print(f'final output mse: {mse:.5f}, mae: {mae:.5f}, r2: {r2:.5f}, pear: {pear:.5f}, mase: {mase:.5f}')
+            _step_maes = [float(np.mean(np.abs(preds_array[:, i, :] - trues_array[:, i, :])))
+                          for i in range(preds_array.shape[1])]
+            _metrics_json = {
+                "model": "FreEformer",
+                "location": self.args.model_id_ori,
+                "lookback": self.args.seq_len,
+                "horizon": self.args.pred_len,
+                "test_mae": round(float(mae), 4),
+                "test_rmse": round(float(rmse), 4),
+                "test_r2": round(float(r2), 4),
+                "test_mse": round(float(mse), 4),
+                "step_maes": [round(m, 4) for m in _step_maes],
+            }
+            with open(os.path.join(folder_path, 'metrics.json'), 'w') as _jf:
+                json.dump(_metrics_json, _jf, indent=2)
             f = open("result_long_term_forecast.txt", 'a')
 
         # print seq_inter

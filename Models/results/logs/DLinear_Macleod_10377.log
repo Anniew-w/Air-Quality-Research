@@ -1,0 +1,29 @@
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Macleod_10377_merged | X=(195, 14, 8), y=(195, 14)
+[Macleod_10377_merged] Epoch 01 | TrainLoss=0.8298 | ValMAE=2.5621
+[Macleod_10377_merged] Epoch 05 | TrainLoss=0.7957 | ValMAE=2.3901
+[Macleod_10377_merged] Epoch 10 | TrainLoss=0.7692 | ValMAE=2.3363
+[Macleod_10377_merged] Epoch 15 | TrainLoss=0.7492 | ValMAE=2.3181
+[Macleod_10377_merged] Epoch 20 | TrainLoss=0.7320 | ValMAE=2.2937
+[Macleod_10377_merged] Epoch 25 | TrainLoss=0.7168 | ValMAE=2.2694
+[Macleod_10377_merged] Epoch 30 | TrainLoss=0.7035 | ValMAE=2.2693
+[Macleod_10377_merged] Epoch 35 | TrainLoss=0.6915 | ValMAE=2.2693
+[Macleod_10377_merged] Epoch 40 | TrainLoss=0.6825 | ValMAE=2.2682
+[Macleod_10377_merged] Epoch 45 | TrainLoss=0.6786 | ValMAE=2.2659
+[Macleod_10377_merged] Epoch 50 | TrainLoss=0.6758 | ValMAE=2.2636
+
+==================================================
+[Macleod_10377_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  2.3475
+  RMSE: 2.8140
+  R2:   -2.0902
+  Step MAEs: ['2.692', '2.227', '2.577', '2.252', '1.970', '2.066', '1.964', '2.553', '2.651', '2.448', '1.899', '1.916', '2.673', '2.977']
+==================================================
+
+✅ Saved metrics to results/DLinear_Macleod_10377_merged_metrics.json

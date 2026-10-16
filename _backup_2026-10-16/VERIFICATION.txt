@@ -1,0 +1,45 @@
+Air Quality Research backup verification
+Date: 2026-10-16 Australia/Melbourne
+Branch: main
+Changed field: coverage: previously_tracked_files -> all_present_research_files
+Research code and data bytes: unchanged
+Original commit: 472a5e153baa34d03c8c7108f9008f4e622ef12e
+Original manifest SHA256: 2700d514b41b370520a2e7f4d3b6da75dfd0acd7b563ee8b418372b8de69fa72  ORIGINAL_FILE.json
+MODIFIED_FILE.json: /Users/wangshihan/Air Quality Research/_backup_2026-10-16/MODIFIED_FILE.json
+DIFF_FILE.patch: /Users/wangshihan/Air Quality Research/_backup_2026-10-16/DIFF_FILE.patch
+VERIFICATION.txt: /Users/wangshihan/Air Quality Research/_backup_2026-10-16/VERIFICATION.txt
+ROLLBACK.sh: /Users/wangshihan/Air Quality Research/_backup_2026-10-16/ROLLBACK.sh
+
+ENVIRONMENT:
+CWD=/Users/wangshihan/Air Quality Research
+B=/Users/wangshihan/Air Quality Research/_backup_2026-10-16
+T=/private/tmp/air-quality-rollback-manifest.json
+
+BASELINE
+COMMAND: python3 "$B/verify_backup.py" --manifest "$B/ORIGINAL_FILE.json" --summary-only
+INPUT: local research files and named manifest
+LITERAL STDOUT:
+FAIL files=3785 missing=0 unbacked=2376 mismatched=0
+LITERAL STDERR:
+EXIT STATUS: 1
+
+MODIFIED
+COMMAND: python3 "$B/verify_backup.py" --summary-only
+INPUT: local research files and named manifest
+LITERAL STDOUT:
+PASS files=6161 bytes=3797934234 sha256=all_match
+LITERAL STDERR:
+EXIT STATUS: 0
+
+ROLLBACK
+COMMAND: cp "$B/MODIFIED_FILE.json" "$T"; "$B/ROLLBACK.sh" "$T"; python3 "$B/verify_backup.py" --manifest "$T" --summary-only
+INPUT: local research files and named manifest
+LITERAL STDOUT:
+RESTORED baseline manifest; research files and Git history unchanged
+FAIL files=3785 missing=0 unbacked=2376 mismatched=0
+LITERAL STDERR:
+EXIT STATUS: 1
+
+RESTORED BEHAVIOR: separate rollback manifest equals ORIGINAL_FILE.json byte-for-byte and reports the same 2376 baseline omissions (exit 1). Completed MODIFIED_FILE.json remains changed, coverage=all_present_research_files, and passes (exit 0). No research files or Git history were rolled back.
+
+CLOUD VERIFICATION: pending upload and independent fresh download.

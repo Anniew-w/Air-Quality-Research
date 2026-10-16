@@ -1,0 +1,23 @@
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Brighton_10007_merged | X=(1214, 14, 8), y=(1214, 14)
+[Brighton_10007_merged] Epoch 01 | TrainLoss=4.1169 | ValMAE=5.1079
+[Brighton_10007_merged] Epoch 05 | TrainLoss=1.0830 | ValMAE=4.2641
+[Brighton_10007_merged] Epoch 10 | TrainLoss=0.8680 | ValMAE=4.1262
+[Brighton_10007_merged] Epoch 15 | TrainLoss=0.7896 | ValMAE=4.0997
+[Brighton_10007_merged] Epoch 20 | TrainLoss=0.7494 | ValMAE=4.0886
+[Brighton_10007_merged] Epoch 25 | TrainLoss=0.7274 | ValMAE=4.0852
+[Brighton_10007_merged] Epoch 30 | TrainLoss=0.7082 | ValMAE=4.0846
+✅ Saved training history and prediction: results/TCN_Brighton_10007_merged_history.png, results/TCN_Brighton_10007_merged_prediction_step1.png
+✅ Saved extra MAE plots: results/Brighton_10007_merged_ValMAE_curve.png, results/Brighton_10007_merged_StepMAE_bar.png
+
+==================================================
+[Brighton_10007_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  2.2754
+  RMSE: 3.0960
+  R2:   -0.3647
+  Step MAEs: ['1.997', '2.271', '2.345', '2.317', '2.222', '2.199', '2.322', '2.267', '2.117', '2.267', '2.382', '2.283', '2.459', '2.408']
+==================================================
+
+✅ Saved metrics to results/TCN_Brighton_10007_merged_metrics.json

@@ -1,0 +1,27 @@
+{
+  "model": "Fed-indep-fre",
+  "location": "Morwell_East_10017_merged",
+  "seed": 2025,
+  "lookback": 14,
+  "horizon": 14,
+  "test_mae": 2.2359,
+  "test_rmse": 3.0345,
+  "test_r2": -0.2461,
+  "step_maes": [
+    2.1994,
+    2.1663,
+    2.1349,
+    2.1992,
+    2.2904,
+    2.2567,
+    2.2031,
+    2.2616,
+    2.3045,
+    2.2591,
+    2.271,
+    2.3292,
+    2.2444,
+    2.183
+  ],
+  "test_r2_perwindow": -0.3616
+}

@@ -1,0 +1,37 @@
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Alphington_10001_merged | X=(1269, 14, 8), y=(1269, 14)
+[Alphington_10001_merged] Epoch 01 | TrainLoss=4.0216 | ValMAE=5.9857
+[Alphington_10001_merged] Epoch 05 | TrainLoss=1.0858 | ValMAE=5.3031
+[Alphington_10001_merged] Epoch 10 | TrainLoss=0.8807 | ValMAE=5.2002
+[Alphington_10001_merged] Epoch 15 | TrainLoss=0.8052 | ValMAE=5.1734
+[Alphington_10001_merged] Epoch 20 | TrainLoss=0.7665 | ValMAE=5.1641
+[Alphington_10001_merged] Epoch 25 | TrainLoss=0.7459 | ValMAE=5.1626
+[Alphington_10001_merged] Epoch 30 | TrainLoss=0.7379 | ValMAE=5.1649
+✅ Saved training history and prediction: results/TCN_Alphington_10001_merged_history.png, results/TCN_Alphington_10001_merged_prediction_step1.png
+✅ Saved extra MAE plots: results/Alphington_10001_merged_ValMAE_curve.png, results/Alphington_10001_merged_StepMAE_bar.png
+
+==================================================
+[Alphington_10001_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  2.4361
+  RMSE: 3.6469
+  R2:   -0.0568
+  Step MAEs: ['2.232', '2.436', '2.411', '2.419', '2.444', '2.353', '2.450', '2.352', '2.435', '2.433', '2.559', '2.493', '2.550', '2.540']
+==================================================
+
+✅ Saved metrics to results/TCN_Alphington_10001_merged_metrics.json

@@ -1,0 +1,36 @@
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Alphington_10001_merged | X=(1269, 14, 8), y=(1269, 14)
+[Alphington_10001_merged] Epoch 01 | TrainLoss=0.8050 | ValMAE=5.4841
+[Alphington_10001_merged] Epoch 05 | TrainLoss=0.7128 | ValMAE=5.3164
+[Alphington_10001_merged] Epoch 10 | TrainLoss=0.6979 | ValMAE=5.3167
+[Alphington_10001_merged] Epoch 15 | TrainLoss=0.6962 | ValMAE=5.3208
+[Alphington_10001_merged] Epoch 20 | TrainLoss=0.6975 | ValMAE=5.3199
+⏸️ Early stopping triggered at epoch 21
+✅ Saved training history and prediction plots for Alphington_10001_merged
+✅ Saved extra MAE plots: Step-wise MAE for Alphington_10001_merged
+
+==================================================
+[Alphington_10001_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  2.2998
+  RMSE: 3.5761
+  R2:   -0.0162
+  Step MAEs: ['2.306', '2.260', '2.298', '2.294', '2.297', '2.275', '2.288', '2.291', '2.296', '2.292', '2.283', '2.322', '2.366', '2.330']
+==================================================
+
+✅ Saved metrics to results/GNNTransformer_Alphington_10001_merged_metrics.json

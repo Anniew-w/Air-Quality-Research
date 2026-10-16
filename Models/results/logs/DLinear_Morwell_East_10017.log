@@ -1,0 +1,29 @@
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Morwell_East_10017_merged | X=(376, 14, 8), y=(376, 14)
+[Morwell_East_10017_merged] Epoch 01 | TrainLoss=0.8360 | ValMAE=2.7150
+[Morwell_East_10017_merged] Epoch 05 | TrainLoss=0.7607 | ValMAE=2.6786
+[Morwell_East_10017_merged] Epoch 10 | TrainLoss=0.7244 | ValMAE=2.6643
+[Morwell_East_10017_merged] Epoch 15 | TrainLoss=0.7032 | ValMAE=2.6073
+[Morwell_East_10017_merged] Epoch 20 | TrainLoss=0.6854 | ValMAE=2.5555
+[Morwell_East_10017_merged] Epoch 25 | TrainLoss=0.6700 | ValMAE=2.5159
+[Morwell_East_10017_merged] Epoch 30 | TrainLoss=0.6563 | ValMAE=2.4843
+[Morwell_East_10017_merged] Epoch 35 | TrainLoss=0.6441 | ValMAE=2.4517
+[Morwell_East_10017_merged] Epoch 40 | TrainLoss=0.6332 | ValMAE=2.4278
+[Morwell_East_10017_merged] Epoch 45 | TrainLoss=0.6234 | ValMAE=2.4045
+[Morwell_East_10017_merged] Epoch 50 | TrainLoss=0.6147 | ValMAE=2.3945
+
+==================================================
+[Morwell_East_10017_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  2.3332
+  RMSE: 3.1061
+  R2:   -0.5066
+  Step MAEs: ['2.494', '2.354', '2.922', '2.268', '1.980', '2.344', '2.156', '2.194', '2.116', '2.500', '2.179', '1.997', '2.504', '2.659']
+==================================================
+
+✅ Saved metrics to results/DLinear_Morwell_East_10017_merged_metrics.json

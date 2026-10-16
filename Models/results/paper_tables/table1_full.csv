@@ -1,0 +1,67 @@
+location,station,model,mae,rmse,r2
+Alphington_10001_merged,Alphington (10001),AFFIRM,2.8977,4.2302,-0.3895
+Alphington_10001_merged,Alphington (10001),DLinear,2.5194,3.6645,-0.067
+Alphington_10001_merged,Alphington (10001),GNNTransformer,2.2998,3.5761,-0.0162
+Alphington_10001_merged,Alphington (10001),LSTM,2.4355,3.5578,-0.0058
+Alphington_10001_merged,Alphington (10001),PGN,2.3715,3.6018,-0.0308
+Alphington_10001_merged,Alphington (10001),TCN,2.4361,3.6469,-0.0568
+Box_Hill_10042_merged,Box Hill (10042),AFFIRM,1.6399,2.1849,-0.2883
+Box_Hill_10042_merged,Box Hill (10042),DLinear,1.6132,2.1618,-0.2612
+Box_Hill_10042_merged,Box Hill (10042),GNNTransformer,1.5343,2.157,-0.2557
+Box_Hill_10042_merged,Box Hill (10042),LSTM,1.4438,1.9658,-0.0429
+Box_Hill_10042_merged,Box Hill (10042),PGN,1.5812,2.1659,-0.266
+Box_Hill_10042_merged,Box Hill (10042),TCN,1.6761,2.2538,-0.3709
+Brighton_10007_merged,Brighton (10007),AFFIRM,2.1933,2.8812,-0.1731
+Brighton_10007_merged,Brighton (10007),DLinear,2.2956,3.1314,-0.3961
+Brighton_10007_merged,Brighton (10007),GNNTransformer,2.2581,3.1223,-0.388
+Brighton_10007_merged,Brighton (10007),LSTM,2.0822,2.8472,-0.1542
+Brighton_10007_merged,Brighton (10007),PGN,2.2891,3.1506,-0.4133
+Brighton_10007_merged,Brighton (10007),TCN,2.2754,3.096,-0.3647
+Dandenong_10022_merged,Dandenong (10022),AFFIRM,1.9361,2.4649,-0.1628
+Dandenong_10022_merged,Dandenong (10022),DLinear,1.8978,2.3897,-0.1066
+Dandenong_10022_merged,Dandenong (10022),GNNTransformer,1.8066,2.3911,-0.1079
+Dandenong_10022_merged,Dandenong (10022),LSTM,1.7667,2.2781,-0.0057
+Dandenong_10022_merged,Dandenong (10022),PGN,1.8945,2.4507,-0.1638
+Dandenong_10022_merged,Dandenong (10022),TCN,1.9895,2.581,-0.2909
+Geelong_South_10107_merged,Geelong South (10107),AFFIRM,2.0297,2.6798,-0.2022
+Geelong_South_10107_merged,Geelong South (10107),DLinear,2.0982,2.7613,-0.273
+Geelong_South_10107_merged,Geelong South (10107),GNNTransformer,1.8218,2.5395,-0.0767
+Geelong_South_10107_merged,Geelong South (10107),LSTM,1.824,2.4592,-0.0097
+Geelong_South_10107_merged,Geelong South (10107),PGN,1.9213,2.6087,-0.1362
+Geelong_South_10107_merged,Geelong South (10107),TCN,1.9365,2.6023,-0.1306
+Macleod_10377_merged,Macleod (10377),AFFIRM,1.5315,1.8399,-0.289
+Macleod_10377_merged,Macleod (10377),DLinear,2.3475,2.814,-2.0902
+Macleod_10377_merged,Macleod (10377),GNNTransformer,1.396,1.7672,-0.2188
+Macleod_10377_merged,Macleod (10377),LSTM,1.3774,1.6073,-0.0081
+Macleod_10377_merged,Macleod (10377),PGN,1.6667,2.105,-0.7293
+Macleod_10377_merged,Macleod (10377),TCN,2.6054,3.3902,-3.4852
+Melbourne_CBD_10239_merged,Melbourne CBD (10239),AFFIRM,2.1925,2.8261,-0.1662
+Melbourne_CBD_10239_merged,Melbourne CBD (10239),DLinear,2.2903,2.7561,-0.123
+Melbourne_CBD_10239_merged,Melbourne CBD (10239),GNNTransformer,2.0842,2.5738,0.0207
+Melbourne_CBD_10239_merged,Melbourne CBD (10239),LSTM,2.0636,2.6431,-0.0328
+Melbourne_CBD_10239_merged,Melbourne CBD (10239),PGN,2.1677,2.6591,-0.0453
+Melbourne_CBD_10239_merged,Melbourne CBD (10239),TCN,2.2087,2.7391,-0.1092
+Melton_10169_merged,Melton (10169),AFFIRM,1.8722,2.4028,-0.1135
+Melton_10169_merged,Melton (10169),DLinear,1.8799,2.3773,-0.0781
+Melton_10169_merged,Melton (10169),GNNTransformer,1.7281,2.2321,0.0496
+Melton_10169_merged,Melton (10169),LSTM,1.8541,2.3285,-0.0343
+Melton_10169_merged,Melton (10169),PGN,1.8149,2.2952,-0.0049
+Melton_10169_merged,Melton (10169),TCN,1.8464,2.3332,-0.0385
+Morwell_East_10017_merged,Morwell East (10017),AFFIRM,2.2229,2.6986,-0.1153
+Morwell_East_10017_merged,Morwell East (10017),DLinear,2.3332,3.1061,-0.5066
+Morwell_East_10017_merged,Morwell East (10017),GNNTransformer,2.0046,2.5984,-0.0543
+Morwell_East_10017_merged,Morwell East (10017),LSTM,2.0877,2.5458,-0.0121
+Morwell_East_10017_merged,Morwell East (10017),PGN,2.2465,2.9623,-0.3703
+Morwell_East_10017_merged,Morwell East (10017),TCN,2.5298,3.2617,-0.6612
+Morwell_South_10217_merged,Morwell South (10217),AFFIRM,1.4345,1.849,-0.2342
+Morwell_South_10217_merged,Morwell South (10217),DLinear,1.5244,1.9056,-0.2804
+Morwell_South_10217_merged,Morwell South (10217),GNNTransformer,1.5717,1.9082,-0.284
+Morwell_South_10217_merged,Morwell South (10217),LSTM,1.7919,2.1151,-0.5774
+Morwell_South_10217_merged,Morwell South (10217),PGN,1.5719,1.9109,-0.2875
+Morwell_South_10217_merged,Morwell South (10217),TCN,1.6628,2.0464,-0.4766
+Traralgon_10011_merged,Traralgon (10011),AFFIRM,1.9635,2.4794,-0.3518
+Traralgon_10011_merged,Traralgon (10011),DLinear,2.0605,2.6036,-0.5081
+Traralgon_10011_merged,Traralgon (10011),GNNTransformer,1.8539,2.3312,-0.209
+Traralgon_10011_merged,Traralgon (10011),LSTM,1.6905,2.1386,-0.0175
+Traralgon_10011_merged,Traralgon (10011),PGN,1.951,2.4576,-0.3436
+Traralgon_10011_merged,Traralgon (10011),TCN,1.888,2.3852,-0.2656

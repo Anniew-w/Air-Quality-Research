@@ -270,7 +270,7 @@ if __name__ == '__main__':
                              'you can select [partial_start_index, min(enc_in + partial_start_index, N)]')
 
     args = parser.parse_args()
-    args.use_gpu = True if torch.cuda.is_available() and args.use_gpu else False
+    args.use_gpu = True if (torch.cuda.is_available() or torch.backends.mps.is_available()) and args.use_gpu else False
     print('args.use_gpu:', args.use_gpu)
 
     if args.train_ratio < 1:

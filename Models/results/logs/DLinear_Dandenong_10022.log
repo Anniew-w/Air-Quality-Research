@@ -1,0 +1,31 @@
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/dlinear_running.py:304: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Dandenong_10022_merged | X=(694, 14, 8), y=(694, 14)
+[Dandenong_10022_merged] Epoch 01 | TrainLoss=0.8291 | ValMAE=2.6218
+[Dandenong_10022_merged] Epoch 05 | TrainLoss=0.7879 | ValMAE=2.5093
+[Dandenong_10022_merged] Epoch 10 | TrainLoss=0.7617 | ValMAE=2.3992
+[Dandenong_10022_merged] Epoch 15 | TrainLoss=0.7407 | ValMAE=2.3232
+[Dandenong_10022_merged] Epoch 20 | TrainLoss=0.7234 | ValMAE=2.2764
+[Dandenong_10022_merged] Epoch 25 | TrainLoss=0.7091 | ValMAE=2.2438
+[Dandenong_10022_merged] Epoch 30 | TrainLoss=0.6972 | ValMAE=2.2251
+[Dandenong_10022_merged] Epoch 35 | TrainLoss=0.6875 | ValMAE=2.2117
+[Dandenong_10022_merged] Epoch 40 | TrainLoss=0.6792 | ValMAE=2.2034
+[Dandenong_10022_merged] Epoch 45 | TrainLoss=0.6723 | ValMAE=2.1944
+[Dandenong_10022_merged] Epoch 50 | TrainLoss=0.6660 | ValMAE=2.1945
+
+==================================================
+[Dandenong_10022_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  1.8978
+  RMSE: 2.3897
+  R2:   -0.1066
+  Step MAEs: ['1.636', '1.918', '2.026', '2.047', '1.947', '1.850', '1.922', '1.975', '1.909', '1.886', '1.882', '1.854', '1.837', '1.881']
+==================================================
+
+✅ Saved metrics to results/DLinear_Dandenong_10022_merged_metrics.json

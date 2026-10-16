@@ -1,0 +1,23 @@
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Brighton_10007_merged | X=(1214, 14, 8), y=(1214, 14)
+📊 X_train mean=-0.0000, std=1.0000
+📊 y_train (std) mean=-0.0000, std=1.0000
+[Brighton_10007_merged] Epoch 01 | TrainLoss=0.6744 | ValMAE=3.9943
+[Brighton_10007_merged] Epoch 05 | TrainLoss=0.6545 | ValMAE=3.9938
+[Brighton_10007_merged] Epoch 10 | TrainLoss=0.6175 | ValMAE=3.9965
+[Brighton_10007_merged] Epoch 15 | TrainLoss=0.5801 | ValMAE=3.9973
+⏸️ Early stopping triggered at epoch 15
+✅ Saved training history and prediction: results/LSTM_Brighton_10007_merged_history.png, results/LSTM_Brighton_10007_merged_prediction_step1.png
+✅ Saved extra MAE plots: results/LSTM_Brighton_10007_merged_ValMAE_curve.png, results/LSTM_Brighton_10007_merged_ValMSE_curve.png
+
+==================================================
+[Brighton_10007_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  2.0822
+  RMSE: 2.8472
+  R2:   -0.1542
+  Step MAEs: ['2.063', '2.109', '2.088', '2.068', '2.134', '2.069', '2.077', '2.112', '2.079', '2.071', '2.115', '2.054', '2.039', '2.073']
+==================================================
+
+✅ Saved metrics to results/LSTM_Brighton_10007_merged_metrics.json

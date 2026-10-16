@@ -1,0 +1,6 @@
+Box_Hill_10042_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_18_21  
+MSE:{'test': 0.9674423336982727, 'val': 1.5692487955093384}, MAE:{'test': 0.7222532033920288, 'val': 0.70598304271698}
+
+Box_Hill_10042_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_20_24  
+MSE:{'test': 0.9674423336982727, 'val': 1.5692487955093384}, MAE:{'test': 0.7222532033920288, 'val': 0.70598304271698}
+

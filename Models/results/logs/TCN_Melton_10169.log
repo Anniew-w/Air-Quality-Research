@@ -1,0 +1,41 @@
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/tcn_running.py:346: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Melton_10169_merged | X=(1250, 14, 8), y=(1250, 14)
+[Melton_10169_merged] Epoch 01 | TrainLoss=4.0505 | ValMAE=3.6384
+[Melton_10169_merged] Epoch 05 | TrainLoss=1.0736 | ValMAE=2.8140
+[Melton_10169_merged] Epoch 10 | TrainLoss=0.8573 | ValMAE=2.6766
+[Melton_10169_merged] Epoch 15 | TrainLoss=0.7707 | ValMAE=2.6064
+[Melton_10169_merged] Epoch 20 | TrainLoss=0.7318 | ValMAE=2.5727
+[Melton_10169_merged] Epoch 25 | TrainLoss=0.7035 | ValMAE=2.5543
+[Melton_10169_merged] Epoch 30 | TrainLoss=0.6861 | ValMAE=2.5497
+✅ Saved training history and prediction: results/TCN_Melton_10169_merged_history.png, results/TCN_Melton_10169_merged_prediction_step1.png
+✅ Saved extra MAE plots: results/Melton_10169_merged_ValMAE_curve.png, results/Melton_10169_merged_StepMAE_bar.png
+
+==================================================
+[Melton_10169_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  1.8464
+  RMSE: 2.3332
+  R2:   -0.0385
+  Step MAEs: ['1.765', '1.816', '1.820', '1.969', '1.826', '1.873', '1.842', '1.801', '1.904', '1.770', '1.947', '1.806', '1.838', '1.873']
+==================================================
+
+✅ Saved metrics to results/TCN_Melton_10169_merged_metrics.json

@@ -1,0 +1,27 @@
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Morwell_South_10217_merged | X=(690, 14, 8), y=(690, 14)
+[Morwell_South_10217_merged] Epoch 01 | TrainLoss=0.8734 | ValMAE=1.7275
+[Morwell_South_10217_merged] Epoch 05 | TrainLoss=0.7392 | ValMAE=1.4656
+[Morwell_South_10217_merged] Epoch 10 | TrainLoss=0.7098 | ValMAE=1.4301
+[Morwell_South_10217_merged] Epoch 15 | TrainLoss=0.6900 | ValMAE=1.4104
+[Morwell_South_10217_merged] Epoch 20 | TrainLoss=0.6798 | ValMAE=1.3888
+✅ Saved training history and prediction: results/PGN_Morwell_South_10217_merged_history.png, results/PGN_Morwell_South_10217_merged_prediction_step1.png
+✅ Saved extra MAE plots: results/PGN_Morwell_South_10217_merged_ValMAE_curve.png, results/Morwell_South_10217_merged_PGN_StepMAE_bar.png
+
+==================================================
+[Morwell_South_10217_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  1.5719
+  RMSE: 1.9109
+  R2:   -0.2875
+  Step MAEs: ['1.437', '1.592', '1.456', '1.645', '1.554', '1.494', '1.612', '1.623', '1.628', '1.362', '1.625', '1.841', '1.603', '1.533']
+==================================================
+
+✅ Saved metrics to results/PGN_Morwell_South_10217_merged_metrics.json

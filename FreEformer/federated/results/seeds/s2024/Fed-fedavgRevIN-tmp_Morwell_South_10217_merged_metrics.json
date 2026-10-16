@@ -1,0 +1,27 @@
+{
+  "model": "Fed-fedavgRevIN-tmp",
+  "location": "Morwell_South_10217_merged",
+  "seed": 2024,
+  "lookback": 14,
+  "horizon": 14,
+  "test_mae": 1.3099,
+  "test_rmse": 1.7267,
+  "test_r2": -0.1479,
+  "step_maes": [
+    1.215,
+    1.3519,
+    1.3602,
+    1.3543,
+    1.3212,
+    1.3118,
+    1.3092,
+    1.3024,
+    1.3151,
+    1.3165,
+    1.2861,
+    1.2883,
+    1.2982,
+    1.3081
+  ],
+  "test_r2_perwindow": -0.3842
+}

@@ -1,0 +1,15 @@
+Melbourne_CBD_10239_merged_emb128_d2_ps32_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_15_18  
+MSE:{'test': 0.6280366778373718, 'val': 3.4872615337371826}, MAE:{'test': 0.6135916709899902, 'val': 1.354670524597168}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_18_18  
+MSE:{'test': 0.9047184586524963, 'val': 1.1982024908065796}, MAE:{'test': 0.7121062874794006, 'val': 0.7087661027908325}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_18_27  
+MSE:{'test': 0.902289867401123, 'val': 1.1725174188613892}, MAE:{'test': 0.7080760598182678, 'val': 0.6892187595367432}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_20_20  
+MSE:{'test': 0.902289867401123, 'val': 1.1725174188613892}, MAE:{'test': 0.7080760598182678, 'val': 0.6892187595367432}
+
+Melbourne_CBD_10239_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_20_28  
+MSE:{'test': 0.902289867401123, 'val': 1.1725174188613892}, MAE:{'test': 0.7080760598182678, 'val': 0.6892187595367432}
+

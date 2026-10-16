@@ -1,0 +1,27 @@
+{
+  "model": "Fed-central-tmp",
+  "location": "Box_Hill_10042_merged",
+  "seed": 2026,
+  "lookback": 14,
+  "horizon": 14,
+  "test_mae": 2.4947,
+  "test_rmse": 3.6856,
+  "test_r2": -0.0133,
+  "step_maes": [
+    2.0237,
+    2.499,
+    2.4659,
+    2.5782,
+    2.6467,
+    2.572,
+    2.5404,
+    2.4965,
+    2.5434,
+    2.5508,
+    2.432,
+    2.5624,
+    2.55,
+    2.4656
+  ],
+  "test_r2_perwindow": -0.637
+}

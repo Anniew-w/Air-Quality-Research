@@ -1,0 +1,26 @@
+{
+  "model": "Fed-central-tmp",
+  "location": "Morwell_East_10017_merged",
+  "lookback": 14,
+  "horizon": 14,
+  "test_mae": 2.3459,
+  "test_rmse": 3.0909,
+  "test_r2": -0.2929,
+  "step_maes": [
+    2.1387,
+    2.5144,
+    2.3582,
+    2.311,
+    2.3628,
+    2.4064,
+    2.2485,
+    2.5083,
+    2.3544,
+    2.514,
+    2.293,
+    2.3407,
+    2.1996,
+    2.2923
+  ],
+  "test_r2_perwindow": -0.4595
+}

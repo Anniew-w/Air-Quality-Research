@@ -1,0 +1,27 @@
+{
+  "model": "Fed-indep-fre",
+  "location": "Traralgon_10011_merged",
+  "seed": 2026,
+  "lookback": 14,
+  "horizon": 14,
+  "test_mae": 2.741,
+  "test_rmse": 3.7895,
+  "test_r2": -0.1375,
+  "step_maes": [
+    2.2138,
+    2.7454,
+    2.8763,
+    2.9259,
+    2.8387,
+    2.8398,
+    2.8303,
+    2.836,
+    2.7535,
+    2.733,
+    2.7131,
+    2.7079,
+    2.679,
+    2.6807
+  ],
+  "test_r2_perwindow": -0.9511
+}

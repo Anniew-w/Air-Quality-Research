@@ -1,0 +1,27 @@
+{
+  "model": "Fed-fedavg-fre",
+  "location": "Melbourne_CBD_10239_merged",
+  "seed": 2026,
+  "lookback": 14,
+  "horizon": 14,
+  "test_mae": 3.315,
+  "test_rmse": 4.9436,
+  "test_r2": -0.1284,
+  "step_maes": [
+    2.4417,
+    3.1119,
+    3.2313,
+    3.2869,
+    3.3709,
+    3.402,
+    3.4128,
+    3.4505,
+    3.4369,
+    3.4787,
+    3.4667,
+    3.4662,
+    3.4425,
+    3.4109
+  ],
+  "test_r2_perwindow": -0.7955
+}

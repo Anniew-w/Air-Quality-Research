@@ -1,0 +1,22 @@
+{
+  "dataset_version": "2026-08-20",
+  "daily_rows": 100796,
+  "stations_total": 69,
+  "stations_by_state": {
+    "Queensland": 58,
+    "Victoria": 11
+  },
+  "daily_date_start": "2021-01-01",
+  "daily_date_end": "2025-12-31",
+  "qld_hourly_files": 58,
+  "qld_raw_resource_files": 251,
+  "qld_hourly_rows": 2157414,
+  "source_victoria_daily_files": 11,
+  "qld_source_years": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ]
+}

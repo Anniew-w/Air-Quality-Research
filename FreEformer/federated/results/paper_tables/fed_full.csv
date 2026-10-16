@@ -1,0 +1,353 @@
+seed,mode,backbone,location,station,mae,rmse,r2
+2023,central,fre,Alphington_10001_merged,Alphington (10001),3.7395,5.5794,-0.0277
+2024,central,fre,Alphington_10001_merged,Alphington (10001),3.7406,5.5817,-0.0286
+2025,central,fre,Alphington_10001_merged,Alphington (10001),3.7391,5.6068,-0.0378
+2026,central,fre,Alphington_10001_merged,Alphington (10001),3.7322,5.6004,-0.0355
+2023,central,fre,Box_Hill_10042_merged,Box Hill (10042),2.5539,3.8047,-0.0799
+2024,central,fre,Box_Hill_10042_merged,Box Hill (10042),2.5422,3.7915,-0.0724
+2025,central,fre,Box_Hill_10042_merged,Box Hill (10042),2.5522,3.8289,-0.0937
+2026,central,fre,Box_Hill_10042_merged,Box Hill (10042),2.5505,3.8066,-0.081
+2023,central,fre,Brighton_10007_merged,Brighton (10007),3.392,4.8798,-0.2322
+2024,central,fre,Brighton_10007_merged,Brighton (10007),3.3718,4.8406,-0.2125
+2025,central,fre,Brighton_10007_merged,Brighton (10007),3.3926,4.8792,-0.2319
+2026,central,fre,Brighton_10007_merged,Brighton (10007),3.3891,4.8765,-0.2306
+2023,central,fre,Dandenong_10022_merged,Dandenong (10022),2.2702,2.9832,-0.3781
+2024,central,fre,Dandenong_10022_merged,Dandenong (10022),2.2444,2.9461,-0.3441
+2025,central,fre,Dandenong_10022_merged,Dandenong (10022),2.2534,2.951,-0.3485
+2026,central,fre,Dandenong_10022_merged,Dandenong (10022),2.2575,2.9671,-0.3633
+2023,central,fre,Geelong_South_10107_merged,Geelong South (10107),2.0008,2.7251,-0.2453
+2024,central,fre,Geelong_South_10107_merged,Geelong South (10107),1.9901,2.7039,-0.226
+2025,central,fre,Geelong_South_10107_merged,Geelong South (10107),1.9905,2.7125,-0.2338
+2026,central,fre,Geelong_South_10107_merged,Geelong South (10107),1.9961,2.7224,-0.2429
+2023,central,fre,Macleod_10377_merged,Macleod (10377),1.825,2.2919,-0.3297
+2024,central,fre,Macleod_10377_merged,Macleod (10377),1.8411,2.3075,-0.3479
+2025,central,fre,Macleod_10377_merged,Macleod (10377),1.84,2.2991,-0.3381
+2026,central,fre,Macleod_10377_merged,Macleod (10377),1.8594,2.3153,-0.357
+2023,central,fre,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.3538,4.9893,-0.1493
+2024,central,fre,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.3577,4.9875,-0.1485
+2025,central,fre,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.377,5.0224,-0.1646
+2026,central,fre,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.3828,5.0182,-0.1627
+2023,central,fre,Melton_10169_merged,Melton (10169),2.338,3.2288,-0.1998
+2024,central,fre,Melton_10169_merged,Melton (10169),2.3221,3.2119,-0.1873
+2025,central,fre,Melton_10169_merged,Melton (10169),2.3305,3.2393,-0.2077
+2026,central,fre,Melton_10169_merged,Melton (10169),2.3219,3.228,-0.1992
+2023,central,fre,Morwell_East_10017_merged,Morwell East (10017),2.2967,3.0345,-0.2461
+2024,central,fre,Morwell_East_10017_merged,Morwell East (10017),2.2424,2.9858,-0.2065
+2025,central,fre,Morwell_East_10017_merged,Morwell East (10017),2.2949,3.0549,-0.2629
+2026,central,fre,Morwell_East_10017_merged,Morwell East (10017),2.2743,3.0244,-0.2378
+2023,central,fre,Morwell_South_10217_merged,Morwell South (10217),1.35,1.7702,-0.2064
+2024,central,fre,Morwell_South_10217_merged,Morwell South (10217),1.3372,1.7495,-0.1784
+2025,central,fre,Morwell_South_10217_merged,Morwell South (10217),1.3482,1.7651,-0.1995
+2026,central,fre,Morwell_South_10217_merged,Morwell South (10217),1.3383,1.7522,-0.182
+2023,central,fre,Traralgon_10011_merged,Traralgon (10011),2.7623,3.8278,-0.1606
+2024,central,fre,Traralgon_10011_merged,Traralgon (10011),2.7798,3.8351,-0.1651
+2025,central,fre,Traralgon_10011_merged,Traralgon (10011),2.7586,3.823,-0.1577
+2026,central,fre,Traralgon_10011_merged,Traralgon (10011),2.7713,3.835,-0.165
+2023,fedavg,fre,Alphington_10001_merged,Alphington (10001),3.7709,5.5825,-0.0289
+2024,fedavg,fre,Alphington_10001_merged,Alphington (10001),3.7582,5.5718,-0.0249
+2025,fedavg,fre,Alphington_10001_merged,Alphington (10001),3.7518,5.587,-0.0305
+2026,fedavg,fre,Alphington_10001_merged,Alphington (10001),3.7453,5.5859,-0.0301
+2023,fedavg,fre,Box_Hill_10042_merged,Box Hill (10042),2.5368,3.7798,-0.0658
+2024,fedavg,fre,Box_Hill_10042_merged,Box Hill (10042),2.527,3.7755,-0.0634
+2025,fedavg,fre,Box_Hill_10042_merged,Box Hill (10042),2.526,3.7854,-0.069
+2026,fedavg,fre,Box_Hill_10042_merged,Box Hill (10042),2.5199,3.7839,-0.0681
+2023,fedavg,fre,Brighton_10007_merged,Brighton (10007),3.3491,4.8231,-0.2038
+2024,fedavg,fre,Brighton_10007_merged,Brighton (10007),3.3226,4.8091,-0.1968
+2025,fedavg,fre,Brighton_10007_merged,Brighton (10007),3.33,4.8284,-0.2064
+2026,fedavg,fre,Brighton_10007_merged,Brighton (10007),3.3229,4.8199,-0.2022
+2023,fedavg,fre,Dandenong_10022_merged,Dandenong (10022),2.1835,2.8885,-0.292
+2024,fedavg,fre,Dandenong_10022_merged,Dandenong (10022),2.1675,2.8751,-0.2801
+2025,fedavg,fre,Dandenong_10022_merged,Dandenong (10022),2.1832,2.8894,-0.2928
+2026,fedavg,fre,Dandenong_10022_merged,Dandenong (10022),2.1674,2.8777,-0.2824
+2023,fedavg,fre,Geelong_South_10107_merged,Geelong South (10107),1.9565,2.6715,-0.1968
+2024,fedavg,fre,Geelong_South_10107_merged,Geelong South (10107),1.9495,2.6689,-0.1945
+2025,fedavg,fre,Geelong_South_10107_merged,Geelong South (10107),1.9533,2.6721,-0.1974
+2026,fedavg,fre,Geelong_South_10107_merged,Geelong South (10107),1.9476,2.6721,-0.1974
+2023,fedavg,fre,Macleod_10377_merged,Macleod (10377),1.7543,2.2044,-0.2301
+2024,fedavg,fre,Macleod_10377_merged,Macleod (10377),1.7547,2.2013,-0.2267
+2025,fedavg,fre,Macleod_10377_merged,Macleod (10377),1.7612,2.2096,-0.2359
+2026,fedavg,fre,Macleod_10377_merged,Macleod (10377),1.762,2.2138,-0.2406
+2023,fedavg,fre,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.3311,4.9464,-0.1297
+2024,fedavg,fre,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.3218,4.9356,-0.1247
+2025,fedavg,fre,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.321,4.9476,-0.1302
+2026,fedavg,fre,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.315,4.9436,-0.1284
+2023,fedavg,fre,Melton_10169_merged,Melton (10169),2.3129,3.1952,-0.175
+2024,fedavg,fre,Melton_10169_merged,Melton (10169),2.2986,3.1813,-0.1648
+2025,fedavg,fre,Melton_10169_merged,Melton (10169),2.3011,3.1953,-0.1751
+2026,fedavg,fre,Melton_10169_merged,Melton (10169),2.2996,3.1952,-0.175
+2023,fedavg,fre,Morwell_East_10017_merged,Morwell East (10017),2.1915,2.997,-0.2155
+2024,fedavg,fre,Morwell_East_10017_merged,Morwell East (10017),2.1813,2.9946,-0.2136
+2025,fedavg,fre,Morwell_East_10017_merged,Morwell East (10017),2.1902,3.0074,-0.224
+2026,fedavg,fre,Morwell_East_10017_merged,Morwell East (10017),2.1808,3.0036,-0.2209
+2023,fedavg,fre,Morwell_South_10217_merged,Morwell South (10217),1.3068,1.7264,-0.1475
+2024,fedavg,fre,Morwell_South_10217_merged,Morwell South (10217),1.3035,1.7225,-0.1423
+2025,fedavg,fre,Morwell_South_10217_merged,Morwell South (10217),1.3082,1.7297,-0.1519
+2026,fedavg,fre,Morwell_South_10217_merged,Morwell South (10217),1.3048,1.7238,-0.144
+2023,fedavg,fre,Traralgon_10011_merged,Traralgon (10011),2.7222,3.7741,-0.1283
+2024,fedavg,fre,Traralgon_10011_merged,Traralgon (10011),2.707,3.7622,-0.1212
+2025,fedavg,fre,Traralgon_10011_merged,Traralgon (10011),2.7076,3.7644,-0.1225
+2026,fedavg,fre,Traralgon_10011_merged,Traralgon (10011),2.7042,3.7608,-0.1204
+2023,fedavgRevIN,fre,Alphington_10001_merged,Alphington (10001),3.7724,5.5813,-0.0284
+2024,fedavgRevIN,fre,Alphington_10001_merged,Alphington (10001),3.7552,5.5735,-0.0255
+2025,fedavgRevIN,fre,Alphington_10001_merged,Alphington (10001),3.7509,5.5878,-0.0308
+2026,fedavgRevIN,fre,Alphington_10001_merged,Alphington (10001),3.744,5.5866,-0.0304
+2023,fedavgRevIN,fre,Box_Hill_10042_merged,Box Hill (10042),2.5355,3.7803,-0.0661
+2024,fedavgRevIN,fre,Box_Hill_10042_merged,Box Hill (10042),2.5242,3.7787,-0.0652
+2025,fedavgRevIN,fre,Box_Hill_10042_merged,Box Hill (10042),2.526,3.786,-0.0693
+2026,fedavgRevIN,fre,Box_Hill_10042_merged,Box Hill (10042),2.5193,3.7854,-0.069
+2023,fedavgRevIN,fre,Brighton_10007_merged,Brighton (10007),3.3509,4.8224,-0.2034
+2024,fedavgRevIN,fre,Brighton_10007_merged,Brighton (10007),3.3228,4.809,-0.1967
+2025,fedavgRevIN,fre,Brighton_10007_merged,Brighton (10007),3.333,4.827,-0.2057
+2026,fedavgRevIN,fre,Brighton_10007_merged,Brighton (10007),3.324,4.8194,-0.2019
+2023,fedavgRevIN,fre,Dandenong_10022_merged,Dandenong (10022),2.1831,2.8855,-0.2893
+2024,fedavgRevIN,fre,Dandenong_10022_merged,Dandenong (10022),2.167,2.8705,-0.276
+2025,fedavgRevIN,fre,Dandenong_10022_merged,Dandenong (10022),2.1828,2.8853,-0.2892
+2026,fedavgRevIN,fre,Dandenong_10022_merged,Dandenong (10022),2.1671,2.8727,-0.2779
+2023,fedavgRevIN,fre,Geelong_South_10107_merged,Geelong South (10107),1.9542,2.6723,-0.1975
+2024,fedavgRevIN,fre,Geelong_South_10107_merged,Geelong South (10107),1.9475,2.6699,-0.1954
+2025,fedavgRevIN,fre,Geelong_South_10107_merged,Geelong South (10107),1.9519,2.6736,-0.1987
+2026,fedavgRevIN,fre,Geelong_South_10107_merged,Geelong South (10107),1.9467,2.6735,-0.1986
+2023,fedavgRevIN,fre,Macleod_10377_merged,Macleod (10377),1.7532,2.2006,-0.2259
+2024,fedavgRevIN,fre,Macleod_10377_merged,Macleod (10377),1.7536,2.1978,-0.2228
+2025,fedavgRevIN,fre,Macleod_10377_merged,Macleod (10377),1.7614,2.2071,-0.2332
+2026,fedavgRevIN,fre,Macleod_10377_merged,Macleod (10377),1.7618,2.2104,-0.2368
+2023,fedavgRevIN,fre,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.3271,4.9474,-0.1301
+2024,fedavgRevIN,fre,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.3149,4.9378,-0.1257
+2025,fedavgRevIN,fre,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.3132,4.951,-0.1318
+2026,fedavgRevIN,fre,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.3106,4.9458,-0.1294
+2023,fedavgRevIN,fre,Melton_10169_merged,Melton (10169),2.3073,3.2092,-0.1853
+2024,fedavgRevIN,fre,Melton_10169_merged,Melton (10169),2.2929,3.1968,-0.1762
+2025,fedavgRevIN,fre,Melton_10169_merged,Melton (10169),2.2971,3.2124,-0.1877
+2026,fedavgRevIN,fre,Melton_10169_merged,Melton (10169),2.2965,3.2109,-0.1866
+2023,fedavgRevIN,fre,Morwell_East_10017_merged,Morwell East (10017),2.1924,2.9884,-0.2086
+2024,fedavgRevIN,fre,Morwell_East_10017_merged,Morwell East (10017),2.1811,2.9821,-0.2035
+2025,fedavgRevIN,fre,Morwell_East_10017_merged,Morwell East (10017),2.1915,2.9975,-0.2159
+2026,fedavgRevIN,fre,Morwell_East_10017_merged,Morwell East (10017),2.1798,2.9919,-0.2114
+2023,fedavgRevIN,fre,Morwell_South_10217_merged,Morwell South (10217),1.3063,1.724,-0.1443
+2024,fedavgRevIN,fre,Morwell_South_10217_merged,Morwell South (10217),1.3027,1.7198,-0.1387
+2025,fedavgRevIN,fre,Morwell_South_10217_merged,Morwell South (10217),1.3075,1.7268,-0.148
+2026,fedavgRevIN,fre,Morwell_South_10217_merged,Morwell South (10217),1.303,1.7202,-0.1392
+2023,fedavgRevIN,fre,Traralgon_10011_merged,Traralgon (10011),2.7258,3.7735,-0.128
+2024,fedavgRevIN,fre,Traralgon_10011_merged,Traralgon (10011),2.7094,3.7612,-0.1206
+2025,fedavgRevIN,fre,Traralgon_10011_merged,Traralgon (10011),2.7101,3.7636,-0.122
+2026,fedavgRevIN,fre,Traralgon_10011_merged,Traralgon (10011),2.7062,3.7597,-0.1197
+2023,indep,fre,Alphington_10001_merged,Alphington (10001),3.7784,5.6269,-0.0453
+2024,indep,fre,Alphington_10001_merged,Alphington (10001),3.8279,5.6472,-0.0528
+2025,indep,fre,Alphington_10001_merged,Alphington (10001),3.8426,5.6375,-0.0492
+2026,indep,fre,Alphington_10001_merged,Alphington (10001),3.8196,5.641,-0.0505
+2023,indep,fre,Box_Hill_10042_merged,Box Hill (10042),2.6165,3.8629,-0.1132
+2024,indep,fre,Box_Hill_10042_merged,Box Hill (10042),2.6176,3.8569,-0.1097
+2025,indep,fre,Box_Hill_10042_merged,Box Hill (10042),2.6061,3.8815,-0.1239
+2026,indep,fre,Box_Hill_10042_merged,Box Hill (10042),2.6097,3.8693,-0.1169
+2023,indep,fre,Brighton_10007_merged,Brighton (10007),3.356,4.8251,-0.2048
+2024,indep,fre,Brighton_10007_merged,Brighton (10007),3.3749,4.8248,-0.2046
+2025,indep,fre,Brighton_10007_merged,Brighton (10007),3.3506,4.8261,-0.2053
+2026,indep,fre,Brighton_10007_merged,Brighton (10007),3.3651,4.8392,-0.2118
+2023,indep,fre,Dandenong_10022_merged,Dandenong (10022),2.2948,3.003,-0.3965
+2024,indep,fre,Dandenong_10022_merged,Dandenong (10022),2.3326,3.0618,-0.4517
+2025,indep,fre,Dandenong_10022_merged,Dandenong (10022),2.318,3.0586,-0.4487
+2026,indep,fre,Dandenong_10022_merged,Dandenong (10022),2.3149,3.0455,-0.4363
+2023,indep,fre,Geelong_South_10107_merged,Geelong South (10107),1.99,2.7332,-0.2527
+2024,indep,fre,Geelong_South_10107_merged,Geelong South (10107),1.9976,2.7288,-0.2487
+2025,indep,fre,Geelong_South_10107_merged,Geelong South (10107),2.0166,2.7502,-0.2684
+2026,indep,fre,Geelong_South_10107_merged,Geelong South (10107),1.9901,2.7237,-0.2441
+2023,indep,fre,Macleod_10377_merged,Macleod (10377),1.7822,2.2607,-0.2938
+2024,indep,fre,Macleod_10377_merged,Macleod (10377),1.7624,2.2631,-0.2965
+2025,indep,fre,Macleod_10377_merged,Macleod (10377),1.798,2.2922,-0.3301
+2026,indep,fre,Macleod_10377_merged,Macleod (10377),1.8085,2.2986,-0.3375
+2023,indep,fre,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.3806,5.0087,-0.1583
+2024,indep,fre,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.3651,4.9913,-0.1503
+2025,indep,fre,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.3622,4.9831,-0.1465
+2026,indep,fre,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.3881,4.979,-0.1446
+2023,indep,fre,Melton_10169_merged,Melton (10169),2.3474,3.2916,-0.247
+2024,indep,fre,Melton_10169_merged,Melton (10169),2.3284,3.2925,-0.2476
+2025,indep,fre,Melton_10169_merged,Melton (10169),2.3615,3.3262,-0.2733
+2026,indep,fre,Melton_10169_merged,Melton (10169),2.3576,3.3218,-0.27
+2023,indep,fre,Morwell_East_10017_merged,Morwell East (10017),2.2591,3.0502,-0.2591
+2024,indep,fre,Morwell_East_10017_merged,Morwell East (10017),2.2958,3.0811,-0.2847
+2025,indep,fre,Morwell_East_10017_merged,Morwell East (10017),2.2359,3.0345,-0.2461
+2026,indep,fre,Morwell_East_10017_merged,Morwell East (10017),2.2796,3.068,-0.2738
+2023,indep,fre,Morwell_South_10217_merged,Morwell South (10217),1.3505,1.7558,-0.1869
+2024,indep,fre,Morwell_South_10217_merged,Morwell South (10217),1.3544,1.7651,-0.1995
+2025,indep,fre,Morwell_South_10217_merged,Morwell South (10217),1.3645,1.767,-0.2021
+2026,indep,fre,Morwell_South_10217_merged,Morwell South (10217),1.3414,1.7513,-0.1808
+2023,indep,fre,Traralgon_10011_merged,Traralgon (10011),2.7525,3.8029,-0.1456
+2024,indep,fre,Traralgon_10011_merged,Traralgon (10011),2.7453,3.8003,-0.144
+2025,indep,fre,Traralgon_10011_merged,Traralgon (10011),2.7464,3.7889,-0.1372
+2026,indep,fre,Traralgon_10011_merged,Traralgon (10011),2.741,3.7895,-0.1375
+2023,central,tmp,Alphington_10001_merged,Alphington (10001),3.6301,5.4431,0.0219
+2024,central,tmp,Alphington_10001_merged,Alphington (10001),3.6151,5.4884,0.0055
+2025,central,tmp,Alphington_10001_merged,Alphington (10001),3.5948,5.3592,0.0518
+2026,central,tmp,Alphington_10001_merged,Alphington (10001),3.5346,5.3678,0.0488
+2023,central,tmp,Box_Hill_10042_merged,Box Hill (10042),2.4707,3.6693,-0.0044
+2024,central,tmp,Box_Hill_10042_merged,Box Hill (10042),2.4879,3.7186,-0.0316
+2025,central,tmp,Box_Hill_10042_merged,Box Hill (10042),2.4648,3.651,0.0056
+2026,central,tmp,Box_Hill_10042_merged,Box Hill (10042),2.4947,3.6856,-0.0133
+2023,central,tmp,Brighton_10007_merged,Brighton (10007),3.3411,4.8084,-0.1964
+2024,central,tmp,Brighton_10007_merged,Brighton (10007),3.3521,4.86,-0.2223
+2025,central,tmp,Brighton_10007_merged,Brighton (10007),3.3363,4.7574,-0.1712
+2026,central,tmp,Brighton_10007_merged,Brighton (10007),3.2842,4.7681,-0.1765
+2023,central,tmp,Dandenong_10022_merged,Dandenong (10022),2.1782,2.8816,-0.2859
+2024,central,tmp,Dandenong_10022_merged,Dandenong (10022),2.2013,2.9354,-0.3343
+2025,central,tmp,Dandenong_10022_merged,Dandenong (10022),2.161,2.8532,-0.2606
+2026,central,tmp,Dandenong_10022_merged,Dandenong (10022),2.1926,2.9093,-0.3107
+2023,central,tmp,Geelong_South_10107_merged,Geelong South (10107),1.9866,2.6806,-0.205
+2024,central,tmp,Geelong_South_10107_merged,Geelong South (10107),1.972,2.6793,-0.2038
+2025,central,tmp,Geelong_South_10107_merged,Geelong South (10107),1.993,2.69,-0.2135
+2026,central,tmp,Geelong_South_10107_merged,Geelong South (10107),2.0027,2.7119,-0.2333
+2023,central,tmp,Macleod_10377_merged,Macleod (10377),1.8572,2.3132,-0.3546
+2024,central,tmp,Macleod_10377_merged,Macleod (10377),1.8141,2.2626,-0.2959
+2025,central,tmp,Macleod_10377_merged,Macleod (10377),1.8235,2.2723,-0.3071
+2026,central,tmp,Macleod_10377_merged,Macleod (10377),1.8677,2.3376,-0.3833
+2023,central,tmp,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.2784,4.878,-0.0986
+2024,central,tmp,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.2346,4.8816,-0.1003
+2025,central,tmp,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.2069,4.7861,-0.0576
+2026,central,tmp,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.1414,4.7643,-0.048
+2023,central,tmp,Melton_10169_merged,Melton (10169),2.2806,3.1533,-0.1444
+2024,central,tmp,Melton_10169_merged,Melton (10169),2.3128,3.223,-0.1955
+2025,central,tmp,Melton_10169_merged,Melton (10169),2.2831,3.1222,-0.1219
+2026,central,tmp,Melton_10169_merged,Melton (10169),2.2698,3.1624,-0.151
+2023,central,tmp,Morwell_East_10017_merged,Morwell East (10017),2.3459,3.0909,-0.2929
+2024,central,tmp,Morwell_East_10017_merged,Morwell East (10017),2.303,3.0498,-0.2587
+2025,central,tmp,Morwell_East_10017_merged,Morwell East (10017),2.3691,3.1061,-0.3056
+2026,central,tmp,Morwell_East_10017_merged,Morwell East (10017),2.2822,3.0479,-0.2572
+2023,central,tmp,Morwell_South_10217_merged,Morwell South (10217),1.3407,1.7718,-0.2086
+2024,central,tmp,Morwell_South_10217_merged,Morwell South (10217),1.341,1.7677,-0.203
+2025,central,tmp,Morwell_South_10217_merged,Morwell South (10217),1.3508,1.7691,-0.2049
+2026,central,tmp,Morwell_South_10217_merged,Morwell South (10217),1.3418,1.7637,-0.1976
+2023,central,tmp,Traralgon_10011_merged,Traralgon (10011),2.754,3.7819,-0.133
+2024,central,tmp,Traralgon_10011_merged,Traralgon (10011),2.7712,3.8279,-0.1607
+2025,central,tmp,Traralgon_10011_merged,Traralgon (10011),2.7743,3.8094,-0.1495
+2026,central,tmp,Traralgon_10011_merged,Traralgon (10011),2.7907,3.8529,-0.1759
+2023,fedavg,tmp,Alphington_10001_merged,Alphington (10001),3.7876,5.6254,-0.0447
+2024,fedavg,tmp,Alphington_10001_merged,Alphington (10001),3.7839,5.6175,-0.0418
+2025,fedavg,tmp,Alphington_10001_merged,Alphington (10001),3.7936,5.6244,-0.0444
+2026,fedavg,tmp,Alphington_10001_merged,Alphington (10001),3.7732,5.6139,-0.0405
+2023,fedavg,tmp,Box_Hill_10042_merged,Box Hill (10042),2.549,3.7896,-0.0713
+2024,fedavg,tmp,Box_Hill_10042_merged,Box Hill (10042),2.5566,3.7978,-0.076
+2025,fedavg,tmp,Box_Hill_10042_merged,Box Hill (10042),2.555,3.7948,-0.0743
+2026,fedavg,tmp,Box_Hill_10042_merged,Box Hill (10042),2.5465,3.7934,-0.0735
+2023,fedavg,tmp,Brighton_10007_merged,Brighton (10007),3.3703,4.8598,-0.2222
+2024,fedavg,tmp,Brighton_10007_merged,Brighton (10007),3.3755,4.8682,-0.2264
+2025,fedavg,tmp,Brighton_10007_merged,Brighton (10007),3.3845,4.8682,-0.2264
+2026,fedavg,tmp,Brighton_10007_merged,Brighton (10007),3.3596,4.8575,-0.221
+2023,fedavg,tmp,Dandenong_10022_merged,Dandenong (10022),2.2259,2.939,-0.3376
+2024,fedavg,tmp,Dandenong_10022_merged,Dandenong (10022),2.2198,2.9354,-0.3343
+2025,fedavg,tmp,Dandenong_10022_merged,Dandenong (10022),2.2306,2.941,-0.3394
+2026,fedavg,tmp,Dandenong_10022_merged,Dandenong (10022),2.2291,2.9393,-0.3379
+2023,fedavg,tmp,Geelong_South_10107_merged,Geelong South (10107),1.9556,2.6746,-0.1996
+2024,fedavg,tmp,Geelong_South_10107_merged,Geelong South (10107),1.9588,2.6782,-0.2028
+2025,fedavg,tmp,Geelong_South_10107_merged,Geelong South (10107),1.9633,2.6836,-0.2077
+2026,fedavg,tmp,Geelong_South_10107_merged,Geelong South (10107),1.9516,2.6722,-0.1975
+2023,fedavg,tmp,Macleod_10377_merged,Macleod (10377),1.794,2.2431,-0.2737
+2024,fedavg,tmp,Macleod_10377_merged,Macleod (10377),1.7994,2.2464,-0.2775
+2025,fedavg,tmp,Macleod_10377_merged,Macleod (10377),1.8058,2.2532,-0.2852
+2026,fedavg,tmp,Macleod_10377_merged,Macleod (10377),1.7915,2.239,-0.2691
+2023,fedavg,tmp,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.361,4.9782,-0.1442
+2024,fedavg,tmp,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.3581,4.9767,-0.1435
+2025,fedavg,tmp,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.3629,4.9859,-0.1478
+2026,fedavg,tmp,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.3427,4.9684,-0.1397
+2023,fedavg,tmp,Melton_10169_merged,Melton (10169),2.3162,3.204,-0.1815
+2024,fedavg,tmp,Melton_10169_merged,Melton (10169),2.3201,3.2103,-0.1861
+2025,fedavg,tmp,Melton_10169_merged,Melton (10169),2.3209,3.2095,-0.1855
+2026,fedavg,tmp,Melton_10169_merged,Melton (10169),2.3112,3.2062,-0.1831
+2023,fedavg,tmp,Morwell_East_10017_merged,Morwell East (10017),2.2116,3.0039,-0.2211
+2024,fedavg,tmp,Morwell_East_10017_merged,Morwell East (10017),2.1982,2.9929,-0.2122
+2025,fedavg,tmp,Morwell_East_10017_merged,Morwell East (10017),2.2127,2.9969,-0.2154
+2026,fedavg,tmp,Morwell_East_10017_merged,Morwell East (10017),2.202,2.9894,-0.2094
+2023,fedavg,tmp,Morwell_South_10217_merged,Morwell South (10217),1.3035,1.7219,-0.1415
+2024,fedavg,tmp,Morwell_South_10217_merged,Morwell South (10217),1.3078,1.7281,-0.1497
+2025,fedavg,tmp,Morwell_South_10217_merged,Morwell South (10217),1.307,1.731,-0.1536
+2026,fedavg,tmp,Morwell_South_10217_merged,Morwell South (10217),1.3051,1.7265,-0.1476
+2023,fedavg,tmp,Traralgon_10011_merged,Traralgon (10011),2.7352,3.7821,-0.1331
+2024,fedavg,tmp,Traralgon_10011_merged,Traralgon (10011),2.7371,3.7821,-0.1331
+2025,fedavg,tmp,Traralgon_10011_merged,Traralgon (10011),2.7389,3.7821,-0.1331
+2026,fedavg,tmp,Traralgon_10011_merged,Traralgon (10011),2.7337,3.7775,-0.1303
+2023,fedavgRevIN,tmp,Alphington_10001_merged,Alphington (10001),3.7906,5.6268,-0.0452
+2024,fedavgRevIN,tmp,Alphington_10001_merged,Alphington (10001),3.7908,5.6172,-0.0417
+2025,fedavgRevIN,tmp,Alphington_10001_merged,Alphington (10001),3.7995,5.624,-0.0442
+2026,fedavgRevIN,tmp,Alphington_10001_merged,Alphington (10001),3.7742,5.6153,-0.041
+2023,fedavgRevIN,tmp,Box_Hill_10042_merged,Box Hill (10042),2.551,3.7904,-0.0718
+2024,fedavgRevIN,tmp,Box_Hill_10042_merged,Box Hill (10042),2.5576,3.8009,-0.0777
+2025,fedavgRevIN,tmp,Box_Hill_10042_merged,Box Hill (10042),2.557,3.7969,-0.0755
+2026,fedavgRevIN,tmp,Box_Hill_10042_merged,Box Hill (10042),2.5461,3.7965,-0.0752
+2023,fedavgRevIN,tmp,Brighton_10007_merged,Brighton (10007),3.3733,4.8595,-0.222
+2024,fedavgRevIN,tmp,Brighton_10007_merged,Brighton (10007),3.3792,4.8692,-0.2269
+2025,fedavgRevIN,tmp,Brighton_10007_merged,Brighton (10007),3.3875,4.87,-0.2273
+2026,fedavgRevIN,tmp,Brighton_10007_merged,Brighton (10007),3.3617,4.8588,-0.2216
+2023,fedavgRevIN,tmp,Dandenong_10022_merged,Dandenong (10022),2.2231,2.9329,-0.332
+2024,fedavgRevIN,tmp,Dandenong_10022_merged,Dandenong (10022),2.2173,2.9284,-0.328
+2025,fedavgRevIN,tmp,Dandenong_10022_merged,Dandenong (10022),2.2293,2.936,-0.3349
+2026,fedavgRevIN,tmp,Dandenong_10022_merged,Dandenong (10022),2.2276,2.9343,-0.3333
+2023,fedavgRevIN,tmp,Geelong_South_10107_merged,Geelong South (10107),1.9526,2.6755,-0.2004
+2024,fedavgRevIN,tmp,Geelong_South_10107_merged,Geelong South (10107),1.9559,2.6799,-0.2044
+2025,fedavgRevIN,tmp,Geelong_South_10107_merged,Geelong South (10107),1.961,2.6853,-0.2092
+2026,fedavgRevIN,tmp,Geelong_South_10107_merged,Geelong South (10107),1.9485,2.6741,-0.1992
+2023,fedavgRevIN,tmp,Macleod_10377_merged,Macleod (10377),1.7941,2.2371,-0.2669
+2024,fedavgRevIN,tmp,Macleod_10377_merged,Macleod (10377),1.7968,2.2402,-0.2704
+2025,fedavgRevIN,tmp,Macleod_10377_merged,Macleod (10377),1.8038,2.248,-0.2793
+2026,fedavgRevIN,tmp,Macleod_10377_merged,Macleod (10377),1.7908,2.2345,-0.264
+2023,fedavgRevIN,tmp,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.3569,4.9824,-0.1462
+2024,fedavgRevIN,tmp,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.3567,4.9794,-0.1448
+2025,fedavgRevIN,tmp,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.357,4.9892,-0.1493
+2026,fedavgRevIN,tmp,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.3411,4.9705,-0.1407
+2023,fedavgRevIN,tmp,Melton_10169_merged,Melton (10169),2.3104,3.2278,-0.1991
+2024,fedavgRevIN,tmp,Melton_10169_merged,Melton (10169),2.316,3.2355,-0.2048
+2025,fedavgRevIN,tmp,Melton_10169_merged,Melton (10169),2.3159,3.2329,-0.2029
+2026,fedavgRevIN,tmp,Melton_10169_merged,Melton (10169),2.3064,3.2299,-0.2007
+2023,fedavgRevIN,tmp,Morwell_East_10017_merged,Morwell East (10017),2.218,2.9941,-0.2132
+2024,fedavgRevIN,tmp,Morwell_East_10017_merged,Morwell East (10017),2.2041,2.9844,-0.2053
+2025,fedavgRevIN,tmp,Morwell_East_10017_merged,Morwell East (10017),2.2194,2.9879,-0.2081
+2026,fedavgRevIN,tmp,Morwell_East_10017_merged,Morwell East (10017),2.2085,2.9792,-0.2011
+2023,fedavgRevIN,tmp,Morwell_South_10217_merged,Morwell South (10217),1.3052,1.7202,-0.1392
+2024,fedavgRevIN,tmp,Morwell_South_10217_merged,Morwell South (10217),1.3099,1.7267,-0.1479
+2025,fedavgRevIN,tmp,Morwell_South_10217_merged,Morwell South (10217),1.3106,1.7307,-0.1532
+2026,fedavgRevIN,tmp,Morwell_South_10217_merged,Morwell South (10217),1.3088,1.726,-0.1469
+2023,fedavgRevIN,tmp,Traralgon_10011_merged,Traralgon (10011),2.7388,3.7778,-0.1305
+2024,fedavgRevIN,tmp,Traralgon_10011_merged,Traralgon (10011),2.7392,3.7801,-0.1319
+2025,fedavgRevIN,tmp,Traralgon_10011_merged,Traralgon (10011),2.7456,3.7806,-0.1322
+2026,fedavgRevIN,tmp,Traralgon_10011_merged,Traralgon (10011),2.7376,3.7749,-0.1288
+2023,indep,tmp,Alphington_10001_merged,Alphington (10001),3.9686,5.7776,-0.102
+2024,indep,tmp,Alphington_10001_merged,Alphington (10001),3.9776,5.8041,-0.1122
+2025,indep,tmp,Alphington_10001_merged,Alphington (10001),3.9831,5.7991,-0.1102
+2026,indep,tmp,Alphington_10001_merged,Alphington (10001),3.952,5.7499,-0.0915
+2023,indep,tmp,Box_Hill_10042_merged,Box Hill (10042),2.7532,4.0106,-0.1999
+2024,indep,tmp,Box_Hill_10042_merged,Box Hill (10042),2.7114,3.9815,-0.1826
+2025,indep,tmp,Box_Hill_10042_merged,Box Hill (10042),2.7264,4.0027,-0.1952
+2026,indep,tmp,Box_Hill_10042_merged,Box Hill (10042),2.7008,3.9472,-0.1623
+2023,indep,tmp,Brighton_10007_merged,Brighton (10007),3.5103,4.9508,-0.2683
+2024,indep,tmp,Brighton_10007_merged,Brighton (10007),3.5067,4.9631,-0.2747
+2025,indep,tmp,Brighton_10007_merged,Brighton (10007),3.4713,4.9357,-0.2606
+2026,indep,tmp,Brighton_10007_merged,Brighton (10007),3.5123,4.9615,-0.2738
+2023,indep,tmp,Dandenong_10022_merged,Dandenong (10022),2.356,3.0974,-0.4857
+2024,indep,tmp,Dandenong_10022_merged,Dandenong (10022),2.3622,3.099,-0.4872
+2025,indep,tmp,Dandenong_10022_merged,Dandenong (10022),2.3529,3.0974,-0.4857
+2026,indep,tmp,Dandenong_10022_merged,Dandenong (10022),2.4056,3.1699,-0.556
+2023,indep,tmp,Geelong_South_10107_merged,Geelong South (10107),2.0239,2.7768,-0.293
+2024,indep,tmp,Geelong_South_10107_merged,Geelong South (10107),2.0386,2.7818,-0.2977
+2025,indep,tmp,Geelong_South_10107_merged,Geelong South (10107),2.0344,2.786,-0.3016
+2026,indep,tmp,Geelong_South_10107_merged,Geelong South (10107),2.033,2.7834,-0.2992
+2023,indep,tmp,Macleod_10377_merged,Macleod (10377),1.8366,2.3442,-0.3911
+2024,indep,tmp,Macleod_10377_merged,Macleod (10377),1.8628,2.3445,-0.3915
+2025,indep,tmp,Macleod_10377_merged,Macleod (10377),1.8454,2.3429,-0.3896
+2026,indep,tmp,Macleod_10377_merged,Macleod (10377),1.8344,2.3159,-0.3577
+2023,indep,tmp,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.4837,5.0497,-0.1773
+2024,indep,tmp,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.4619,5.0462,-0.1757
+2025,indep,tmp,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.4399,5.0296,-0.168
+2026,indep,tmp,Melbourne_CBD_10239_merged,Melbourne CBD (10239),3.4423,5.0128,-0.1602
+2023,indep,tmp,Melton_10169_merged,Melton (10169),2.4214,3.3839,-0.3179
+2024,indep,tmp,Melton_10169_merged,Melton (10169),2.4054,3.3911,-0.3235
+2025,indep,tmp,Melton_10169_merged,Melton (10169),2.4049,3.3669,-0.3047
+2026,indep,tmp,Melton_10169_merged,Melton (10169),2.4248,3.3663,-0.3042
+2023,indep,tmp,Morwell_East_10017_merged,Morwell East (10017),2.2182,3.0087,-0.225
+2024,indep,tmp,Morwell_East_10017_merged,Morwell East (10017),2.2677,3.0562,-0.264
+2025,indep,tmp,Morwell_East_10017_merged,Morwell East (10017),2.2538,3.0456,-0.2553
+2026,indep,tmp,Morwell_East_10017_merged,Morwell East (10017),2.2399,3.0239,-0.2374
+2023,indep,tmp,Morwell_South_10217_merged,Morwell South (10217),1.367,1.7739,-0.2115
+2024,indep,tmp,Morwell_South_10217_merged,Morwell South (10217),1.3638,1.7708,-0.2072
+2025,indep,tmp,Morwell_South_10217_merged,Morwell South (10217),1.3612,1.7666,-0.2015
+2026,indep,tmp,Morwell_South_10217_merged,Morwell South (10217),1.3688,1.7577,-0.1895
+2023,indep,tmp,Traralgon_10011_merged,Traralgon (10011),2.8075,3.8405,-0.1684
+2024,indep,tmp,Traralgon_10011_merged,Traralgon (10011),2.7815,3.8324,-0.1634
+2025,indep,tmp,Traralgon_10011_merged,Traralgon (10011),2.784,3.8196,-0.1557
+2026,indep,tmp,Traralgon_10011_merged,Traralgon (10011),2.7926,3.826,-0.1596

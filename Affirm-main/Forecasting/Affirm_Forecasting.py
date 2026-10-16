@@ -312,7 +312,7 @@ class model_training(L.LightningModule):
         self.save_hyperparameters()
         self.model = Affirm(configs=args)
         print(f"self.model:{self.model}")
-        self.criterion = nn.MSELoss()
+        self.criterion = nn.L1Loss()
         self.mse = MeanSquaredError()
         self.mae = MeanAbsoluteError()
         self.preds = []
@@ -328,8 +328,7 @@ class model_training(L.LightningModule):
     def configure_optimizers(self):
         optimizer = optim.AdamW(self.model.parameters(), lr=1e-4, weight_decay=1e-6)
         scheduler = {
-            'scheduler': optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.1, patience=2,
-                                                              verbose=True),
+            'scheduler': optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.1, patience=2),
             'monitor': 'val_mse',
             'interval': 'epoch',
             'frequency': 1
@@ -444,6 +443,9 @@ class model_training(L.LightningModule):
         self.val_trues.clear()
 
     def on_test_epoch_end(self):
+        from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+        import json
+
         preds = torch.cat(self.preds)
         trues = torch.cat(self.trues)
 
@@ -454,7 +456,78 @@ class model_training(L.LightningModule):
         trues = trues.contiguous()
         mse = self.mse(preds, trues)
         mae = self.mae(preds, trues)
-        print(f"{mae, mse}")
+        print(f"Normalised — MAE: {float(mae):.4f}, MSE: {float(mse):.4f}")
+
+        # ========== PM2.5 原始空间指标 ==========
+        preds_np = preds.detach().cpu().numpy()
+        trues_np = trues.detach().cpu().numpy()
+
+        dataset = None
+        try:
+            dls = self.trainer.test_dataloaders
+            if isinstance(dls, (list, tuple)):
+                dataset = getattr(dls[0], "dataset", None) if dls else None
+            else:
+                dataset = getattr(dls, "dataset", None)
+        except Exception:
+            dataset = None
+
+        if dataset is not None and hasattr(dataset, "inverse_transform"):
+            try:
+                shape = preds_np.shape
+                preds_np = dataset.inverse_transform(
+                    preds_np.reshape(-1, preds_np.shape[-1])
+                ).reshape(shape)
+                trues_np = dataset.inverse_transform(
+                    trues_np.reshape(-1, trues_np.shape[-1])
+                ).reshape(shape)
+            except Exception as e:
+                print(f"[WARN] inverse_transform failed: {e}")
+
+        # In M/MS mode the model outputs all channels (covariates + target), and the
+        # target (pm25) is the LAST column (column order is [date] + covariates + [target]).
+        # Only evaluate the target channel, otherwise the weather covariates (temperature,
+        # solar radiation, etc.) get mixed into MAE/RMSE/R2 and corrupt the metrics.
+        pred_target = preds_np[:, :, -1]  # [N, pred_len]
+        true_target = trues_np[:, :, -1]
+
+        y_true_flat = true_target.reshape(-1)
+        y_pred_flat = pred_target.reshape(-1)
+        test_mae  = float(mean_absolute_error(y_true_flat, y_pred_flat))
+        test_rmse = float(np.sqrt(mean_squared_error(y_true_flat, y_pred_flat)))
+        test_r2   = float(r2_score(y_true_flat, y_pred_flat))
+        step_maes = [
+            float(mean_absolute_error(true_target[:, i], pred_target[:, i]))
+            for i in range(true_target.shape[1])
+        ]
+
+        print(f"\n{'='*50}")
+        print(f"[AFFIRM] Final Test Results (PM2.5 space, horizon={args.pred_len})")
+        print(f"  MAE:  {test_mae:.4f}")
+        print(f"  RMSE: {test_rmse:.4f}")
+        print(f"  R2:   {test_r2:.4f}")
+        print(f"  Step MAEs: {[f'{m:.3f}' for m in step_maes]}")
+        print(f"{'='*50}\n")
+
+        os.makedirs("results", exist_ok=True)
+        loc_name = os.path.basename(args.data_path).replace(".csv", "")
+        metrics = {
+            "model": "AFFIRM",
+            "location": loc_name,
+            "lookback": args.seq_len,
+            "horizon": args.pred_len,
+            "test_mae": round(test_mae, 4),
+            "test_rmse": round(test_rmse, 4),
+            "test_r2": round(test_r2, 4),
+            "step_maes": [round(m, 4) for m in step_maes],
+        }
+        json_path = f"results/AFFIRM_{loc_name}_metrics.json"
+        with open(json_path, "w") as f:
+            json.dump(metrics, f, indent=2)
+        print(f"✅ Saved metrics to {json_path}")
+
+        self.preds.clear()
+        self.trues.clear()
 
 
 def save_prediction_plot(preds, trues, save_path, channel=0, max_points=400, inv_transform=None, title=None):

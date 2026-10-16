@@ -1,0 +1,31 @@
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/gnn_transformer_running.py:357: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Traralgon_10011_merged | X=(1332, 14, 8), y=(1332, 14)
+[Traralgon_10011_merged] Epoch 01 | TrainLoss=0.7919 | ValMAE=3.9720
+[Traralgon_10011_merged] Epoch 05 | TrainLoss=0.6906 | ValMAE=3.7459
+[Traralgon_10011_merged] Epoch 10 | TrainLoss=0.6745 | ValMAE=3.6918
+[Traralgon_10011_merged] Epoch 15 | TrainLoss=0.6661 | ValMAE=3.5810
+[Traralgon_10011_merged] Epoch 20 | TrainLoss=0.6570 | ValMAE=3.4142
+[Traralgon_10011_merged] Epoch 25 | TrainLoss=0.6480 | ValMAE=3.2701
+[Traralgon_10011_merged] Epoch 30 | TrainLoss=0.6413 | ValMAE=3.1864
+✅ Saved training history and prediction plots for Traralgon_10011_merged
+✅ Saved extra MAE plots: Step-wise MAE for Traralgon_10011_merged
+
+==================================================
+[Traralgon_10011_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  1.8539
+  RMSE: 2.3312
+  R2:   -0.2090
+  Step MAEs: ['1.904', '1.976', '1.885', '1.944', '1.932', '1.901', '1.815', '1.837', '1.869', '1.891', '1.826', '1.833', '1.694', '1.647']
+==================================================
+
+✅ Saved metrics to results/GNNTransformer_Traralgon_10011_merged_metrics.json

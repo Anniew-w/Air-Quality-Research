@@ -1,0 +1,95 @@
+[Fed-central-tmp] device=mps backbone=FrePatchTST3_temporal seed=2025 d_model=128 e_layers=1 bs=8 workers=0 -> /Users/wangshihan/Air Quality Research/FreEformer/federated/results/seeds/s2025
+train 1015
+test 254
+self.weight_plus in FullAttention_ablation: 0
+self.softmax_flag in FullAttention_ablation: 1
+self.outside_softmax in FullAttention_ablation: 0
+Enhanced attention is used...
+  client Alphington_10001: n_train=1015 n_test=254
+train 889
+test 223
+self.weight_plus in FullAttention_ablation: 0
+self.softmax_flag in FullAttention_ablation: 1
+self.outside_softmax in FullAttention_ablation: 0
+Enhanced attention is used...
+  client Box_Hill_10042: n_train=889 n_test=223
+train 971
+test 243
+self.weight_plus in FullAttention_ablation: 0
+self.softmax_flag in FullAttention_ablation: 1
+self.outside_softmax in FullAttention_ablation: 0
+Enhanced attention is used...
+  client Brighton_10007: n_train=971 n_test=243
+train 555
+test 139
+self.weight_plus in FullAttention_ablation: 0
+self.softmax_flag in FullAttention_ablation: 1
+self.outside_softmax in FullAttention_ablation: 0
+Enhanced attention is used...
+  client Dandenong_10022: n_train=555 n_test=139
+train 927
+test 232
+self.weight_plus in FullAttention_ablation: 0
+self.softmax_flag in FullAttention_ablation: 1
+self.outside_softmax in FullAttention_ablation: 0
+Enhanced attention is used...
+  client Geelong_South_10107: n_train=927 n_test=232
+train 156
+test 39
+self.weight_plus in FullAttention_ablation: 0
+self.softmax_flag in FullAttention_ablation: 1
+self.outside_softmax in FullAttention_ablation: 0
+Enhanced attention is used...
+  client Macleod_10377: n_train=156 n_test=39
+train 1112
+test 278
+self.weight_plus in FullAttention_ablation: 0
+self.softmax_flag in FullAttention_ablation: 1
+self.outside_softmax in FullAttention_ablation: 0
+Enhanced attention is used...
+  client Melbourne_CBD_10239: n_train=1112 n_test=278
+train 1000
+test 250
+self.weight_plus in FullAttention_ablation: 0
+self.softmax_flag in FullAttention_ablation: 1
+self.outside_softmax in FullAttention_ablation: 0
+Enhanced attention is used...
+  client Melton_10169: n_train=1000 n_test=250
+train 300
+test 76
+self.weight_plus in FullAttention_ablation: 0
+self.softmax_flag in FullAttention_ablation: 1
+self.outside_softmax in FullAttention_ablation: 0
+Enhanced attention is used...
+  client Morwell_East_10017: n_train=300 n_test=76
+train 552
+test 138
+self.weight_plus in FullAttention_ablation: 0
+self.softmax_flag in FullAttention_ablation: 1
+self.outside_softmax in FullAttention_ablation: 0
+Enhanced attention is used...
+  client Morwell_South_10217: n_train=552 n_test=138
+train 1065
+test 267
+self.weight_plus in FullAttention_ablation: 0
+self.softmax_flag in FullAttention_ablation: 1
+self.outside_softmax in FullAttention_ablation: 0
+Enhanced attention is used...
+  client Traralgon_10011: n_train=1065 n_test=267
+self.weight_plus in FullAttention_ablation: 0
+self.softmax_flag in FullAttention_ablation: 1
+self.outside_softmax in FullAttention_ablation: 0
+Enhanced attention is used...
+[centralized] pooled train windows=8542, training 30 epochs
+  eval Alphington_10001: MAE=3.5948 R2=-0.5788
+  eval Box_Hill_10042: MAE=2.4648 R2=-0.6052
+  eval Brighton_10007: MAE=3.3363 R2=-0.8792
+  eval Dandenong_10022: MAE=2.161 R2=-0.6162
+  eval Geelong_South_10107: MAE=1.993 R2=-0.7434
+  eval Macleod_10377: MAE=1.8235 R2=-0.4448
+  eval Melbourne_CBD_10239: MAE=3.2069 R2=-0.7477
+  eval Melton_10169: MAE=2.2831 R2=-0.5326
+  eval Morwell_East_10017: MAE=2.3691 R2=-0.4616
+  eval Morwell_South_10217: MAE=1.3508 R2=-0.5012
+  eval Traralgon_10011: MAE=2.7743 R2=-1.023
+[Fed-central-tmp] done in 9.6 min

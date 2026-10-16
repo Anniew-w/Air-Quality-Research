@@ -1,0 +1,35 @@
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/lstm_running.py:361: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Morwell_South_10217_merged | X=(690, 14, 8), y=(690, 14)
+📊 X_train mean=0.0000, std=1.0000
+📊 y_train (std) mean=-0.0000, std=1.0000
+[Morwell_South_10217_merged] Epoch 01 | TrainLoss=0.6849 | ValMAE=1.5080
+[Morwell_South_10217_merged] Epoch 05 | TrainLoss=0.6595 | ValMAE=1.4988
+[Morwell_South_10217_merged] Epoch 10 | TrainLoss=0.6347 | ValMAE=1.4915
+[Morwell_South_10217_merged] Epoch 15 | TrainLoss=0.5963 | ValMAE=1.4843
+[Morwell_South_10217_merged] Epoch 20 | TrainLoss=0.5366 | ValMAE=1.4834
+[Morwell_South_10217_merged] Epoch 25 | TrainLoss=0.4818 | ValMAE=1.4795
+[Morwell_South_10217_merged] Epoch 30 | TrainLoss=0.4544 | ValMAE=1.4781
+[Morwell_South_10217_merged] Epoch 35 | TrainLoss=0.4389 | ValMAE=1.4771
+[Morwell_South_10217_merged] Epoch 40 | TrainLoss=0.4322 | ValMAE=1.4749
+[Morwell_South_10217_merged] Epoch 45 | TrainLoss=0.4231 | ValMAE=1.4726
+[Morwell_South_10217_merged] Epoch 50 | TrainLoss=0.4131 | ValMAE=1.4703
+✅ Saved training history and prediction: results/LSTM_Morwell_South_10217_merged_history.png, results/LSTM_Morwell_South_10217_merged_prediction_step1.png
+✅ Saved extra MAE plots: results/LSTM_Morwell_South_10217_merged_ValMAE_curve.png, results/LSTM_Morwell_South_10217_merged_ValMSE_curve.png
+
+==================================================
+[Morwell_South_10217_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  1.7919
+  RMSE: 2.1151
+  R2:   -0.5774
+  Step MAEs: ['1.738', '1.665', '1.840', '1.912', '1.735', '1.879', '1.921', '1.728', '1.782', '1.732', '1.669', '1.790', '1.853', '1.842']
+==================================================
+
+✅ Saved metrics to results/LSTM_Morwell_South_10217_merged_metrics.json

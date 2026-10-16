@@ -1,0 +1,27 @@
+{
+  "model": "Fed-central-fre",
+  "location": "Brighton_10007_merged",
+  "seed": 2024,
+  "lookback": 14,
+  "horizon": 14,
+  "test_mae": 3.3718,
+  "test_rmse": 4.8406,
+  "test_r2": -0.2125,
+  "step_maes": [
+    2.7512,
+    3.2951,
+    3.4509,
+    3.5577,
+    3.4908,
+    3.4522,
+    3.4612,
+    3.4374,
+    3.417,
+    3.401,
+    3.3853,
+    3.458,
+    3.3462,
+    3.3006
+  ],
+  "test_r2_perwindow": -0.9585
+}

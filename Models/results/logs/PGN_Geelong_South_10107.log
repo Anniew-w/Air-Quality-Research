@@ -1,0 +1,39 @@
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+/Users/wangshihan/Air Quality Research/Models/pgn_running.py:350: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  seg = seg.interpolate(limit=3, limit_direction='both')
+
+🚀 Training station Geelong_South_10107_merged | X=(1159, 14, 8), y=(1159, 14)
+[Geelong_South_10107_merged] Epoch 01 | TrainLoss=0.8530 | ValMAE=1.9788
+[Geelong_South_10107_merged] Epoch 05 | TrainLoss=0.7389 | ValMAE=1.8269
+[Geelong_South_10107_merged] Epoch 10 | TrainLoss=0.7092 | ValMAE=1.8029
+[Geelong_South_10107_merged] Epoch 15 | TrainLoss=0.6951 | ValMAE=1.7891
+[Geelong_South_10107_merged] Epoch 20 | TrainLoss=0.6857 | ValMAE=1.7877
+✅ Saved training history and prediction: results/PGN_Geelong_South_10107_merged_history.png, results/PGN_Geelong_South_10107_merged_prediction_step1.png
+✅ Saved extra MAE plots: results/PGN_Geelong_South_10107_merged_ValMAE_curve.png, results/Geelong_South_10107_merged_PGN_StepMAE_bar.png
+
+==================================================
+[Geelong_South_10107_merged] Final Test Results (PM2.5 space, horizon=14)
+  MAE:  1.9213
+  RMSE: 2.6087
+  R2:   -0.1362
+  Step MAEs: ['1.801', '2.010', '2.047', '2.014', '2.000', '2.013', '2.002', '1.855', '1.745', '1.915', '2.000', '1.904', '1.826', '1.765']
+==================================================
+
+✅ Saved metrics to results/PGN_Geelong_South_10107_merged_metrics.json

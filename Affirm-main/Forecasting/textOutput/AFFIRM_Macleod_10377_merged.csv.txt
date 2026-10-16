@@ -1,0 +1,6 @@
+Macleod_10377_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_18_26  
+MSE:{'test': 0.8724149465560913, 'val': 1.6781175136566162}, MAE:{'test': 0.7513495087623596, 'val': 0.9310334920883179}
+
+Macleod_10377_merged_emb128_d2_ps14_pl14_bs8_mr0.4_AFFB_True_AF_True_ICB_False_preTr_False_20_28  
+MSE:{'test': 0.8724149465560913, 'val': 1.6781175136566162}, MAE:{'test': 0.7513495087623596, 'val': 0.9310334920883179}
+
